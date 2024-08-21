@@ -28,7 +28,7 @@ require (
 	github.com/spf13/viper v1.18.2
 	github.com/stretchr/testify v1.9.0
 	github.com/toqueteos/webbrowser v1.2.0
-	golang.org/x/net v0.25.0
+	golang.org/x/net v0.28.0
 	golang.org/x/oauth2 v0.20.0
 	golang.org/x/tools v0.21.0
 	gopkg.in/yaml.v2 v2.4.0
