@@ -1,0 +1,26 @@
+DEBUG: Using RE2 regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in config.js
+FATAL: Could not parse config file 
+        /Users/paulrelf/renovatePG/config.js:2
+         "customManagers": [
+                         ^
+       
+       SyntaxError: Unexpected token ':'
+           at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+           at Module._compile (node:internal/modules/cjs/loader:1491:20)
+           at Object.Module._extensions..js (node:internal/modules/cjs/loader:1691:10)
+           at Module.load (node:internal/modules/cjs/loader:1317:32)
+           at Function.Module._load (node:internal/modules/cjs/loader:1127:12)
+           at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+           at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+           at Module.require (node:internal/modules/cjs/loader:1339:12)
+           at require (node:internal/modules/helpers:125:16)
+           at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/config/parse/file.ts:31:67
+           at processTicksAndRejections (node:internal/process/task_queues:95:5)
+           at getParsedContent (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/config/parse/file.ts:30:25)
+           at Object.getConfig (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/config/parse/file.ts:61:14)
+           at parseConfigs (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/config/parse/index.ts:24:22)
+           at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:135:16
+           at start (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:133:5)
+           at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/renovate.ts:18:22
