@@ -1,4 +1,4 @@
-FROM python:3.2
+FROM python:3.12
 
 ARG FRREXPORTER_VERSION=v1.2.0
 
