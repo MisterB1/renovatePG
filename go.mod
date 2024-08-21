@@ -2,7 +2,7 @@ module github.com/MisterB1/renovatePG
 
 go 1.21
 
-toolchain go1.22.3
+toolchain go1.23.0
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.3
