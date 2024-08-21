@@ -6,7 +6,7 @@ toolchain go1.22.3
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.3
-	github.com/coreos/go-oidc/v3 v3.10.0
+	github.com/coreos/go-oidc/v3 v3.11.0
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
 	github.com/go-openapi/analysis v0.23.0
 	github.com/go-openapi/errors v0.22.0
