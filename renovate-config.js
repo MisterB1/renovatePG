@@ -1,12 +1,18 @@
-  enabledManagers: [
-    "custom.regex"
-]
-  customManagers: [
+module.exports = {
+"customManagers": [
     {
-      customType: "regex",
-      fileMatch: ["^Dockerfile$"],
-      matchStrings: ["ARG FRREXPORTER_VERSION=v(?<currentValue>.*?)"],
-      depNameTemplate: "github.com/tynany/frr_exporter",
-      datasourceTemplate: "go"
+      "customType": "regex",
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ENV YARN_VERSION=(?<currentValue>.*?)\\n"],
+      "depNameTemplate": "yarn",
+      "datasourceTemplate": "npm"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ENV PYTHON_VERSION=(?<currentValue>.*?)\\n"],
+      "depNameTemplate": "python",
+      "datasourceTemplate": "docker"
     }
   ]
+}
