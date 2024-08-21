@@ -15,17 +15,17 @@ require (
 	github.com/go-openapi/runtime v0.28.0
 	github.com/go-openapi/spec v0.21.0
 	github.com/go-openapi/strfmt v0.23.0
-	github.com/go-openapi/swag v0.23.0
-	github.com/go-openapi/validate v0.24.0
+	github.com/go-openapi/swag v0.22.0
+	github.com/go-openapi/validate v0.22.0
 	github.com/go-swagger/scan-repo-boundary v0.0.0-20180623220736-973b3573c013
-	github.com/golang-jwt/jwt/v5 v5.2.1
-	github.com/gorilla/handlers v1.5.2
+	github.com/golang-jwt/jwt/v5 v5.1.1
+	github.com/gorilla/handlers v1.5.1
 	github.com/jessevdk/go-flags v1.5.0
 	github.com/kr/pretty v0.3.1
-	github.com/mitchellh/mapstructure v1.5.0
+	github.com/mitchellh/mapstructure v1.3.0
 	github.com/spf13/cobra v1.8.0
 	github.com/spf13/pflag v1.0.5
-	github.com/spf13/viper v1.18.2
+	github.com/spf13/viper v1.12.2
 	github.com/stretchr/testify v1.9.0
 	github.com/toqueteos/webbrowser v1.2.0
 	golang.org/x/net v0.25.0
