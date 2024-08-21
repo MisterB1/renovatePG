@@ -6,33 +6,8 @@ toolchain go1.22.3
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.3
-	github.com/coreos/go-oidc/v3 v3.10.0
-	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
-	github.com/go-openapi/analysis v0.23.0
-	github.com/go-openapi/errors v0.22.0
-	github.com/go-openapi/inflect v0.21.0
-	github.com/go-openapi/loads v0.22.0
-	github.com/go-openapi/runtime v0.28.0
-	github.com/go-openapi/spec v0.21.0
-	github.com/go-openapi/strfmt v0.23.0
-	github.com/go-openapi/swag v0.23.0
-	github.com/go-openapi/validate v0.24.0
-	github.com/go-swagger/scan-repo-boundary v0.0.0-20180623220736-973b3573c013
-	github.com/golang-jwt/jwt/v5 v5.1.1
-	github.com/gorilla/handlers v1.5.1
-	github.com/jessevdk/go-flags v1.5.0
-	github.com/kr/pretty v0.3.1
-	github.com/mitchellh/mapstructure v1.3.0
-	github.com/spf13/cobra v1.8.0
-	github.com/spf13/pflag v1.0.5
-	github.com/spf13/viper v1.12.2
-	github.com/stretchr/testify v1.9.0
-	github.com/toqueteos/webbrowser v1.2.0
-	golang.org/x/net v0.25.0
-	golang.org/x/oauth2 v0.20.0
-	golang.org/x/tools v0.21.0
-	gopkg.in/yaml.v2 v2.4.0
-	gopkg.in/yaml.v3 v3.0.1
+	github.com/coreos/go-oidc/v3 v1.10.0
+	github.com/go-openapi/errors v0.21.0
 )
 
 require (
