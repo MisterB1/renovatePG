@@ -6,6 +6,7 @@
       "matchStrings": ["ARG FRREXPORTER_VERSION=v(?<currentValue>.*?)"],
       "depNameTemplate": "github.com/tynany/frr_exporter",
       "datasourceTemplate": "go"
+      mess up see if actually called
     }
   ]
 }
