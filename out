@@ -105,7 +105,7 @@ DEBUG: hostRules: authentication already set for api.github.com (repository=Mist
 DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: MisterB1/cicd-pipeline-train-schedule-pipelines default branch = master (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Using personal access token for git init (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
-DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=403) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=371) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Default config file renovate.json not found in repo (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository is a fork and not manually configured - skipping - did you want to run with --fork-processing=enabled? (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Removing any stale branches (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
@@ -114,7 +114,7 @@ DEBUG: No renovate branches found (repository=MisterB1/cicd-pipeline-train-sched
 DEBUG: Repository result: fork, status: disabled, enabled: false, onboarded: undefined (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "splits": {},
-       "total": 1613
+       "total": 1708
 DEBUG: Package cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
        "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
@@ -122,9 +122,9 @@ DEBUG: HTTP statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelin
        "hosts": {
          "api.github.com": {
            "count": 2,
-           "reqAvgMs": 441,
-           "reqMedianMs": 478,
-           "reqMaxMs": 478,
+           "reqAvgMs": 435,
+           "reqMedianMs": 498,
+           "reqMaxMs": 498,
            "queueAvgMs": 0,
            "queueMedianMs": 0,
            "queueMaxMs": 0
@@ -135,7 +135,7 @@ DEBUG: HTTP cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-p
 DEBUG: Lookup statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository finished (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "cloned": false,
-       "durationMs": 1613
+       "durationMs": 1708
 DEBUG: Reinitializing hostRules for repo
 DEBUG: Clearing hostRules
 DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
@@ -153,7 +153,7 @@ DEBUG: Resetting npmrc (repository=MisterB1/renovatePG)
 DEBUG: checkOnboarding() (repository=MisterB1/renovatePG)
 DEBUG: isOnboarded() (repository=MisterB1/renovatePG)
 DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"522278c2472c3779221f2677fbc006147f8724ba372f1b9a6561711111a66673", lastModified=undefined) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"600d0257dc2cb5d1160b969f852f21426c9b43f76e2cc860c3bf286ca388a1a3", lastModified=undefined) (repository=MisterB1/renovatePG)
 DEBUG: getPrList success (repository=MisterB1/renovatePG)
        "pullsTotal": 15,
        "requestsTotal": 1,
@@ -163,11 +163,11 @@ DEBUG: findFile(renovate.json) (repository=MisterB1/renovatePG)
 DEBUG: Initializing git repository into /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/repos/github/MisterB1/renovatePG (repository=MisterB1/renovatePG)
 DEBUG: Performing blobless clone (repository=MisterB1/renovatePG)
 DEBUG: git clone completed (repository=MisterB1/renovatePG)
-       "durationMs": 1772
+       "durationMs": 1762
 DEBUG: latest repository commit (repository=MisterB1/renovatePG)
        "latestCommit": {
-         "hash": "46efcf55c3a8dd3fd5ea107ece8d23dca440728d",
-         "date": "2024-08-22T09:39:52+10:00",
+         "hash": "ae9b4b07fe82a578207b8262e827d7e42704e2dc",
+         "date": "2024-08-22T13:36:18+10:00",
          "message": "test",
          "refs": "HEAD -> base, origin/base, origin/HEAD",
          "body": "",
@@ -207,13 +207,13 @@ DEBUG: No vulnerability alerts found (repository=MisterB1/renovatePG)
 DEBUG: findIssue(Dependency Dashboard) (repository=MisterB1/renovatePG)
 DEBUG: Found issue 17 (repository=MisterB1/renovatePG)
 DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"bf80f099561cbbf3c2a9f1e86ccb8d24063a0b231f83892c76c68d6bfd7fb583", lastModified=Wed, 21 Aug 2024 23:35:35 GMT) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"c8083a2f424552d9a39205ffa0a79fad262e1ca921b0c6b997ec290c194060c9", lastModified=Thu, 22 Aug 2024 03:35:18 GMT) (repository=MisterB1/renovatePG)
 DEBUG: No baseBranches (repository=MisterB1/renovatePG)
 DEBUG: extract() (repository=MisterB1/renovatePG)
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG)
 DEBUG: latest commit (repository=MisterB1/renovatePG)
        "branchName": "base",
-       "latestCommitDate": "2024-08-22T09:39:52+10:00"
+       "latestCommitDate": "2024-08-22T13:36:18+10:00"
 DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=MisterB1/renovatePG)
 DEBUG: Using file match: (^|/)(galaxy|requirements)(\.ansible)?\.ya?ml$ for manager ansible-galaxy (repository=MisterB1/renovatePG)
 DEBUG: Using file match: (^|/)\.tool-versions$ for manager asdf (repository=MisterB1/renovatePG)
@@ -324,17 +324,30 @@ DEBUG: Using file match: (^|/)\.vela\.ya?ml$ for manager velaci (repository=Mist
 DEBUG: Using file match: (^|/)vendir\.yml$ for manager vendir (repository=MisterB1/renovatePG)
 DEBUG: Using file match: ^\.woodpecker(?:/[^/]+)?\.ya?ml$ for manager woodpecker (repository=MisterB1/renovatePG)
 DEBUG: Using file match: ^Dockerfile$ for manager regex (repository=MisterB1/renovatePG)
+DEBUG: Matched 1 file(s) for manager dockerfile: Dockerfile (repository=MisterB1/renovatePG)
 DEBUG: Matched 1 file(s) for manager gomod: go.mod (repository=MisterB1/renovatePG)
+DEBUG: Matched 1 file(s) for manager regex: Dockerfile (repository=MisterB1/renovatePG)
 DEBUG: manager extract durations (ms) (repository=MisterB1/renovatePG)
-       "managers": {"gomod": 2}
+       "managers": {"dockerfile": 2, "gomod": 2, "regex": 3}
+DEBUG: Found dockerfile package files (repository=MisterB1/renovatePG)
 DEBUG: Found gomod package files (repository=MisterB1/renovatePG)
-DEBUG: Found 1 package file(s) (repository=MisterB1/renovatePG)
+DEBUG: Found regex package files (repository=MisterB1/renovatePG)
+DEBUG: Found 3 package file(s) (repository=MisterB1/renovatePG)
  INFO: Dependency extraction complete (repository=MisterB1/renovatePG, baseBranch=base)
        "stats": {
-         "managers": {"gomod": {"fileCount": 1, "depCount": 51}},
-         "total": {"fileCount": 1, "depCount": 51}
+         "managers": {
+           "dockerfile": {"fileCount": 1, "depCount": 1},
+           "gomod": {"fileCount": 1, "depCount": 51},
+           "regex": {"fileCount": 1, "depCount": 1}
+         },
+         "total": {"fileCount": 3, "depCount": 53}
        }
 DEBUG: Starting package releases lookups (repository=MisterB1/renovatePG, baseBranch=base)
+DEBUG: version compatibility regex match (repository=MisterB1/renovatePG)
+       "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$",
+       "currentValue": "12",
+       "packageName": "node",
+       "groups": {"version": "12"}
 DEBUG: Dependency: github.com/Masterminds/goutils, is disabled (repository=MisterB1/renovatePG)
 DEBUG: Dependency: github.com/Masterminds/semver/v3, is disabled (repository=MisterB1/renovatePG)
 DEBUG: Dependency: github.com/asaskevich/govalidator, is disabled (repository=MisterB1/renovatePG)
@@ -381,13 +394,20 @@ DEBUG: Dependency: golang.org/x/sync, is disabled (repository=MisterB1/renovateP
 DEBUG: Dependency: golang.org/x/sys, is disabled (repository=MisterB1/renovatePG)
 DEBUG: Dependency: golang.org/x/text, is disabled (repository=MisterB1/renovatePG)
 DEBUG: Dependency: gopkg.in/ini.v1, is disabled (repository=MisterB1/renovatePG)
-DEBUG: hostRules: no authentication for raw.githubusercontent.com (repository=MisterB1/renovatePG)
-DEBUG: Using queue: host=raw.githubusercontent.com, concurrency=16 (repository=MisterB1/renovatePG)
-DEBUG: Using queue: host=proxy.golang.org, concurrency=16 (repository=MisterB1/renovatePG)
-DEBUG: GET https://proxy.golang.org/github.com/!masterminds/sprig/v4/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=649) (repository=MisterB1/renovatePG)
-DEBUG: GET https://proxy.golang.org/github.com/coreos/go-oidc/v4/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=156) (repository=MisterB1/renovatePG)
 DEBUG: Found no satisfying versions with 'semver' versioning (repository=MisterB1/renovatePG)
-DEBUG: GET https://proxy.golang.org/github.com/go-openapi/errors/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=649) (repository=MisterB1/renovatePG)
+DEBUG:  (repository=MisterB1/renovatePG)
+       "update": {
+         "bucket": "major",
+         "newVersion": "20.17.0",
+         "newValue": "20",
+         "newDigest": "sha256:a4d1de4c7339eabcf78a90137dfd551b798829e3ef3e399e0036ac454afa1291",
+         "releaseTimestamp": "2024-08-22T00:40:47.589Z",
+         "newMajor": 20,
+         "newMinor": 17,
+         "newPatch": 0,
+         "updateType": "major",
+         "isRange": true
+       }
 DEBUG: PackageFiles.add() - Package file saved for base branch (repository=MisterB1/renovatePG, baseBranch=base)
 DEBUG: Package releases lookups complete (repository=MisterB1/renovatePG, baseBranch=base)
 DEBUG: branchifyUpgrades (repository=MisterB1/renovatePG)
@@ -395,11 +415,49 @@ DEBUG: detectSemanticCommits() (repository=MisterB1/renovatePG)
 DEBUG: getCommitMessages (repository=MisterB1/renovatePG)
 DEBUG: semanticCommits: detected "unknown" (repository=MisterB1/renovatePG)
 DEBUG: semanticCommits: disabled (repository=MisterB1/renovatePG)
-DEBUG: 3 flattened updates found: go, github.com/coreos/go-oidc/v3, github.com/go-openapi/errors (repository=MisterB1/renovatePG)
-DEBUG: Returning 3 branch(es) (repository=MisterB1/renovatePG)
+DEBUG: 4 flattened updates found: node, go, github.com/coreos/go-oidc/v3, github.com/go-openapi/errors (repository=MisterB1/renovatePG)
+DEBUG: Returning 4 branch(es) (repository=MisterB1/renovatePG)
 DEBUG: config.repoIsOnboarded=true (repository=MisterB1/renovatePG)
 DEBUG: packageFiles with updates (repository=MisterB1/renovatePG, baseBranch=base)
        "config": {
+         "dockerfile": [
+           {
+             "deps": [
+               {
+                 "depName": "node",
+                 "currentValue": "12",
+                 "replaceString": "node:12",
+                 "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+                 "datasource": "docker",
+                 "depType": "final",
+                 "updates": [
+                   {
+                     "bucket": "major",
+                     "newVersion": "20.17.0",
+                     "newValue": "20",
+                     "releaseTimestamp": "2024-08-22T00:40:47.589Z",
+                     "newMajor": 20,
+                     "newMinor": 17,
+                     "newPatch": 0,
+                     "updateType": "major",
+                     "isRange": true,
+                     "branchName": "renovate/node-20.x"
+                   }
+                 ],
+                 "packageName": "node",
+                 "versioning": "node",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/nodejs/node",
+                 "registryUrl": "https://index.docker.io",
+                 "lookupName": "library/node",
+                 "currentVersion": "12.22.12",
+                 "currentVersionTimestamp": "2022-04-21T01:47:18.079Z",
+                 "isSingleVersion": false
+               }
+             ],
+             "packageFile": "Dockerfile"
+           }
+         ],
          "gomod": [
            {
              "deps": [
@@ -1037,12 +1095,36 @@ DEBUG: packageFiles with updates (repository=MisterB1/renovatePG, baseBranch=bas
              ],
              "packageFile": "go.mod"
            }
+         ],
+         "regex": [
+           {
+             "deps": [
+               {
+                 "depName": "github.com/tynany/frr_exporter",
+                 "currentValue": "1.2.0",
+                 "datasource": "go",
+                 "replaceString": "ARG FRREXPORTER_VERSION=v1.2.0\n",
+                 "updates": [],
+                 "packageName": "github.com/tynany/frr_exporter",
+                 "versioning": "semver",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/tynany/frr_exporter",
+                 "currentVersion": "v1.2.0",
+                 "currentVersionTimestamp": "2023-04-23T03:01:22.000Z",
+                 "fixedVersion": "1.2.0"
+               }
+             ],
+             "matchStrings": ["ARG FRREXPORTER_VERSION=v(?<currentValue>.*?)\\n"],
+             "depNameTemplate": "github.com/tynany/frr_exporter",
+             "datasourceTemplate": "go",
+             "packageFile": "Dockerfile"
+           }
          ]
        }
 DEBUG: detectSemanticCommits() (repository=MisterB1/renovatePG)
 DEBUG: semanticCommits: returning "disabled" from cache (repository=MisterB1/renovatePG)
 DEBUG: processRepo() (repository=MisterB1/renovatePG)
-DEBUG: Processing 3 branches: renovate/github.com-coreos-go-oidc-v3-3.x, renovate/go-1.x, renovate/go-openapi (repository=MisterB1/renovatePG)
+DEBUG: Processing 4 branches: renovate/github.com-coreos-go-oidc-v3-3.x, renovate/go-1.x, renovate/go-openapi, renovate/node-20.x (repository=MisterB1/renovatePG)
 DEBUG: Calculated maximum PRs remaining this run: 9007199254740991 (repository=MisterB1/renovatePG)
 DEBUG: PullRequests limit = 9007199254740991 (repository=MisterB1/renovatePG)
 DEBUG: Calculated maximum branches remaining this run: 9007199254740991 (repository=MisterB1/renovatePG)
@@ -1059,10 +1141,10 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-08-22T03:35:10.516Z) (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-08-22T03:45:08.754Z) (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
-DEBUG: GET https://api.github.com/repos/MisterB1/renovatePG/branches/base/protection = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=343) (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
+DEBUG: GET https://api.github.com/repos/MisterB1/renovatePG/branches/base/protection = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=359) (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: No branch protection found for base (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for converting to rebaseWhen=behind-base-branch applies (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: Skipping behind base branch check due to rebaseWhen=conflicted (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
@@ -1076,7 +1158,7 @@ DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=r
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-08-22T09:39:52+10:00"
+       "latestCommitDate": "2024-08-22T13:36:18+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: gomod.updateDependency: 1.23.0 (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
@@ -1087,7 +1169,7 @@ DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/go-1.
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-08-22T09:39:52+10:00"
+       "latestCommitDate": "2024-08-22T13:36:18+10:00"
 DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/go-1.x)
@@ -1113,7 +1195,7 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-08-22T03:35:14.010Z) (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-08-22T03:45:11.263Z) (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for converting to rebaseWhen=behind-base-branch applies (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
@@ -1126,7 +1208,7 @@ DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=r
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
        "branchName": "base",
-       "latestCommitDate": "2024-08-22T09:39:52+10:00"
+       "latestCommitDate": "2024-08-22T13:36:18+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: gomod.updateDependency: v0.22.0 (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
@@ -1137,7 +1219,7 @@ DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/go-op
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
        "branchName": "base",
-       "latestCommitDate": "2024-08-22T09:39:52+10:00"
+       "latestCommitDate": "2024-08-22T13:36:18+10:00"
 DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
@@ -1151,905 +1233,183 @@ DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/g
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: Pull Request #32 does not need updating (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/go-openapi)
-DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: getBranchPr(renovate/github.com-coreos-go-oidc-v3-3.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: findPr(renovate/github.com-coreos-go-oidc-v3-3.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Found PR #21 (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: branchExists=true (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: dependencyDashboardCheck=undefined (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: PR rebase requested=false (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-08-22T03:35:16.245Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for converting to rebaseWhen=behind-base-branch applies (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Skipping behind base branch check due to rebaseWhen=conflicted (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: isBranchConflicted(base, renovate/github.com-coreos-go-oidc-v3-3.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
+DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: getBranchPr(renovate/node-20.x) (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: findPr(renovate/node-20.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Found PR #31 (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: branchExists=true (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: PR rebase requested=false (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-08-22T03:45:12.159Z) (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for converting to rebaseWhen=behind-base-branch applies (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Skipping behind base branch check due to rebaseWhen=conflicted (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: isBranchConflicted(base, renovate/node-20.x) (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
        "branchName": "base",
-       "latestCommitDate": "2024-08-22T09:39:52+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: gomod.updateDependency: v3.11.0 (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: gomod: major update for github.com/coreos/go-oidc/v3 (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
+       "latestCommitDate": "2024-08-22T13:36:18+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Branch dep node in Dockerfile is already updated (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: No content changed (repository=MisterB1/renovatePG, packageFile=Dockerfile, branch=renovate/node-20.x)
+       "depName": "node"
+DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
        "branchName": "base",
-       "latestCommitDate": "2024-08-22T09:39:52+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: getBranchPr(renovate/github.com-coreos-go-oidc-v3-3.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: findPr(renovate/github.com-coreos-go-oidc-v3-3.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Found PR #21 (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Fetching changelog: https://github.com/coreos/go-oidc (v1.10.0 -> v3.11.0) (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: Pull Request #21 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-coreos-go-oidc-v3-3.x)
-DEBUG: getBranchPr(renovate/go-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/go-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #20 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/go-openapi) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/go-openapi, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #32 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-coreos-go-oidc-v3-3.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-coreos-go-oidc-v3-3.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #21 (repository=MisterB1/renovatePG)
-DEBUG: ensureDependencyDashboard() (repository=MisterB1/renovatePG)
-DEBUG: Ensuring Dependency Dashboard (repository=MisterB1/renovatePG)
-DEBUG: Checking packageFiles for deprecated packages (repository=MisterB1/renovatePG)
-       "packageFiles": {
-         "gomod": [
-           {
-             "deps": [
-               {
-                 "datasource": "golang-version",
-                 "versioning": "go-mod-directive",
-                 "depType": "golang",
-                 "depName": "go",
-                 "currentValue": "1.21",
-                 "managerData": {"lineNumber": 2},
-                 "updates": [],
-                 "packageName": "go",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/golang/go",
-                 "registryUrl": "https://raw.githubusercontent.com/golang/website",
-                 "homepage": "https://go.dev/",
-                 "currentVersion": "1.23.0",
-                 "currentVersionTimestamp": "2024-08-13T00:00:00.000Z"
-               },
-               {
-                 "datasource": "golang-version",
-                 "depType": "toolchain",
-                 "depName": "go",
-                 "currentValue": "1.22.3",
-                 "managerData": {"lineNumber": 4},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "1.23.0",
-                     "newValue": "1.23.0",
-                     "releaseTimestamp": "2024-08-13T00:00:00.000Z",
-                     "newMajor": 1,
-                     "newMinor": 23,
-                     "newPatch": 0,
-                     "updateType": "minor",
-                     "branchName": "renovate/go-1.x"
-                   }
-                 ],
-                 "packageName": "go",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/golang/go",
-                 "registryUrl": "https://raw.githubusercontent.com/golang/website",
-                 "homepage": "https://go.dev/",
-                 "currentVersion": "1.22.3",
-                 "currentVersionTimestamp": "2024-05-07T00:00:00.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "1.22.3"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/Masterminds/sprig/v3",
-                 "currentValue": "v3.2.3",
-                 "managerData": {"multiLine": true, "lineNumber": 7},
-                 "updates": [],
-                 "packageName": "github.com/Masterminds/sprig/v3",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/Masterminds/sprig",
-                 "currentVersion": "v3.2.3",
-                 "currentVersionTimestamp": "2022-11-29T18:52:29.000Z",
-                 "fixedVersion": "v3.2.3"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/coreos/go-oidc/v3",
-                 "currentValue": "v1.10.0",
-                 "managerData": {"multiLine": true, "lineNumber": 8},
-                 "updates": [
-                   {
-                     "bucket": "major",
-                     "newVersion": "v3.11.0",
-                     "newValue": "v3.11.0",
-                     "releaseTimestamp": "2024-07-08T17:10:06.000Z",
-                     "newMajor": 3,
-                     "newMinor": 11,
-                     "newPatch": 0,
-                     "updateType": "major",
-                     "branchName": "renovate/github.com-coreos-go-oidc-v3-3.x"
-                   }
-                 ],
-                 "packageName": "github.com/coreos/go-oidc/v3",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/coreos/go-oidc",
-                 "currentVersion": "v1.10.0",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.10.0"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/go-openapi/errors",
-                 "currentValue": "v0.21.0",
-                 "managerData": {"multiLine": true, "lineNumber": 9},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v0.22.0",
-                     "newValue": "v0.22.0",
-                     "releaseTimestamp": "2024-03-09T18:11:36.000Z",
-                     "newMajor": 0,
-                     "newMinor": 22,
-                     "newPatch": 0,
-                     "updateType": "minor",
-                     "branchName": "renovate/go-openapi"
-                   }
-                 ],
-                 "packageName": "github.com/go-openapi/errors",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/go-openapi/errors",
-                 "currentVersion": "v0.21.0",
-                 "currentVersionTimestamp": "2023-12-17T17:29:10.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v0.21.0"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/Masterminds/goutils",
-                 "currentValue": "v1.1.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 13},
-                 "updates": [],
-                 "packageName": "github.com/Masterminds/goutils",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/Masterminds/semver/v3",
-                 "currentValue": "v3.2.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 14},
-                 "updates": [],
-                 "packageName": "github.com/Masterminds/semver/v3",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/asaskevich/govalidator",
-                 "currentValue": "v0.0.0-20230301143203-a9d515a09cc2",
-                 "currentDigest": "a9d515a09cc2",
-                 "digestOneAndOnly": true,
-                 "versioning": "loose",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 15},
-                 "updates": [],
-                 "packageName": "github.com/asaskevich/govalidator",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/docker/go-units",
-                 "currentValue": "v0.5.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 16},
-                 "updates": [],
-                 "packageName": "github.com/docker/go-units",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/felixge/httpsnoop",
-                 "currentValue": "v1.0.4",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 17},
-                 "updates": [],
-                 "packageName": "github.com/felixge/httpsnoop",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/fsnotify/fsnotify",
-                 "currentValue": "v1.7.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 18},
-                 "updates": [],
-                 "packageName": "github.com/fsnotify/fsnotify",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/go-jose/go-jose/v4",
-                 "currentValue": "v4.0.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 19},
-                 "updates": [],
-                 "packageName": "github.com/go-jose/go-jose/v4",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/go-logr/logr",
-                 "currentValue": "v1.4.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 20},
-                 "updates": [],
-                 "packageName": "github.com/go-logr/logr",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/go-logr/stdr",
-                 "currentValue": "v1.2.2",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 21},
-                 "updates": [],
-                 "packageName": "github.com/go-logr/stdr",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/go-openapi/jsonpointer",
-                 "currentValue": "v0.21.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 22},
-                 "updates": [],
-                 "packageName": "github.com/go-openapi/jsonpointer",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/go-openapi/jsonreference",
-                 "currentValue": "v0.21.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 23},
-                 "updates": [],
-                 "packageName": "github.com/go-openapi/jsonreference",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/google/uuid",
-                 "currentValue": "v1.6.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 24},
-                 "updates": [],
-                 "packageName": "github.com/google/uuid",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/hashicorp/hcl",
-                 "currentValue": "v1.0.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 25},
-                 "updates": [],
-                 "packageName": "github.com/hashicorp/hcl",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/huandu/xstrings",
-                 "currentValue": "v1.4.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 26},
-                 "updates": [],
-                 "packageName": "github.com/huandu/xstrings",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/imdario/mergo",
-                 "currentValue": "v0.3.16",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 27},
-                 "updates": [],
-                 "packageName": "github.com/imdario/mergo",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/inconshreveable/mousetrap",
-                 "currentValue": "v1.1.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 28},
-                 "updates": [],
-                 "packageName": "github.com/inconshreveable/mousetrap",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/josharian/intern",
-                 "currentValue": "v1.0.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 29},
-                 "updates": [],
-                 "packageName": "github.com/josharian/intern",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/kr/text",
-                 "currentValue": "v0.2.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 30},
-                 "updates": [],
-                 "packageName": "github.com/kr/text",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/magiconair/properties",
-                 "currentValue": "v1.8.7",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 31},
-                 "updates": [],
-                 "packageName": "github.com/magiconair/properties",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/mailru/easyjson",
-                 "currentValue": "v0.7.7",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 32},
-                 "updates": [],
-                 "packageName": "github.com/mailru/easyjson",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/mitchellh/copystructure",
-                 "currentValue": "v1.2.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 33},
-                 "updates": [],
-                 "packageName": "github.com/mitchellh/copystructure",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/mitchellh/reflectwalk",
-                 "currentValue": "v1.0.2",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 34},
-                 "updates": [],
-                 "packageName": "github.com/mitchellh/reflectwalk",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/oklog/ulid",
-                 "currentValue": "v1.3.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 35},
-                 "updates": [],
-                 "packageName": "github.com/oklog/ulid",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/opentracing/opentracing-go",
-                 "currentValue": "v1.2.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 36},
-                 "updates": [],
-                 "packageName": "github.com/opentracing/opentracing-go",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/pelletier/go-toml/v2",
-                 "currentValue": "v2.1.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 37},
-                 "updates": [],
-                 "packageName": "github.com/pelletier/go-toml/v2",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/pmezard/go-difflib",
-                 "currentValue": "v1.0.1-0.20181226105442-5d4384ee4fb2",
-                 "currentDigest": "5d4384ee4fb2",
-                 "digestOneAndOnly": true,
-                 "versioning": "loose",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 38},
-                 "updates": [],
-                 "packageName": "github.com/pmezard/go-difflib",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/rogpeppe/go-internal",
-                 "currentValue": "v1.12.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 39},
-                 "updates": [],
-                 "packageName": "github.com/rogpeppe/go-internal",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/sagikazarmark/locafero",
-                 "currentValue": "v0.4.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 40},
-                 "updates": [],
-                 "packageName": "github.com/sagikazarmark/locafero",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/sagikazarmark/slog-shim",
-                 "currentValue": "v0.1.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 41},
-                 "updates": [],
-                 "packageName": "github.com/sagikazarmark/slog-shim",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/shopspring/decimal",
-                 "currentValue": "v1.3.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 42},
-                 "updates": [],
-                 "packageName": "github.com/shopspring/decimal",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/sourcegraph/conc",
-                 "currentValue": "v0.3.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 43},
-                 "updates": [],
-                 "packageName": "github.com/sourcegraph/conc",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/spf13/afero",
-                 "currentValue": "v1.11.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 44},
-                 "updates": [],
-                 "packageName": "github.com/spf13/afero",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/spf13/cast",
-                 "currentValue": "v1.6.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 45},
-                 "updates": [],
-                 "packageName": "github.com/spf13/cast",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/subosito/gotenv",
-                 "currentValue": "v1.6.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 46},
-                 "updates": [],
-                 "packageName": "github.com/subosito/gotenv",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "go.mongodb.org/mongo-driver",
-                 "currentValue": "v1.14.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 47},
-                 "updates": [],
-                 "packageName": "go.mongodb.org/mongo-driver",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "go.opentelemetry.io/otel",
-                 "currentValue": "v1.24.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 48},
-                 "updates": [],
-                 "packageName": "go.opentelemetry.io/otel",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "go.opentelemetry.io/otel/metric",
-                 "currentValue": "v1.24.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 49},
-                 "updates": [],
-                 "packageName": "go.opentelemetry.io/otel/metric",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "go.opentelemetry.io/otel/trace",
-                 "currentValue": "v1.24.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 50},
-                 "updates": [],
-                 "packageName": "go.opentelemetry.io/otel/trace",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "go.uber.org/multierr",
-                 "currentValue": "v1.11.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 51},
-                 "updates": [],
-                 "packageName": "go.uber.org/multierr",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/crypto",
-                 "currentValue": "v0.23.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 52},
-                 "updates": [],
-                 "packageName": "golang.org/x/crypto",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/exp",
-                 "currentValue": "v0.0.0-20240222234643-814bf88cf225",
-                 "currentDigest": "814bf88cf225",
-                 "digestOneAndOnly": true,
-                 "versioning": "loose",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 53},
-                 "updates": [],
-                 "packageName": "golang.org/x/exp",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/mod",
-                 "currentValue": "v0.17.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 54},
-                 "updates": [],
-                 "packageName": "golang.org/x/mod",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/sync",
-                 "currentValue": "v0.7.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 55},
-                 "updates": [],
-                 "packageName": "golang.org/x/sync",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/sys",
-                 "currentValue": "v0.20.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 56},
-                 "updates": [],
-                 "packageName": "golang.org/x/sys",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/text",
-                 "currentValue": "v0.15.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 57},
-                 "updates": [],
-                 "packageName": "golang.org/x/text",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "gopkg.in/ini.v1",
-                 "currentValue": "v1.67.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 58},
-                 "updates": [],
-                 "packageName": "gopkg.in/ini.v1",
-                 "skipReason": "disabled"
-               }
-             ],
-             "packageFile": "go.mod"
+       "latestCommitDate": "2024-08-22T13:36:18+10:00"
+DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: getBranchPr(renovate/node-20.x) (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: findPr(renovate/node-20.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Found PR #31 (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Fetching changelog: https://github.com/nodejs/node (12.22.12 -> 20.17.0) (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: PR body changed (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+       "prTitle": "Update Node.js to v20"
+DEBUG: updatePr(31, Update Node.js to v20, body) (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: PATCH https://api.github.com/repos/MisterB1/renovatePG/pulls/31 = (code=ECONNRESET, statusCode=-1 retryCount=0, duration=2) (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: GitHub failure: RequestError (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+       "err": {
+         "name": "RequestError",
+         "code": "ECONNRESET",
+         "timings": {
+           "start": 1724298345058,
+           "socket": 1724298345059,
+           "lookup": 1724298345059,
+           "connect": 1724298345059,
+           "secureConnect": 1724298345059,
+           "upload": 1724298345059,
+           "error": 1724298345060,
+           "phases": {
+             "wait": 1,
+             "dns": 0,
+             "tcp": 0,
+             "tls": 0,
+             "request": 0,
+             "total": 2
            }
-         ]
+         },
+         "message": "socket hang up",
+         "stack": "RequestError: socket hang up\n    at ClientRequest.<anonymous> (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/got/dist/source/core/index.js:970:111)\n    at Object.onceWrapper (node:events:635:26)\n    at ClientRequest.emit (node:events:532:35)\n    at ClientRequest.emit (node:domain:488:12)\n    at ClientRequest.origin.emit (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/@szmarczak/http-timer/dist/source/index.js:43:20)\n    at emitErrorEvent (node:_http_client:103:11)\n    at TLSSocket.socketOnEnd (node:_http_client:530:5)\n    at TLSSocket.emit (node:events:532:35)\n    at TLSSocket.emit (node:domain:488:12)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at TLSSocket.socketOnEnd (node:_http_client:530:25)\n    at TLSSocket.emit (node:events:532:35)\n    at TLSSocket.emit (node:domain:488:12)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)",
+         "options": {
+           "headers": {
+             "user-agent": "RenovateBot/38.45.0 (https://github.com/renovatebot/renovate)",
+             "accept": "application/json, application/vnd.github.v3+json",
+             "authorization": "***********",
+             "content-type": "application/json",
+             "content-length": "60778",
+             "accept-encoding": "gzip, deflate, br"
+           },
+           "url": "https://api.github.com/repos/MisterB1/renovatePG/pulls/31",
+           "hostType": "github",
+           "username": "",
+           "password": "",
+           "method": "PATCH",
+           "http2": false
+         }
        }
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"bf80f099561cbbf3c2a9f1e86ccb8d24063a0b231f83892c76c68d6bfd7fb583", lastModified=Wed, 21 Aug 2024 23:35:35 GMT) (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"bf80f099561cbbf3c2a9f1e86ccb8d24063a0b231f83892c76c68d6bfd7fb583", lastModified=Wed, 21 Aug 2024 23:35:35 GMT) (repository=MisterB1/renovatePG)
-DEBUG: ensureIssue(Dependency Dashboard) (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"bf80f099561cbbf3c2a9f1e86ccb8d24063a0b231f83892c76c68d6bfd7fb583", lastModified=Wed, 21 Aug 2024 23:35:35 GMT) (repository=MisterB1/renovatePG)
-DEBUG: Patching issue (repository=MisterB1/renovatePG)
-DEBUG: Issue updated (repository=MisterB1/renovatePG)
-DEBUG: validateReconfigureBranch() (repository=MisterB1/renovatePG)
-DEBUG: No reconfigure branch found (repository=MisterB1/renovatePG)
-DEBUG: Removing any stale branches (repository=MisterB1/renovatePG)
-DEBUG: config.repoIsOnboarded=true (repository=MisterB1/renovatePG)
-DEBUG: Branch lists (repository=MisterB1/renovatePG)
-       "branchList": [
-         "renovate/github.com-coreos-go-oidc-v3-3.x",
-         "renovate/go-1.x",
-         "renovate/go-openapi"
-       ],
-       "renovateBranches": [
-         "renovate/github.com-coreos-go-oidc-v3-3.x",
-         "renovate/go-1.x",
-         "renovate/go-openapi",
-         "renovate/python-3.x"
-       ]
-DEBUG: remainingBranches=renovate/python-3.x (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/python-3.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #29 (repository=MisterB1/renovatePG)
-DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG)
-DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG)
-DEBUG: setCachedModifiedResult(): Branch cache not present (repository=MisterB1/renovatePG)
- INFO: Autoclosing PR (repository=MisterB1/renovatePG)
-       "branchName": "renovate/python-3.x",
-       "prNo": 29,
-       "prTitle": "Update python Docker tag to v3.12"
-DEBUG: updatePr(29, Update python Docker tag to v3.12 - autoclosed, body) (repository=MisterB1/renovatePG)
-DEBUG: PR updated...prNo: 29 (repository=MisterB1/renovatePG)
-DEBUG: Deleted remote branch: renovate/python-3.x (repository=MisterB1/renovatePG)
-DEBUG: No local branch to delete with name: renovate/python-3.x (repository=MisterB1/renovatePG)
-DEBUG: PackageFiles.clear() - Package files deleted (repository=MisterB1/renovatePG)
-DEBUG: Branch summary (repository=MisterB1/renovatePG)
-       "cacheModified": undefined,
-       "baseBranches": [{"branchName": "base", "sha": "46efcf55c3a8dd3fd5ea107ece8d23dca440728d"}],
-       "branches": [
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "46efcf55c3a8dd3fd5ea107ece8d23dca440728d",
-           "branchName": "renovate/go-1.x",
-           "branchSha": "c9f24578d131209b42cba3d99e217379f38e7a74",
-           "isModified": false,
-           "isPristine": false
+DEBUG: Passing error up (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+DEBUG: Passing PR error up (repository=MisterB1/renovatePG, branch=renovate/node-20.x)
+ WARN: Host error (repository=MisterB1/renovatePG)
+       "hostType": "github",
+       "packageName": undefined,
+       "err": {
+         "name": "RequestError",
+         "code": "ECONNRESET",
+         "timings": {
+           "start": 1724298345058,
+           "socket": 1724298345059,
+           "lookup": 1724298345059,
+           "connect": 1724298345059,
+           "secureConnect": 1724298345059,
+           "upload": 1724298345059,
+           "error": 1724298345060,
+           "phases": {
+             "wait": 1,
+             "dns": 0,
+             "tcp": 0,
+             "tls": 0,
+             "request": 0,
+             "total": 2
+           }
          },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "46efcf55c3a8dd3fd5ea107ece8d23dca440728d",
-           "branchName": "renovate/go-openapi",
-           "branchSha": "d3e0407a0e0e399b31ed1d559a70167dc81c0a89",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "46efcf55c3a8dd3fd5ea107ece8d23dca440728d",
-           "branchName": "renovate/github.com-coreos-go-oidc-v3-3.x",
-           "branchSha": "6b8b6ad03b4e543605e44ac093957e41404936b9",
-           "isModified": false,
-           "isPristine": false
+         "message": "socket hang up",
+         "stack": "RequestError: socket hang up\n    at ClientRequest.<anonymous> (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/got/dist/source/core/index.js:970:111)\n    at Object.onceWrapper (node:events:635:26)\n    at ClientRequest.emit (node:events:532:35)\n    at ClientRequest.emit (node:domain:488:12)\n    at ClientRequest.origin.emit (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/@szmarczak/http-timer/dist/source/index.js:43:20)\n    at emitErrorEvent (node:_http_client:103:11)\n    at TLSSocket.socketOnEnd (node:_http_client:530:5)\n    at TLSSocket.emit (node:events:532:35)\n    at TLSSocket.emit (node:domain:488:12)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at TLSSocket.socketOnEnd (node:_http_client:530:25)\n    at TLSSocket.emit (node:events:532:35)\n    at TLSSocket.emit (node:domain:488:12)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)",
+         "options": {
+           "headers": {
+             "user-agent": "RenovateBot/38.45.0 (https://github.com/renovatebot/renovate)",
+             "accept": "application/json, application/vnd.github.v3+json",
+             "authorization": "***********",
+             "content-type": "application/json",
+             "content-length": "60778",
+             "accept-encoding": "gzip, deflate, br"
+           },
+           "url": "https://api.github.com/repos/MisterB1/renovatePG/pulls/31",
+           "hostType": "github",
+           "username": "",
+           "password": "",
+           "method": "PATCH",
+           "http2": false
          }
-       ],
-       "defaultBranch": "base",
-       "inactiveBranches": []
-DEBUG: branches info extended (repository=MisterB1/renovatePG)
-       "branchesInformation": [
-         {
-           "branchName": "renovate/go-1.x",
-           "prNo": 20,
-           "prTitle": "Update dependency go to v1.23.0",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "golang-version",
-               "depName": "go",
-               "displayPending": "",
-               "fixedVersion": "1.22.3",
-               "currentVersion": "1.22.3",
-               "currentValue": "1.22.3",
-               "newValue": "1.23.0",
-               "newVersion": "1.23.0",
-               "packageFile": "go.mod",
-               "updateType": "minor",
-               "packageName": "go"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/go-openapi",
-           "prNo": 32,
-           "prTitle": "Update module github.com/go-openapi/errors to v0.22.0",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/go-openapi/errors",
-               "displayPending": "",
-               "fixedVersion": "v0.21.0",
-               "currentVersion": "v0.21.0",
-               "currentValue": "v0.21.0",
-               "newValue": "v0.22.0",
-               "newVersion": "v0.22.0",
-               "packageFile": "go.mod",
-               "updateType": "minor",
-               "packageName": "github.com/go-openapi/errors"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-coreos-go-oidc-v3-3.x",
-           "prNo": 21,
-           "prTitle": "Update module github.com/coreos/go-oidc/v3 to v3",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/coreos/go-oidc/v3",
-               "displayPending": "",
-               "fixedVersion": "v1.10.0",
-               "currentVersion": "v1.10.0",
-               "currentValue": "v1.10.0",
-               "newValue": "v3.11.0",
-               "newVersion": "v3.11.0",
-               "packageFile": "go.mod",
-               "updateType": "major",
-               "packageName": "github.com/coreos/go-oidc/v3"
-             }
-           ]
-         }
-       ]
-DEBUG: Renovate repository PR statistics (repository=MisterB1/renovatePG)
-       "stats": {"total": 15, "open": 3, "closed": 12, "merged": 0}
-DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=MisterB1/renovatePG)
+       }
+ INFO: External host error causing abort - skipping (repository=MisterB1/renovatePG)
+DEBUG: Repository result: external-host-error, status: onboarded, enabled: true, onboarded: true (repository=MisterB1/renovatePG)
 DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/renovatePG)
-       "splits": {"init": 4227, "extract": 473, "lookup": 3809, "onboarding": 1, "update": 7735},
-       "total": 19132
+       "splits": {"init": 4126, "extract": 537, "lookup": 209, "onboarding": 1},
+       "total": 41204
 DEBUG: Package cache statistics (repository=MisterB1/renovatePG)
-       "get": {"count": 53, "avgMs": 1, "medianMs": 1, "maxMs": 8, "totalMs": 78},
-       "set": {"count": 49, "avgMs": 2, "medianMs": 1, "maxMs": 6, "totalMs": 107}
+       "get": {"count": 308, "avgMs": 1, "medianMs": 1, "maxMs": 46, "totalMs": 337},
+       "set": {"count": 151, "avgMs": 1, "medianMs": 1, "maxMs": 9, "totalMs": 216}
 DEBUG: HTTP statistics (repository=MisterB1/renovatePG)
        "hosts": {
          "api.github.com": {
-           "count": 17,
-           "reqAvgMs": 475,
-           "reqMedianMs": 430,
-           "reqMaxMs": 920,
-           "queueAvgMs": 0,
-           "queueMedianMs": 0,
-           "queueMaxMs": 0
-         },
-         "proxy.golang.org": {
-           "count": 51,
-           "reqAvgMs": 409,
-           "reqMedianMs": 161,
-           "reqMaxMs": 964,
-           "queueAvgMs": 0,
-           "queueMedianMs": 0,
-           "queueMaxMs": 1
-         },
-         "raw.githubusercontent.com": {
-           "count": 1,
-           "reqAvgMs": 404,
-           "reqMedianMs": 404,
-           "reqMaxMs": 404,
+           "count": 9,
+           "reqAvgMs": 352,
+           "reqMedianMs": 378,
+           "reqMaxMs": 479,
            "queueAvgMs": 0,
            "queueMedianMs": 0,
            "queueMaxMs": 0
          }
        },
-       "requests": 69
+       "requests": 9
 DEBUG: HTTP cache statistics (repository=MisterB1/renovatePG)
        "https://api.github.com": {
-         "/repos/MisterB1/renovatePG/issues/17": {"hit": 0, "miss": 4},
+         "/repos/MisterB1/renovatePG/issues/17": {"hit": 0, "miss": 1},
          "/repos/MisterB1/renovatePG/pulls": {"hit": 0, "miss": 1}
        }
 DEBUG: Lookup statistics (repository=MisterB1/renovatePG)
-       "golang-version": {"count": 2, "avgMs": 492, "medianMs": 493, "maxMs": 493, "totalMs": 983},
-       "go": {"count": 3, "avgMs": 3144, "medianMs": 2928, "maxMs": 3739, "totalMs": 9431}
+       "go": {"count": 4, "avgMs": 63, "medianMs": 66, "maxMs": 79, "totalMs": 250},
+       "golang-version": {"count": 2, "avgMs": 82, "medianMs": 83, "maxMs": 83, "totalMs": 163},
+       "docker": {"count": 1, "avgMs": 140, "medianMs": 140, "maxMs": 140, "totalMs": 140}
  INFO: Repository finished (repository=MisterB1/renovatePG)
        "cloned": true,
-       "durationMs": 19132
+       "durationMs": 41204
 DEBUG: Checking file package cache for expired items
-DEBUG: Deleted 1 of 289 file cached entries in 110ms
+DEBUG: Deleted 0 of 438 file cached entries in 139ms
  INFO: Renovate is exiting with a non-zero code due to the following logged errors
        "loggerErrors": [
          {
            "name": "renovate",
            "level": 50,
-           "logContext": "jjF_gzIgMoItE7ThFxzG1",
+           "logContext": "V8tgzIvu_JZQB2c6QCciy",
            "versions": {
              "node": "22.6.0",
              "acorn": "8.11.3",
