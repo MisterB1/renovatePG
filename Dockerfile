@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:20
 
 # renovate: datasource=go depName=github.com/tynany/frr_exporter
 ARG FRREXPORTER_VERSION=v1.1.0
