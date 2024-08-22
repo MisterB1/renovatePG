@@ -1,7 +1,7 @@
 FROM node:12
 
 # renovate: datasource=go depName=github.com/tynany/frr_exporter
-ARG FRREXPORTER_VERSION=v1.1.0
+ARG FRREXPORTER_VERSION=v1.2.0
 
 ENV PYTHON_VERSION=3.1
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version ${PYTHON_VERSION}
