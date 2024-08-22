@@ -2,10 +2,10 @@ module.exports = {
 "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^TestDockerfile$"],
-      "matchStrings": ["ENV PYTHON_VERSION=(?<currentValue>.*?)\\n"],
-      "depNameTemplate": "python",
-      "datasourceTemplate": "docker"
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ARG FRREXPORTER_VERSION=v(?<currentValue>.*?)\\n"],
+      "depNameTemplate": "github.com/tynany/frr_exporter",
+      "datasourceTemplate": "go"
     }
   ]
 }
