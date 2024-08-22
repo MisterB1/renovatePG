@@ -4,8 +4,8 @@ module.exports = {
       "customType": "regex",
       "fileMatch": ["^Dockerfile$"],
       "matchStrings": [
-          "# renovate: datasourceTemplate=(?<datasourceTemplate>[a-z-]+?)(?: depNameTemplate=(?<depNameTemplate>.+?))\\s(?:ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
-	],
+          "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))\\s(?:ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
+	]
     }
   ]
 }
