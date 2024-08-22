@@ -3,9 +3,9 @@ module.exports = {
     {
       "customType": "regex",
       "fileMatch": ["^Dockerfile$"],
-      "matchStrings": ["ARG FRREXPORTER_VERSION=v(?<currentValue>.*?)\\n"],
-      "depNameTemplate": "github.com/tynany/frr_exporter",
-      "datasourceTemplate": "go"
+      "matchStrings": [
+          "# renovate: datasourceTemplate=(?<datasourceTemplate>[a-z-]+?)(?: depNameTemplate=(?<depNameTemplate>.+?))\\s(?:ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
+	],
     }
   ]
 }
