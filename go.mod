@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.3
-	github.com/coreos/go-oidc/v3 v1.10.0
+	github.com/coreos/go-oidc/v3 v3.11.0
 	github.com/go-openapi/errors v0.21.0
 	github.com/BurntSushi/toml v0.3.1
 	github.com/cznic/mathutil v0.0.0-20181122101859-297441e03548
