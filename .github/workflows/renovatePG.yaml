@@ -1,5 +1,8 @@
 name: renovatePG
 
+on:
+ workflow_dispatch:
+
 jobs:
   renovate:
     runs-on: default
