@@ -27,7 +27,7 @@ require (
 	github.com/uber-go/atomic v1.2.2
 	github.com/zhangjinpeng1987/raft v0.0.0-20200819064223-df31bb68a018
 	golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2
-	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4
+	golang.org/x/time v0.6.0
 )
 
 require (
