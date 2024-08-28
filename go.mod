@@ -1,13 +1,35 @@
 module github.com/MisterB1/renovatePG
 
-go 1.21
-
-toolchain go1.22.3
+go 1.20
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.3
 	github.com/coreos/go-oidc/v3 v1.10.0
 	github.com/go-openapi/errors v0.21.0
+	github.com/BurntSushi/toml v0.3.1
+	github.com/cznic/mathutil v0.0.0-20181122101859-297441e03548
+	github.com/dgryski/go-farm v0.0.0-20190423205320-6a90982ecee2
+	github.com/gogo/protobuf v1.2.1
+	github.com/golang/protobuf v1.2.4
+	github.com/google/btree v1.0.0
+	github.com/juju/errors v0.0.0-20181118221551-089d3ea4e4d5
+	github.com/pierrec/lz4 v2.0.1+incompatible
+	github.com/pingcap/badger v1.2.1-0.20200810065601-8c92a97807f9
+	github.com/pingcap/check v0.0.0-20200212061837-5e12011dc712
+	github.com/pingcap/errors v0.10.5-0.20200729012136-4e113ddee29e
+	github.com/pingcap/kvproto v0.0.0-20200828054126-d677e6fd224a
+	github.com/pingcap/log v0.0.0-20200511115504-543df19646ad
+	github.com/pingcap/tidb v1.0.0-beta.0.20200820085534-0d997f2b8b3c
+	github.com/prometheus/client_golang v1.5.1
+	github.com/shirou/gopsutil v2.12.10+incompatible
+	github.com/stretchr/testify v1.2.1
+	github.com/tikv/pd v1.1.0-beta.0.20200818122340-ef1a4e920b2f
+	github.com/uber-go/atomic v1.2.2
+	github.com/zhangjinpeng1987/raft v0.0.0-20200819064223-df31bb68a018
+	go.uber.org/zap v1.12.0
+	golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2
+	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4
+	google.golang.org/grpc v1.22.0
 )
 
 require (
