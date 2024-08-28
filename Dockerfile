@@ -1,4 +1,5 @@
-FROM hub.docker.internal.cba/golang:1.21 AS acmbuilder
+#FROM hub.docker.internal.cba/golang:1.21 AS acmbuilder
+FROM ubuntu:22.04 as base
  
 # Use Artifactory
 ENV GOPROXY=https://artifactory.internal.cba/org.golang.proxy
@@ -19,10 +20,10 @@ RUN make bin/dns-anycast-manager-linux-amd64
  
 ######
  
-FROM hub.docker.internal.cba/golang:1.21-bullseye AS frrexporter
+#FROM hub.docker.internal.cba/golang:1.21-bullseye AS frrexporter
  
 # renovate: datasource=go depName=github.com/tynany/frr_exporter
-ARG FRREXPORTER_VERSION=v1.2.0
+# ARG FRREXPORTER_VERSION=v1.2.0
  
 ENV GOPROXY=https://artifactory.internal.cba/org.golang.proxy
 ENV GOSUMDB=off
@@ -34,7 +35,7 @@ RUN cp ${GOPATH}/bin/frr_exporter /
  
 ##########
  
-FROM applicationinfrastructure-public.docker.internal.cba/library/ubuntu:24.04@sha256:20aa388836c09f052fcd69462b2337de56a628b11b50bf40948927efd1927991
+# FROM applicationinfrastructure-public.docker.internal.cba/library/ubuntu:24.04@sha256:20aa388836c09f052fcd69462b2337de56a628b11b50bf40948927efd1927991
  
 ARG FRR_VERSION=10.1
 RUN apt-get update && apt-get -y upgrade
