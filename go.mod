@@ -11,7 +11,7 @@ require (
 	github.com/dgryski/go-farm v0.0.0-20190423205320-6a90982ecee2
 	github.com/gogo/protobuf v1.2.1
 	github.com/golang/protobuf v1.2.4
-	github.com/google/btree v1.0.0
+	github.com/google/btree v1.1.3
 	github.com/juju/errors v0.0.0-20181118221551-089d3ea4e4d5
 	github.com/pierrec/lz4 v2.0.1+incompatible
 	github.com/pingcap/badger v1.2.1-0.20200810065601-8c92a97807f9
