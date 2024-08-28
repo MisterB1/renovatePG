@@ -8,7 +8,7 @@ require (
 	github.com/go-openapi/errors v0.21.0
 	github.com/BurntSushi/toml v0.3.1
 	github.com/cznic/mathutil v0.0.0-20181122101859-297441e03548
-	github.com/dgryski/go-farm v0.0.0-20190423205320-6a90982ecee2
+	github.com/dgryski/go-farm a6ae2369ad13
 	github.com/gogo/protobuf v1.2.1
 	github.com/golang/protobuf v1.2.4
 	github.com/google/btree v1.0.0
