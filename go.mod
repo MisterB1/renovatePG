@@ -1,7 +1,7 @@
 module dns-anycast-manager
  
 go 1.20
- 
+  
 require (
     github.com/PowerDNS/go-tlsconfig v0.0.0-20221101135152-0956853b28df
     github.com/fsnotify/fsnotify v1.7.0
