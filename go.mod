@@ -26,7 +26,7 @@ require (
 	github.com/tikv/pd v1.1.0-beta.0.20200818122340-ef1a4e920b2f
 	github.com/uber-go/atomic v1.2.2
 	github.com/zhangjinpeng1987/raft v0.0.0-20200819064223-df31bb68a018
-	go.uber.org/zap v1.12.0
+	go.uber.org/zap v1.27.0
 	golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2
 	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4
 	google.golang.org/grpc v1.22.0
