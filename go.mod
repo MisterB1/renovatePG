@@ -24,7 +24,7 @@ require (
 	github.com/shirou/gopsutil v2.12.10+incompatible
 	github.com/stretchr/testify v1.2.1
 	github.com/tikv/pd v1.1.0-beta.0.20200818122340-ef1a4e920b2f
-	github.com/uber-go/atomic v1.2.2
+	github.com/uber-go/atomic v1.11.0
 	github.com/zhangjinpeng1987/raft v0.0.0-20200819064223-df31bb68a018
 	go.uber.org/zap v1.12.0
 	golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2
