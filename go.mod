@@ -15,7 +15,7 @@ require (
 	github.com/juju/errors v0.0.0-20181118221551-089d3ea4e4d5
 	github.com/pierrec/lz4 v2.0.1+incompatible
 	github.com/pingcap/badger v1.2.1-0.20200810065601-8c92a97807f9
-	github.com/pingcap/check v0.0.0-20200212061837-5e12011dc712
+	github.com/pingcap/check 57bd13f7b5f0
 	github.com/pingcap/errors v0.10.5-0.20200729012136-4e113ddee29e
 	github.com/pingcap/kvproto v0.0.0-20200828054126-d677e6fd224a
 	github.com/pingcap/log v0.0.0-20200511115504-543df19646ad
