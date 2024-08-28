@@ -1,73 +1,47 @@
-module github.com/MisterB1/renovatePG
-
+module dns-anycast-manager
+ 
 go 1.20
-
+ 
 require (
-	github.com/Masterminds/sprig/v3 v3.2.3
-	github.com/coreos/go-oidc/v3 v1.10.0
-	github.com/go-openapi/errors v0.21.0
-	github.com/BurntSushi/toml v0.3.1
-	github.com/cznic/mathutil v0.0.0-20181122101859-297441e03548
-	github.com/dgryski/go-farm v0.0.0-20190423205320-6a90982ecee2
-	github.com/gogo/protobuf v1.2.1
-	github.com/golang/protobuf v1.2.4
-	github.com/google/btree v1.0.0
-	github.com/juju/errors v0.0.0-20181118221551-089d3ea4e4d5
-	github.com/pierrec/lz4 v2.0.1+incompatible
-	github.com/pingcap/badger v1.2.1-0.20200810065601-8c92a97807f9
-	github.com/pingcap/check v0.0.0-20200212061837-5e12011dc712
-	github.com/pingcap/errors v0.10.5-0.20200729012136-4e113ddee29e
-	github.com/pingcap/kvproto v0.0.0-20200828054126-d677e6fd224a
-	github.com/pingcap/log v0.0.0-20200511115504-543df19646ad
-	github.com/pingcap/tidb v1.0.0-beta.0.20200820085534-0d997f2b8b3c
-	github.com/prometheus/client_golang v1.5.1
-	github.com/shirou/gopsutil v2.12.10+incompatible
-	github.com/stretchr/testify v1.2.1
-	github.com/tikv/pd v1.1.0-beta.0.20200818122340-ef1a4e920b2f
-	github.com/uber-go/atomic v1.2.2
-	github.com/zhangjinpeng1987/raft v0.0.0-20200819064223-df31bb68a018
-	golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2
-	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4
+    github.com/PowerDNS/go-tlsconfig v0.0.0-20221101135152-0956853b28df
+    github.com/fsnotify/fsnotify v1.7.0
+    github.com/go-co-op/gocron v1.37.0
+    github.com/gookit/validate v1.5.2
+    github.com/gorilla/mux v1.8.1
+    github.com/miekg/dns v1.1.56
+    github.com/prometheus/client_golang v1.19.1
+    github.com/sirupsen/logrus v1.9.3
+    github.com/spf13/cobra v1.8.1
+    github.com/stretchr/testify v1.9.0
+    github.com/vishvananda/netlink v1.1.0
+    golang.org/x/exp v0.0.0-20230905200255-921286631fa9
+    gopkg.in/yaml.v3 v3.0.1
+    gopkg.in/yaml.v3 v3.0.1
 )
-
+ 
 require (
-	github.com/Masterminds/goutils v1.1.1 // indirect
-	github.com/Masterminds/semver/v3 v3.2.1 // indirect
-	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
-	github.com/docker/go-units v0.5.0 // indirect
-	github.com/felixge/httpsnoop v1.0.4 // indirect
-	github.com/fsnotify/fsnotify v1.7.0 // indirect
-	github.com/go-jose/go-jose/v4 v4.0.1 // indirect
-	github.com/go-logr/logr v1.4.1 // indirect
-	github.com/go-logr/stdr v1.2.2 // indirect
-	github.com/go-openapi/jsonpointer v0.21.0 // indirect
-	github.com/go-openapi/jsonreference v0.21.0 // indirect
-	github.com/google/uuid v1.6.0 // indirect
-	github.com/hashicorp/hcl v1.0.0 // indirect
-	github.com/huandu/xstrings v1.4.0 // indirect
-	github.com/imdario/mergo v0.3.16 // indirect
-	github.com/inconshreveable/mousetrap v1.1.0 // indirect
-	github.com/josharian/intern v1.0.0 // indirect
-	github.com/kr/text v0.2.0 // indirect
-	github.com/magiconair/properties v1.8.7 // indirect
-	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/mitchellh/copystructure v1.2.0 // indirect
-	github.com/mitchellh/reflectwalk v1.0.2 // indirect
-	github.com/oklog/ulid v1.3.1 // indirect
-	github.com/opentracing/opentracing-go v1.2.0 // indirect
-	github.com/pelletier/go-toml/v2 v2.1.1 // indirect
-	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
-	github.com/rogpeppe/go-internal v1.12.0 // indirect
-	github.com/sagikazarmark/locafero v0.4.0 // indirect
-	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
-	github.com/shopspring/decimal v1.3.1 // indirect
-	github.com/sourcegraph/conc v0.3.0 // indirect
-	github.com/spf13/afero v1.11.0 // indirect
-	github.com/spf13/cast v1.6.0 // indirect
-	github.com/subosito/gotenv v1.6.0 // indirect
-	golang.org/x/exp v0.0.0-20240222234643-814bf88cf225 // indirect
-	golang.org/x/mod v0.17.0 // indirect
-	golang.org/x/sync v0.7.0 // indirect
-	golang.org/x/sys v0.20.0 // indirect
-	golang.org/x/text v0.15.0 // indirect
+    github.com/beorn7/perks v1.0.1 // indirect
+    github.com/cespare/xxhash/v2 v2.2.0 // indirect
+    github.com/davecgh/go-spew v1.1.1 // indirect
+    github.com/go-logr/logr v1.2.3 // indirect
+    github.com/golang/protobuf v1.5.3 // indirect
+    github.com/google/uuid v1.4.0 // indirect
+    github.com/gookit/filter v1.2.1 // indirect
+    github.com/gookit/goutil v0.6.15 // indirect
+    github.com/inconshreveable/mousetrap v1.1.0 // indirect
+    github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
+    github.com/pmezard/go-difflib v1.0.0 // indirect
+    github.com/prometheus/client_model v0.5.0 // indirect
+    github.com/prometheus/common v0.48.0 // indirect
+    github.com/prometheus/procfs v0.12.0 // indirect
+    github.com/robfig/cron/v3 v3.0.1 // indirect
+    github.com/spf13/pflag v1.0.5 // indirect
+    github.com/vishvananda/netns v0.0.0-20191106174202-0a2b9b5464df // indirect
+    go.uber.org/atomic v1.9.0 // indirect
+    golang.org/x/mod v0.12.0 // indirect
+    golang.org/x/net v0.20.0 // indirect
+    golang.org/x/sys v0.17.0 // indirect
+    golang.org/x/text v0.14.0 // indirect
+    golang.org/x/tools v0.13.0 // indirect
+    google.golang.org/protobuf v1.33.0 // indirect
 )
