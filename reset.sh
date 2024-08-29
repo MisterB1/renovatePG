@@ -1,4 +1,4 @@
-$!/bin/bash
+#!/bin/bash
 
 while getopts ":xa" option; do
   case $option in
@@ -21,7 +21,7 @@ if [ "$setx" = "true" ]
  set -x
 fi
 
-for file in Dockerfile go.mod github/workflows/renovatePG.yaml
+for file in Dockerfile go.mod .github/workflows/renovatePG.yaml
 do
  rm ~paulrelf/RenovatePG/${file} 2> /dev/null
  cp ~paulrelf/RenovatePGSourcefiles/${file} ~paulrelf/RenovatePG/${file}
