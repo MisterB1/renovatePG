@@ -5,18 +5,17 @@ go 1.20
 require (
     github.com/PowerDNS/go-tlsconfig v0.0.0-20221101135152-0956853b28df
     github.com/fsnotify/fsnotify v1.6.0
-    github.com/go-co-op/gocron v1.37.0
-    github.com/gookit/validate v1.5.2
-    github.com/gorilla/mux v1.8.1
+    github.com/go-co-op/gocron v1.34.0
+    github.com/gookit/validate v1.5.1
+    github.com/gorilla/mux v1.7.1
     github.com/miekg/dns v1.1.56
     github.com/prometheus/client_golang v1.19.1
-    github.com/sirupsen/logrus v1.9.3
-    github.com/spf13/cobra v1.8.1
-    github.com/stretchr/testify v1.9.0
-    github.com/vishvananda/netlink v1.1.0
+    github.com/sirupsen/logrus v1.8.3
+    github.com/spf13/cobra v1.8.0
+    github.com/stretchr/testify v1.8.0
+    github.com/vishvananda/netlink v1.0.1
     golang.org/x/exp v0.0.0-20230905200255-921286631fa9
-    gopkg.in/yaml.v3 v3.0.1
-    gopkg.in/yaml.v3 v3.0.1
+    gopkg.in/yaml.v3 v2.0.0
 )
  
 require (
