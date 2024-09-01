@@ -11,7 +11,7 @@ require (
     github.com/miekg/dns v1.1.62
     github.com/prometheus/client_golang v1.19.1
     github.com/sirupsen/logrus v1.8.3
-    github.com/spf13/cobra v1.8.0
+    github.com/spf13/cobra v1.8.1
     github.com/stretchr/testify v1.8.0
     github.com/vishvananda/netlink v1.0.1
     golang.org/x/exp 9b4947da3948
