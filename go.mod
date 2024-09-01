@@ -8,7 +8,7 @@ require (
     github.com/go-co-op/gocron v1.34.0
     github.com/gookit/validate v1.5.2
     github.com/gorilla/mux v1.7.1
-    github.com/miekg/dns v1.1.56
+    github.com/miekg/dns v1.1.62
     github.com/prometheus/client_golang v1.19.1
     github.com/sirupsen/logrus v1.8.3
     github.com/spf13/cobra v1.8.0
