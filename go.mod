@@ -15,7 +15,7 @@ require (
     github.com/stretchr/testify v1.8.0
     github.com/vishvananda/netlink v1.0.1
     golang.org/x/exp v0.0.0-20230905200255-921286631fa9
-    gopkg.in/yaml.v3 v2.0.0
+    gopkg.in/yaml.v3 v3.0.1
 )
  
 require (
