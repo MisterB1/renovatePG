@@ -1,7 +1,10 @@
 {
+  "labels": ["renovate"],
   "extends": [
     "config:recommended",
+    ":dependencyDashboard",
     ":prConcurrentLimitNone",
-    ":prHourlyLimitNone"
+    ":prHourlyLimitNone",
+    ":rebaseStalePrs"
   ]
 }
