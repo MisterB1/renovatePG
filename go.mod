@@ -4,7 +4,7 @@ go 1.20
   
 require (
     github.com/PowerDNS/go-tlsconfig v0.0.0-20221101135152-0956853b28df
-    github.com/fsnotify/fsnotify v1.6.0
+    github.com/fsnotify/fsnotify v1.7.0
     github.com/go-co-op/gocron v1.34.0
     github.com/gookit/validate v1.5.1
     github.com/gorilla/mux v1.7.1
