@@ -5,6 +5,7 @@
     ":dependencyDashboard",
     ":prConcurrentLimitNone",
     ":prHourlyLimitNone",
-    ":rebaseStalePrs"
+    ":rebaseStalePrs",
+    "postUpdateOptions:gomodTidy"
   ]
 }
