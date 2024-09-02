@@ -7,5 +7,11 @@
     ":prConcurrentLimitNone",
     ":prHourlyLimitNone",
     ":rebaseStalePrs"
-  ]
+  ],
+    "packageRules": [
+        {
+            "matchManagers": ["go"],
+            "assignees": ["timtam1235"]
+        }
+    ]
 }
