@@ -10,7 +10,7 @@
   ],
     "packageRules": [
         {
-            "matchManagers": ["go"],
+            "matchManagers": ["gomod"],
             "assignees": ["timtam1235"]
         }
     ]
