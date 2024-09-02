@@ -11508,3 +11508,304 @@ FATAL: Authentication failure
            "msg": "Authentication failure"
          }
        ]
+DEBUG: Using RE2 regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in renovate-config.js
+DEBUG: File config
+       "config": {
+         "customManagers": [
+           {
+             "customType": "regex",
+             "fileMatch": ["^Dockerfile$"],
+             "matchStrings": [
+               "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
+             ]
+           }
+         ]
+       }
+DEBUG: CLI config
+       "config": {"platform": "github", "autodiscover": true}
+DEBUG: Env config
+       "config": {"hostRules": [], "token": "***********"}
+DEBUG: Combined config
+       "config": {
+         "customManagers": [
+           {
+             "customType": "regex",
+             "fileMatch": ["^Dockerfile$"],
+             "matchStrings": [
+               "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
+             ]
+           }
+         ],
+         "hostRules": [],
+         "token": "***********",
+         "platform": "github",
+         "autodiscover": true
+       }
+DEBUG: Found valid git version: 2.39.3
+DEBUG: Setting global hostRules
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: hostRules: authentication already set for api.github.com
+DEBUG: Using queue: host=api.github.com, concurrency=16
+DEBUG: Platform config
+       "platformConfig": {
+         "hostType": "github",
+         "endpoint": "https://api.github.com/",
+         "isGHApp": false,
+         "isGhe": false,
+         "userDetails": {"username": "MisterB1", "name": null, "id": 94657669},
+         "userEmail": "paulrelf@gmail.com"
+       },
+       "renovateUsername": "MisterB1"
+DEBUG: Using platform gitAuthor: null <paulrelf@gmail.com>
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: Using baseDir: /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate
+DEBUG: Using cacheDir: /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/cache
+DEBUG: Using containerbaseDir: /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/cache/containerbase
+DEBUG: Initializing Renovate internal cache into /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: validatePresets()
+ERROR: Unsupported node environment detected. Please update your node version.
+       "versions": {
+         "node": "22.6.0",
+         "acorn": "8.11.3",
+         "ada": "2.9.0",
+         "amaro": "0.0.6",
+         "ares": "1.33.0",
+         "brotli": "1.1.0",
+         "cjs_module_lexer": "1.2.2",
+         "cldr": "44.1",
+         "icu": "74.2",
+         "llhttp": "9.2.1",
+         "modules": "127",
+         "napi": "9",
+         "nbytes": "0.1.0",
+         "ncrypto": "0.0.1",
+         "nghttp2": "1.61.0",
+         "openssl": "3.3.1",
+         "simdjson": "3.9.4",
+         "simdutf": "5.3.0",
+         "sqlite": "3.46.0",
+         "tz": "2023c",
+         "undici": "6.19.2",
+         "unicode": "15.1",
+         "uv": "1.48.0",
+         "uvwasi": "0.0.21",
+         "v8": "12.4.254.21-node.18",
+         "zlib": "1.2.12"
+       },
+       "range": "^20.15.1"
+DEBUG: Autodiscovering GitHub repositories
+DEBUG: Autodiscovered 2 repositories
+ INFO: Autodiscovered repositories
+       "length": 2,
+       "repositories": ["MisterB1/cicd-pipeline-train-schedule-pipelines", "MisterB1/renovatePG"]
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+ INFO: Repository started (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+       "renovateVersion": "38.45.0"
+DEBUG: Using localDir: /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/repos/github/MisterB1/cicd-pipeline-train-schedule-pipelines (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: initRepo("MisterB1/cicd-pipeline-train-schedule-pipelines") (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: hostRules: authentication already set for api.github.com (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: MisterB1/cicd-pipeline-train-schedule-pipelines default branch = master (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: Using personal access token for git init (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=622) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: Default config file renovate.json not found in repo (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+ INFO: Repository is a fork and not manually configured - skipping - did you want to run with --fork-processing=enabled? (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: Removing any stale branches (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: config.repoIsOnboarded=undefined (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: No renovate branches found (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: Repository result: fork, status: disabled, enabled: false, onboarded: undefined (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+       "splits": {},
+       "total": 1915
+DEBUG: Package cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+       "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
+       "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
+DEBUG: HTTP statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+       "hosts": {
+         "api.github.com": {
+           "count": 2,
+           "reqAvgMs": 554,
+           "reqMedianMs": 622,
+           "reqMaxMs": 622,
+           "queueAvgMs": 1,
+           "queueMedianMs": 1,
+           "queueMaxMs": 1
+         }
+       },
+       "requests": 2
+DEBUG: HTTP cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: Lookup statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+ INFO: Repository finished (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+       "cloned": false,
+       "durationMs": 1915
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+ INFO: Repository started (repository=MisterB1/renovatePG)
+       "renovateVersion": "38.45.0"
+DEBUG: Using localDir: /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/repos/github/MisterB1/renovatePG (repository=MisterB1/renovatePG)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=MisterB1/renovatePG)
+DEBUG: initRepo("MisterB1/renovatePG") (repository=MisterB1/renovatePG)
+DEBUG: hostRules: authentication already set for api.github.com (repository=MisterB1/renovatePG)
+DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=MisterB1/renovatePG)
+DEBUG: MisterB1/renovatePG default branch = base (repository=MisterB1/renovatePG)
+DEBUG: Using personal access token for git init (repository=MisterB1/renovatePG)
+DEBUG: Resetting npmrc (repository=MisterB1/renovatePG)
+DEBUG: Resetting npmrc (repository=MisterB1/renovatePG)
+DEBUG: checkOnboarding() (repository=MisterB1/renovatePG)
+DEBUG: isOnboarded() (repository=MisterB1/renovatePG)
+DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"ff2177aa7ffa8283d353b7319eac339259dbbd85e724738e7b87b7d78688722a", lastModified=undefined) (repository=MisterB1/renovatePG)
+DEBUG: getPrList success (repository=MisterB1/renovatePG)
+       "pullsTotal": 70,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+DEBUG: findPr(renovate/configure, chore: Configure Renovate, !open) (repository=MisterB1/renovatePG)
+DEBUG: findFile(renovate.json) (repository=MisterB1/renovatePG)
+DEBUG: Initializing git repository into /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/repos/github/MisterB1/renovatePG (repository=MisterB1/renovatePG)
+DEBUG: Performing blobless clone (repository=MisterB1/renovatePG)
+DEBUG: git clone completed (repository=MisterB1/renovatePG)
+       "durationMs": 2122
+DEBUG: latest repository commit (repository=MisterB1/renovatePG)
+       "latestCommit": {
+         "hash": "76fe8b8b141b6ce06fdae80ae6df88530351c537",
+         "date": "2024-09-02T10:20:14+10:00",
+         "message": "test",
+         "refs": "HEAD -> base, origin/base, origin/HEAD",
+         "body": "",
+         "author_name": "Paul Relf",
+         "author_email": "paulrelf@gmail.com"
+       }
+DEBUG: Config file exists, fileName: renovate.json (repository=MisterB1/renovatePG)
+DEBUG: Retrieving issueList (repository=MisterB1/renovatePG)
+DEBUG: Retrieved 2 issues (repository=MisterB1/renovatePG)
+DEBUG: Repo is onboarded (repository=MisterB1/renovatePG)
+DEBUG: Found renovate.json config file (repository=MisterB1/renovatePG)
+DEBUG: Repository config (repository=MisterB1/renovatePG)
+       "fileName": "renovate.json",
+       "config": {
+         "labels": ["renovate"],
+         "extends": [
+           "config:recommended",
+           ":dependencyDashboard",
+           ":prConcurrentLimitNone",
+           ":prHourlyLimitNone",
+           ":rebaseStalePrs",
+           "postUpdateOptions:gomodTidy"
+         ]
+       }
+DEBUG: migrateAndValidate() (repository=MisterB1/renovatePG)
+DEBUG: No config migration necessary (repository=MisterB1/renovatePG)
+ WARN: Using npm packages for Renovate presets is now deprecated. Please migrate to repository-based presets instead. (repository=MisterB1/renovatePG)
+       "registryUrl": "https://registry.npmjs.org",
+       "pkg": "renovate-config-postUpdateOptions"
+DEBUG: hostRules: no authentication for registry.npmjs.org (repository=MisterB1/renovatePG)
+DEBUG: Using queue: host=registry.npmjs.org, concurrency=999 (repository=MisterB1/renovatePG)
+DEBUG: GET https://registry.npmjs.org/renovate-config-postUpdateOptions = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=865) (repository=MisterB1/renovatePG)
+DEBUG: Preset fetch error (repository=MisterB1/renovatePG)
+       "preset": "postUpdateOptions:gomodTidy",
+       "err": {
+         "message": "dep not found",
+         "stack": "Error: dep not found\n    at Object.getPreset (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/config/presets/npm/index.ts:38:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at getPreset (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/config/presets/index.ts:252:20)\n    at fetchPreset (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/config/presets/index.ts:391:12)\n    at Object.resolveConfigPresets (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/config/presets/index.ts:323:31)\n    at mergeRenovateConfig (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/merge.ts:226:5)\n    at getRepoConfig (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/config.ts:14:12)\n    at initRepo (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/index.ts:56:12)\n    at Object.renovateRepository (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/index.ts:64:14)\n    at attributes.repository (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:202:11)\n    at start (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:187:7)\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/renovate.ts:18:22"
+       }
+ INFO: Throwing preset error (repository=MisterB1/renovatePG)
+       "validationError": "Cannot find preset's package (postUpdateOptions:gomodTidy)"
+ INFO: Repository has invalid config (repository=MisterB1/renovatePG)
+       "error": {
+         "validationError": "Cannot find preset's package (postUpdateOptions:gomodTidy)",
+         "message": "config-validation",
+         "stack": "Error: config-validation\n    at fetchPreset (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/config/presets/index.ts:402:19)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.resolveConfigPresets (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/config/presets/index.ts:323:31)\n    at mergeRenovateConfig (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/merge.ts:226:5)\n    at getRepoConfig (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/config.ts:14:12)\n    at initRepo (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/index.ts:56:12)\n    at Object.renovateRepository (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/index.ts:64:14)\n    at attributes.repository (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:202:11)\n    at start (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:187:7)\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/renovate.ts:18:22"
+       }
+DEBUG: raiseConfigWarningIssue() (repository=MisterB1/renovatePG)
+DEBUG: getBranchPr(renovate/configure) (repository=MisterB1/renovatePG)
+DEBUG: findPr(renovate/configure, undefined, open) (repository=MisterB1/renovatePG)
+DEBUG: findPr(renovate/configure, undefined, closed) (repository=MisterB1/renovatePG)
+DEBUG: ensureIssue(Action Required: Fix Renovate Configuration) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/88 (etag=W/"9b0d38ab4139a09860638aca3d48eae92ea34eafb76dc5caab3cbee237a51923", lastModified=Mon, 02 Sep 2024 00:20:34 GMT) (repository=MisterB1/renovatePG)
+DEBUG: Issue is open and up to date - nothing to do (repository=MisterB1/renovatePG)
+DEBUG: Repository result: config-validation, status: onboarded, enabled: true, onboarded: true (repository=MisterB1/renovatePG)
+DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/renovatePG)
+       "splits": {},
+       "total": 7066
+DEBUG: Package cache statistics (repository=MisterB1/renovatePG)
+       "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
+       "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
+DEBUG: HTTP statistics (repository=MisterB1/renovatePG)
+       "hosts": {
+         "api.github.com": {
+           "count": 4,
+           "reqAvgMs": 660,
+           "reqMedianMs": 799,
+           "reqMaxMs": 946,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 1
+         },
+         "registry.npmjs.org": {
+           "count": 1,
+           "reqAvgMs": 865,
+           "reqMedianMs": 865,
+           "reqMaxMs": 865,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 0
+         }
+       },
+       "requests": 5
+DEBUG: HTTP cache statistics (repository=MisterB1/renovatePG)
+       "https://api.github.com": {
+         "/repos/MisterB1/renovatePG/issues/88": {"hit": 0, "miss": 1},
+         "/repos/MisterB1/renovatePG/pulls": {"hit": 0, "miss": 1}
+       }
+DEBUG: Lookup statistics (repository=MisterB1/renovatePG)
+ INFO: Repository finished (repository=MisterB1/renovatePG)
+       "cloned": true,
+       "durationMs": 7066
+DEBUG: Checking file package cache for expired items
+DEBUG: Deleted 0 of 210 file cached entries in 104ms
+ INFO: Renovate is exiting with a non-zero code due to the following logged errors
+       "loggerErrors": [
+         {
+           "name": "renovate",
+           "level": 50,
+           "logContext": "S8TAfQ9QepFNJePBOW4Rg",
+           "versions": {
+             "node": "22.6.0",
+             "acorn": "8.11.3",
+             "ada": "2.9.0",
+             "amaro": "0.0.6",
+             "ares": "1.33.0",
+             "brotli": "1.1.0",
+             "cjs_module_lexer": "1.2.2",
+             "cldr": "44.1",
+             "icu": "74.2",
+             "llhttp": "9.2.1",
+             "modules": "127",
+             "napi": "9",
+             "nbytes": "0.1.0",
+             "ncrypto": "0.0.1",
+             "nghttp2": "1.61.0",
+             "openssl": "3.3.1",
+             "simdjson": "3.9.4",
+             "simdutf": "5.3.0",
+             "sqlite": "3.46.0",
+             "tz": "2023c",
+             "undici": "6.19.2",
+             "unicode": "15.1",
+             "uv": "1.48.0",
+             "uvwasi": "0.0.21",
+             "v8": "12.4.254.21-node.18",
+             "zlib": "1.2.12"
+           },
+           "range": "^20.15.1",
+           "msg": "Unsupported node environment detected. Please update your node version."
+         }
+       ]

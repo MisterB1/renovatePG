@@ -1,11 +1,11 @@
 {
   "labels": ["renovate"],
+  "postUpdateOptions": ["gomodTidy"],
   "extends": [
     "config:recommended",
     ":dependencyDashboard",
     ":prConcurrentLimitNone",
     ":prHourlyLimitNone",
-    ":rebaseStalePrs",
-    "postUpdateOptions:gomodTidy"
+    ":rebaseStalePrs"
   ]
 }
