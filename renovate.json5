@@ -9,11 +9,11 @@
   ],
   "packageRules": [
       {
-          "matchDatasources":["regex"],
+          "matchPackageNames":["regex"],
           "addLabels": ["regex"]
       },
       {
-            "matchDatasources":["gomod"],
+            "matchPackageNames":["gomod"],
             "addLabels": ["gomod"]
         }
 
