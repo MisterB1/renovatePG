@@ -9,16 +9,5 @@ module.exports = {
           "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
 	]
     }
-  ],
-  "packageRules": [
-      {
-          "datasources":["regex"],
-          "addLabels": ["regex"]
-      },
-      {
-            "datasources":["gomod"],
-            "addLabels": ["gomod"]
-        }
-
   ]
 }
