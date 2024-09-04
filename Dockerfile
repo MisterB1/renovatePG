@@ -23,7 +23,7 @@ RUN make bin/dns-anycast-manager-linux-amd64
 #FROM hub.docker.internal.cba/golang:1.21-bullseye AS frrexporter
  
 # renovate: datasource=go depName=github.com/tynany/frr_exporter
-# ARG FRREXPORTER_VERSION=v1.2.0
+ARG FRREXPORTER_VERSION=v1.2.0
  
 ENV GOPROXY=https://artifactory.internal.cba/org.golang.proxy
 ENV GOSUMDB=off
