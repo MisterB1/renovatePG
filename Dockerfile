@@ -1,4 +1,4 @@
-#FROM hub.docker.internal.cba/golang:1.21 AS acmbuilder
+FROM hub.docker.internal.cba/golang:1.21 AS acmbuilder
 FROM ubuntu:24.04@sha256:8a37d68f4f73ebf3d4efafbcf66379bf3728902a8038616808f04e34a9ab63ee as base
  
 # Use Artifactory
@@ -20,7 +20,7 @@ RUN make bin/dns-anycast-manager-linux-amd64
  
 ######
  
-#FROM hub.docker.internal.cba/golang:1.21-bullseye AS frrexporter
+FROM hub.docker.internal.cba/golang:1.21-bullseye AS frrexporter
  
 # renovate: datasource=go depName=github.com/tynany/frr_exporter
 ARG FRREXPORTER_VERSION=v1.2.0

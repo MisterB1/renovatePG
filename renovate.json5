@@ -9,8 +9,8 @@
   ],
     "packageRules": [
         {
-            "datasources":["docker"],
-            "addLabels": ["docker"]
+            "datasources":["regex"],
+            "addLabels": ["regex"]
         }
     ]
 }
