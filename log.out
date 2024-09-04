@@ -138,7 +138,7 @@ DEBUG: hostRules: authentication already set for api.github.com (repository=Mist
 DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: MisterB1/cicd-pipeline-train-schedule-pipelines default branch = master (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Using personal access token for git init (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
-DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=393) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=667) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Default config file renovate.json not found in repo (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository is a fork and not manually configured - skipping - did you want to run with --fork-processing=enabled? (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Removing any stale branches (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
@@ -147,7 +147,7 @@ DEBUG: No renovate branches found (repository=MisterB1/cicd-pipeline-train-sched
 DEBUG: Repository result: fork, status: disabled, enabled: false, onboarded: undefined (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "splits": {},
-       "total": 15389
+       "total": 5629
 DEBUG: Package cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
        "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
@@ -155,9 +155,9 @@ DEBUG: HTTP statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelin
        "hosts": {
          "api.github.com": {
            "count": 2,
-           "reqAvgMs": 6798,
-           "reqMedianMs": 13203,
-           "reqMaxMs": 13203,
+           "reqAvgMs": 571,
+           "reqMedianMs": 667,
+           "reqMaxMs": 667,
            "queueAvgMs": 0,
            "queueMedianMs": 0,
            "queueMaxMs": 0
@@ -168,7 +168,7 @@ DEBUG: HTTP cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-p
 DEBUG: Lookup statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository finished (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "cloned": false,
-       "durationMs": 15389
+       "durationMs": 5629
 DEBUG: Reinitializing hostRules for repo
 DEBUG: Clearing hostRules
 DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
@@ -186,7 +186,7 @@ DEBUG: Resetting npmrc (repository=MisterB1/renovatePG)
 DEBUG: checkOnboarding() (repository=MisterB1/renovatePG)
 DEBUG: isOnboarded() (repository=MisterB1/renovatePG)
 DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"d4062fcd9d38d5f9ffc1aadfb522fd701345465d56c2ffe1649419d39a69bb4d", lastModified=undefined) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"060a1c29ae49dfbd7a300aaea693521738555c9d723042ab43e64a8b3559584b", lastModified=undefined) (repository=MisterB1/renovatePG)
 DEBUG: getPrList success (repository=MisterB1/renovatePG)
        "pullsTotal": 72,
        "requestsTotal": 1,
@@ -196,11 +196,11 @@ DEBUG: findFile(renovate.json) (repository=MisterB1/renovatePG)
 DEBUG: Initializing git repository into /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/repos/github/MisterB1/renovatePG (repository=MisterB1/renovatePG)
 DEBUG: Performing blobless clone (repository=MisterB1/renovatePG)
 DEBUG: git clone completed (repository=MisterB1/renovatePG)
-       "durationMs": 6565
+       "durationMs": 5001
 DEBUG: latest repository commit (repository=MisterB1/renovatePG)
        "latestCommit": {
-         "hash": "6f265b40c4b1096620da1269657adb3bbc939d99",
-         "date": "2024-09-04T13:12:26+10:00",
+         "hash": "ec439737a026e6f5db7a9ca8295d248fac161c44",
+         "date": "2024-09-04T13:50:49+10:00",
          "message": "test",
          "refs": "HEAD -> base, origin/base, origin/HEAD",
          "body": "",
@@ -244,13 +244,13 @@ DEBUG: No vulnerability alerts found (repository=MisterB1/renovatePG)
 DEBUG: findIssue(Dependency Dashboard) (repository=MisterB1/renovatePG)
 DEBUG: Found issue 17 (repository=MisterB1/renovatePG)
 DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"9f2181990b262d3cee751c9826a05dd5dd56e8bcc3a1c6842cedc3d941b37373", lastModified=Wed, 04 Sep 2024 03:18:57 GMT) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"85e3270896434191b2bf1e2f74d20adeb1f2726ac74ba983f8dca99b33f132c2", lastModified=Wed, 04 Sep 2024 03:21:03 GMT) (repository=MisterB1/renovatePG)
 DEBUG: No baseBranches (repository=MisterB1/renovatePG)
 DEBUG: extract() (repository=MisterB1/renovatePG)
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG)
 DEBUG: latest commit (repository=MisterB1/renovatePG)
        "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
 DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=MisterB1/renovatePG)
 DEBUG: Using file match: (^|/)(galaxy|requirements)(\.ansible)?\.ya?ml$ for manager ansible-galaxy (repository=MisterB1/renovatePG)
 DEBUG: Using file match: (^|/)\.tool-versions$ for manager asdf (repository=MisterB1/renovatePG)
@@ -373,7 +373,7 @@ DEBUG: Skipping alias COPY --from (repository=MisterB1/renovatePG)
 DEBUG: Skipping alias COPY --from (repository=MisterB1/renovatePG)
        "image": "acmbuilder"
 DEBUG: manager extract durations (ms) (repository=MisterB1/renovatePG)
-       "managers": {"dockerfile": 3, "gomod": 2, "regex": 3, "github-actions": 5}
+       "managers": {"dockerfile": 2, "github-actions": 5, "gomod": 5, "regex": 6}
 DEBUG: Found dockerfile package files (repository=MisterB1/renovatePG)
 DEBUG: Found github-actions package files (repository=MisterB1/renovatePG)
 DEBUG: Found gomod package files (repository=MisterB1/renovatePG)
@@ -414,10 +414,40 @@ DEBUG: Dependency: golang.org/x/sys, is disabled (repository=MisterB1/renovatePG
 DEBUG: Dependency: golang.org/x/text, is disabled (repository=MisterB1/renovatePG)
 DEBUG: Dependency: golang.org/x/tools, is disabled (repository=MisterB1/renovatePG)
 DEBUG: Dependency: google.golang.org/protobuf, is disabled (repository=MisterB1/renovatePG)
-DEBUG: Failed to look up docker package hub.docker.internal.cba/golang (repository=MisterB1/renovatePG, packageFile=Dockerfile, dependency=hub.docker.internal.cba/golang)
-DEBUG: Failed to look up docker package hub.docker.internal.cba/golang (repository=MisterB1/renovatePG, packageFile=Dockerfile, dependency=hub.docker.internal.cba/golang)
-DEBUG: Found no satisfying versions with 'semver' versioning (repository=MisterB1/renovatePG)
+DEBUG: Using queue: host=hub.docker.com, concurrency=16 (repository=MisterB1/renovatePG)
+DEBUG: hostRules: no authentication for raw.githubusercontent.com (repository=MisterB1/renovatePG)
+DEBUG: Using queue: host=raw.githubusercontent.com, concurrency=16 (repository=MisterB1/renovatePG)
+DEBUG: Using queue: host=proxy.golang.org, concurrency=16 (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/golang.org/x/exp/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=773) (repository=MisterB1/renovatePG)
+DEBUG: Using queue: host=golang.org, concurrency=16 (repository=MisterB1/renovatePG)
+DEBUG: Page Not Found https://hub.docker.com/v2/golang/tags/list?n=10000 (repository=MisterB1/renovatePG)
+DEBUG: Retrying Tags for https://hub.docker.com/golang using library/ prefix (repository=MisterB1/renovatePG)
+DEBUG: Go module: golang.org/x/exp lookup import url https://go.googlesource.com/exp (repository=MisterB1/renovatePG)
 DEBUG: Found no satisfying versions with 'loose' versioning (repository=MisterB1/renovatePG)
+DEBUG: Page Not Found https://hub.docker.com/v2/library/golang/tags/list?n=10000 (repository=MisterB1/renovatePG)
+DEBUG: Datasource unknown error (repository=MisterB1/renovatePG)
+       "datasource": "docker",
+       "packageName": "hub.docker.com/golang",
+       "err": {
+         "message": "page-not-found",
+         "stack": "Error: page-not-found\n    at getAuthHeaders (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/modules/datasource/docker/common.ts:75:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at DockerDatasource.getDockerApiTags (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/modules/datasource/docker/index.ts:658:21)\n    at DockerDatasource.getTags (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/modules/datasource/docker/index.ts:725:16)\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/util/cache/package/decorator.ts:134:20\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/util/cache/package/decorator.ts:134:20\n    at DockerDatasource.getReleases (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/modules/datasource/docker/index.ts:1081:36)\n    at getRegistryReleases (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/modules/datasource/index.ts:84:15)\n    at fetchReleases (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/modules/datasource/index.ts:307:15)"
+       }
+DEBUG: Failed to look up docker package hub.docker.com/golang (repository=MisterB1/renovatePG, packageFile=Dockerfile, dependency=hub.docker.com/golang)
+DEBUG: Failed to look up docker package hub.docker.com/golang (repository=MisterB1/renovatePG, packageFile=Dockerfile, dependency=hub.docker.com/golang)
+DEBUG: GET https://proxy.golang.org/gopkg.in/yaml.v4/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=777) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/vishvananda/netlink/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=248) (repository=MisterB1/renovatePG)
+DEBUG: Found no satisfying versions with 'semver' versioning (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/stretchr/testify/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=343) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/gorilla/mux/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=272) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/gookit/validate/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=271) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/prometheus/client_golang/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=243) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/fsnotify/fsnotify/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=254) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/spf13/cobra/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=785) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/sirupsen/logrus/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=195) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/miekg/dns/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=166) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/go-co-op/gocron/v3/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=203) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/!power!d!n!s/go-tlsconfig/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=2988) (repository=MisterB1/renovatePG)
+DEBUG: GET https://proxy.golang.org/github.com/tynany/frr_exporter/v2/@v/list = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=2113) (repository=MisterB1/renovatePG)
 DEBUG: PackageFiles.add() - Package file saved for base branch (repository=MisterB1/renovatePG, baseBranch=base)
 DEBUG: Package releases lookups complete (repository=MisterB1/renovatePG, baseBranch=base)
 DEBUG: branchifyUpgrades (repository=MisterB1/renovatePG)
@@ -434,19 +464,19 @@ DEBUG: packageFiles with updates (repository=MisterB1/renovatePG, baseBranch=bas
            {
              "deps": [
                {
-                 "depName": "hub.docker.internal.cba/golang",
+                 "depName": "hub.docker.com/golang",
                  "currentValue": "1.21",
-                 "replaceString": "hub.docker.internal.cba/golang:1.21",
+                 "replaceString": "hub.docker.com/golang:1.21",
                  "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
                  "datasource": "docker",
                  "depType": "stage",
                  "updates": [],
-                 "packageName": "hub.docker.internal.cba/golang",
+                 "packageName": "hub.docker.com/golang",
                  "versioning": "docker",
                  "warnings": [
                    {
-                     "topic": "hub.docker.internal.cba/golang",
-                     "message": "Failed to look up docker package hub.docker.internal.cba/golang"
+                     "topic": "hub.docker.com/golang",
+                     "message": "Failed to look up docker package hub.docker.com/golang"
                    }
                  ]
                },
@@ -469,19 +499,19 @@ DEBUG: packageFiles with updates (repository=MisterB1/renovatePG, baseBranch=bas
                  "fixedVersion": "24.04"
                },
                {
-                 "depName": "hub.docker.internal.cba/golang",
+                 "depName": "hub.docker.com/golang",
                  "currentValue": "1.21-bullseye",
-                 "replaceString": "hub.docker.internal.cba/golang:1.21-bullseye",
+                 "replaceString": "hub.docker.com/golang:1.21-bullseye",
                  "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
                  "datasource": "docker",
                  "depType": "final",
                  "updates": [],
-                 "packageName": "hub.docker.internal.cba/golang",
+                 "packageName": "hub.docker.com/golang",
                  "versioning": "docker",
                  "warnings": [
                    {
-                     "topic": "hub.docker.internal.cba/golang",
-                     "message": "Failed to look up docker package hub.docker.internal.cba/golang"
+                     "topic": "hub.docker.com/golang",
+                     "message": "Failed to look up docker package hub.docker.com/golang"
                    }
                  ]
                }
@@ -1234,36 +1264,61 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:28.869Z) (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:51:35.841Z) (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/golang.org-x-exp-digest)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/golang.org-x-exp-digest)
        "branchName": "renovate/golang.org-x-exp-digest"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: gomod.updateDependency: v0.0.0-20240823005443-9b4947da3948 (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: gomod: need to update digest (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+       "depName": "golang.org/x/exp",
+       "lineToChange": "    golang.org/x/exp v0.0.0-20230905200255-921286631fa9",
+       "newDigestRightSized": "9b4947da3948"
+DEBUG: Updating golang.org/x/exp in go.mod (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: isBranchConflicted(base, renovate/golang.org-x-exp-digest) (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: Setting git author name: null (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: Setting git author email: paulrelf@gmail.com (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: Preparing files for committing to branch renovate/golang.org-x-exp-digest (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/golang.org-x-exp-digest",
+         "commit": "c2359de83f01207b33a1c2defecc0ada5e6f14fa",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: Pushing refSpec renovate/golang.org-x-exp-digest:renovate/golang.org-x-exp-digest (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+       "result": {
+         "pushed": [],
+         "ref": {"local": "refs/remotes/origin/renovate/golang.org-x-exp-digest"},
+         "remoteMessages": {"all": []}
+       }
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
        "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: gomod.updateDependency: v0.0.0-20240823005443-9b4947da3948 (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+ INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+       "commitSha": "c2359de83f01207b33a1c2defecc0ada5e6f14fa"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: getBranchPr(renovate/golang.org-x-exp-digest) (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
@@ -1271,12 +1326,13 @@ DEBUG: findPr(renovate/golang.org-x-exp-digest, undefined, open) (repository=Mis
 DEBUG: Found PR #77 (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
  WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
+       "warnings": ["Failed to look up docker package hub.docker.com/golang"],
        "files": ["Dockerfile"]
 DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: Pull Request #77 does not need updating (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
+DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/golang.org-x-exp-digest)
 DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: getBranchPr(renovate/github.com-gookit-validate-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
@@ -1289,35 +1345,57 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:31.094Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:51:43.328Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-gookit-validate-1.x)
        "branchName": "renovate/github.com-gookit-validate-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: gomod.updateDependency: v1.5.2 (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: Updating github.com/gookit/validate in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: isBranchConflicted(base, renovate/github.com-gookit-validate-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: Preparing files for committing to branch renovate/github.com-gookit-validate-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-gookit-validate-1.x",
+         "commit": "11c411485b2bd413a0a9ff370f53bf93b66cae71",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/github.com-gookit-validate-1.x:renovate/github.com-gookit-validate-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+       "result": {
+         "pushed": [],
+         "ref": {
+           "local": "refs/remotes/origin/renovate/github.com-gookit-validate-1.x"
+         },
+         "remoteMessages": {"all": []}
+       }
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: gomod.updateDependency: v1.5.2 (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+ INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+       "commitSha": "11c411485b2bd413a0a9ff370f53bf93b66cae71"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: getBranchPr(renovate/github.com-gookit-validate-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
@@ -1326,12 +1404,13 @@ DEBUG: Found PR #78 (repository=MisterB1/renovatePG, branch=renovate/github.com-
 DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: Fetching changelog: https://github.com/gookit/validate (v1.5.1 -> v1.5.2) (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
  WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
+       "warnings": ["Failed to look up docker package hub.docker.com/golang"],
        "files": ["Dockerfile"]
 DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: Pull Request #78 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
+DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/github.com-gookit-validate-1.x)
 DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: getBranchPr(renovate/github.com-miekg-dns-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
@@ -1344,35 +1423,55 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:33.098Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:51:56.020Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-miekg-dns-1.x)
        "branchName": "renovate/github.com-miekg-dns-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: gomod.updateDependency: v1.1.62 (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: Updating github.com/miekg/dns in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: isBranchConflicted(base, renovate/github.com-miekg-dns-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: Preparing files for committing to branch renovate/github.com-miekg-dns-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-miekg-dns-1.x",
+         "commit": "d41a6319687b6226909143b463dbe85418bda9d2",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: Pushing refSpec renovate/github.com-miekg-dns-1.x:renovate/github.com-miekg-dns-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+       "result": {
+         "pushed": [],
+         "ref": {"local": "refs/remotes/origin/renovate/github.com-miekg-dns-1.x"},
+         "remoteMessages": {"all": []}
+       }
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: gomod.updateDependency: v1.1.62 (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+ INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+       "commitSha": "d41a6319687b6226909143b463dbe85418bda9d2"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: getBranchPr(renovate/github.com-miekg-dns-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
@@ -1381,12 +1480,13 @@ DEBUG: Found PR #79 (repository=MisterB1/renovatePG, branch=renovate/github.com-
 DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: Fetching changelog: https://github.com/miekg/dns (v1.1.56 -> v1.1.62) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
  WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
+       "warnings": ["Failed to look up docker package hub.docker.com/golang"],
        "files": ["Dockerfile"]
 DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: Pull Request #79 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
+DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-1.x)
 DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: getBranchPr(renovate/github.com-spf13-cobra-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
@@ -1399,35 +1499,55 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:35.544Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:52:05.229Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-spf13-cobra-1.x)
        "branchName": "renovate/github.com-spf13-cobra-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: gomod.updateDependency: v1.8.1 (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: Updating github.com/spf13/cobra in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: isBranchConflicted(base, renovate/github.com-spf13-cobra-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: Preparing files for committing to branch renovate/github.com-spf13-cobra-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-spf13-cobra-1.x",
+         "commit": "e753b03d0497ff476fb5e9fce2e2199015493a14",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/github.com-spf13-cobra-1.x:renovate/github.com-spf13-cobra-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+       "result": {
+         "pushed": [],
+         "ref": {"local": "refs/remotes/origin/renovate/github.com-spf13-cobra-1.x"},
+         "remoteMessages": {"all": []}
+       }
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: gomod.updateDependency: v1.8.1 (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+ INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+       "commitSha": "e753b03d0497ff476fb5e9fce2e2199015493a14"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: getBranchPr(renovate/github.com-spf13-cobra-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
@@ -1436,12 +1556,13 @@ DEBUG: Found PR #84 (repository=MisterB1/renovatePG, branch=renovate/github.com-
 DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: Fetching changelog: https://github.com/spf13/cobra (v1.8.0 -> v1.8.1) (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
  WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
+       "warnings": ["Failed to look up docker package hub.docker.com/golang"],
        "files": ["Dockerfile"]
 DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: Pull Request #84 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
+DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/github.com-spf13-cobra-1.x)
 DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: getBranchPr(renovate/github.com-fsnotify-fsnotify-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
@@ -1454,35 +1575,57 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:37.657Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:52:15.314Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-fsnotify-fsnotify-1.x)
        "branchName": "renovate/github.com-fsnotify-fsnotify-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: gomod.updateDependency: v1.7.0 (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: Updating github.com/fsnotify/fsnotify in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: isBranchConflicted(base, renovate/github.com-fsnotify-fsnotify-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: Preparing files for committing to branch renovate/github.com-fsnotify-fsnotify-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-fsnotify-fsnotify-1.x",
+         "commit": "0838059c6a9529d1ed2d69c635e041d52921fab2",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: Pushing refSpec renovate/github.com-fsnotify-fsnotify-1.x:renovate/github.com-fsnotify-fsnotify-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+       "result": {
+         "pushed": [],
+         "ref": {
+           "local": "refs/remotes/origin/renovate/github.com-fsnotify-fsnotify-1.x"
+         },
+         "remoteMessages": {"all": []}
+       }
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: gomod.updateDependency: v1.7.0 (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+ INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+       "commitSha": "0838059c6a9529d1ed2d69c635e041d52921fab2"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: getBranchPr(renovate/github.com-fsnotify-fsnotify-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
@@ -1491,12 +1634,13 @@ DEBUG: Found PR #81 (repository=MisterB1/renovatePG, branch=renovate/github.com-
 DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: Fetching changelog: https://github.com/fsnotify/fsnotify (v1.6.0 -> v1.7.0) (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
  WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
+       "warnings": ["Failed to look up docker package hub.docker.com/golang"],
        "files": ["Dockerfile"]
 DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: Pull Request #81 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
+DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/github.com-fsnotify-fsnotify-1.x)
 DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: getBranchPr(renovate/github.com-go-co-op-gocron-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
@@ -1509,35 +1653,57 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:40.649Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:52:20.235Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-go-co-op-gocron-1.x)
        "branchName": "renovate/github.com-go-co-op-gocron-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: gomod.updateDependency: v1.37.0 (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: Updating github.com/go-co-op/gocron in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: isBranchConflicted(base, renovate/github.com-go-co-op-gocron-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: Preparing files for committing to branch renovate/github.com-go-co-op-gocron-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-go-co-op-gocron-1.x",
+         "commit": "4f2a9d8328cc919823eea3aa4b5f0ac101c9fe16",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/github.com-go-co-op-gocron-1.x:renovate/github.com-go-co-op-gocron-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+       "result": {
+         "pushed": [],
+         "ref": {
+           "local": "refs/remotes/origin/renovate/github.com-go-co-op-gocron-1.x"
+         },
+         "remoteMessages": {"all": []}
+       }
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: gomod.updateDependency: v1.37.0 (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+ INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+       "commitSha": "4f2a9d8328cc919823eea3aa4b5f0ac101c9fe16"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: getBranchPr(renovate/github.com-go-co-op-gocron-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
@@ -1546,12 +1712,13 @@ DEBUG: Found PR #73 (repository=MisterB1/renovatePG, branch=renovate/github.com-
 DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: Fetching changelog: https://github.com/go-co-op/gocron (v1.34.0 -> v1.37.0) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
  WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
+       "warnings": ["Failed to look up docker package hub.docker.com/golang"],
        "files": ["Dockerfile"]
 DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: Pull Request #73 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
+DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-1.x)
 DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: getBranchPr(renovate/github.com-gorilla-mux-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
@@ -1564,35 +1731,55 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:42.819Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:52:25.623Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-gorilla-mux-1.x)
        "branchName": "renovate/github.com-gorilla-mux-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: gomod.updateDependency: v1.8.1 (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: Updating github.com/gorilla/mux in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: isBranchConflicted(base, renovate/github.com-gorilla-mux-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: Preparing files for committing to branch renovate/github.com-gorilla-mux-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-gorilla-mux-1.x",
+         "commit": "08ae2b433b48dd3807f1b5483bad3c395ac2a0f4",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: Pushing refSpec renovate/github.com-gorilla-mux-1.x:renovate/github.com-gorilla-mux-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+       "result": {
+         "pushed": [],
+         "ref": {"local": "refs/remotes/origin/renovate/github.com-gorilla-mux-1.x"},
+         "remoteMessages": {"all": []}
+       }
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: gomod.updateDependency: v1.8.1 (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+ INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+       "commitSha": "08ae2b433b48dd3807f1b5483bad3c395ac2a0f4"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: getBranchPr(renovate/github.com-gorilla-mux-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
@@ -1601,12 +1788,13 @@ DEBUG: Found PR #74 (repository=MisterB1/renovatePG, branch=renovate/github.com-
 DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: Fetching changelog: https://github.com/gorilla/mux (v1.7.1 -> v1.8.1) (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
  WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
+       "warnings": ["Failed to look up docker package hub.docker.com/golang"],
        "files": ["Dockerfile"]
 DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: Pull Request #74 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
+DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/github.com-gorilla-mux-1.x)
 DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: getBranchPr(renovate/github.com-prometheus-client_golang-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
@@ -1619,35 +1807,57 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:44.855Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:52:33.113Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-prometheus-client_golang-1.x)
        "branchName": "renovate/github.com-prometheus-client_golang-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: gomod.updateDependency: v1.20.2 (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: Updating github.com/prometheus/client_golang in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: isBranchConflicted(base, renovate/github.com-prometheus-client_golang-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: Preparing files for committing to branch renovate/github.com-prometheus-client_golang-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-prometheus-client_golang-1.x",
+         "commit": "16234d624540f895c3217d75939a6a03a28ee97c",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/github.com-prometheus-client_golang-1.x:renovate/github.com-prometheus-client_golang-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+       "result": {
+         "pushed": [],
+         "ref": {
+           "local": "refs/remotes/origin/renovate/github.com-prometheus-client_golang-1.x"
+         },
+         "remoteMessages": {"all": []}
+       }
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: gomod.updateDependency: v1.20.2 (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+ INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+       "commitSha": "16234d624540f895c3217d75939a6a03a28ee97c"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: getBranchPr(renovate/github.com-prometheus-client_golang-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
@@ -1656,12 +1866,13 @@ DEBUG: Found PR #85 (repository=MisterB1/renovatePG, branch=renovate/github.com-
 DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: Fetching changelog: https://github.com/prometheus/client_golang (v1.19.1 -> v1.20.2) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
  WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
+       "warnings": ["Failed to look up docker package hub.docker.com/golang"],
        "files": ["Dockerfile"]
 DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: Pull Request #85 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
+DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-1.x)
 DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: getBranchPr(renovate/github.com-sirupsen-logrus-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
@@ -1674,1628 +1885,40 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:47.721Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:52:46.493Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-sirupsen-logrus-1.x)
        "branchName": "renovate/github.com-sirupsen-logrus-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-04T13:50:49+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: gomod.updateDependency: v1.9.3 (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: Updating github.com/sirupsen/logrus in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: isBranchConflicted(base, renovate/github.com-sirupsen-logrus-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
 DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: gomod.updateDependency: v1.9.3 (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: getBranchPr(renovate/github.com-sirupsen-logrus-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: findPr(renovate/github.com-sirupsen-logrus-1.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Found PR #86 (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Fetching changelog: https://github.com/sirupsen/logrus (v1.8.3 -> v1.9.3) (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
- WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
-       "files": ["Dockerfile"]
-DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: Pull Request #86 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
-DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: getBranchPr(renovate/github.com-stretchr-testify-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: findPr(renovate/github.com-stretchr-testify-1.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Found PR #47 (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: branchExists=true (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: dependencyDashboardCheck=undefined (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: PR rebase requested=false (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:49.145Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-stretchr-testify-1.x)
-       "branchName": "renovate/github.com-stretchr-testify-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: isBranchConflicted(base, renovate/github.com-stretchr-testify-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: gomod.updateDependency: v1.9.0 (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: getBranchPr(renovate/github.com-stretchr-testify-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: findPr(renovate/github.com-stretchr-testify-1.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Found PR #47 (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Fetching changelog: https://github.com/stretchr/testify (v1.8.0 -> v1.9.0) (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
- WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
-       "files": ["Dockerfile"]
-DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: Pull Request #47 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-stretchr-testify-1.x)
-DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: getBranchPr(renovate/github.com-vishvananda-netlink-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: findPr(renovate/github.com-vishvananda-netlink-1.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Found PR #87 (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: branchExists=true (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: dependencyDashboardCheck=undefined (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: PR rebase requested=false (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:52.134Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-vishvananda-netlink-1.x)
-       "branchName": "renovate/github.com-vishvananda-netlink-1.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: isBranchConflicted(base, renovate/github.com-vishvananda-netlink-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: gomod.updateDependency: v1.3.0 (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: getBranchPr(renovate/github.com-vishvananda-netlink-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: findPr(renovate/github.com-vishvananda-netlink-1.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Found PR #87 (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Fetching changelog: https://github.com/vishvananda/netlink (v1.0.1 -> v1.3.0) (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
- WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
-       "files": ["Dockerfile"]
-DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: Pull Request #87 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-vishvananda-netlink-1.x)
-DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: getBranchPr(renovate/actions-setup-go-5.x) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: findPr(renovate/actions-setup-go-5.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Found PR #83 (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: branchExists=true (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: dependencyDashboardCheck=undefined (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: PR rebase requested=false (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:54.732Z) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/actions-setup-go-5.x)
-       "branchName": "renovate/actions-setup-go-5.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: isBranchConflicted(base, renovate/actions-setup-go-5.x) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Branch dep actions/setup-go in .github/workflows/renovatePG.yaml is already updated (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: No content changed (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-setup-go-5.x)
-       "depName": "actions/setup-go"
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: getBranchPr(renovate/actions-setup-go-5.x) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: findPr(renovate/actions-setup-go-5.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Found PR #83 (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Fetching changelog: https://github.com/actions/setup-go (v4 -> v5) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
- WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
-       "files": ["Dockerfile"]
-DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Pull Request #83 does not need updating (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: getBranchPr(renovate/github.com-go-co-op-gocron-2.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: findPr(renovate/github.com-go-co-op-gocron-2.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Found PR #68 (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: branchExists=true (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: dependencyDashboardCheck=undefined (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: PR rebase requested=false (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-04T03:20:56.154Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: branch.isBehindBase(): false (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-go-co-op-gocron-2.x)
-       "branchName": "renovate/github.com-go-co-op-gocron-2.x"
-DEBUG: Branch is up-to-date (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: isBranchConflicted(base, renovate/github.com-go-co-op-gocron-2.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Branch does not need rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Using reuseExistingBranch: true (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=true (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: gomod.updateDependency: v2.11.0 (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: gomod: major update for github.com/go-co-op/gocron (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: No changes necessary (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: No package files need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: No changes to package files, skipping post-upgrade tasks (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: No files to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-       "branchName": "base",
-       "latestCommitDate": "2024-09-04T13:12:26+10:00"
-DEBUG: Checking if we can automerge branch (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: mergeStatus=no automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: getBranchPr(renovate/github.com-go-co-op-gocron-2.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: findPr(renovate/github.com-go-co-op-gocron-2.x, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Found PR #68 (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Fetching changelog: https://github.com/go-co-op/gocron (v1.34.0 -> v2.11.0) (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
- WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
-       "files": ["Dockerfile"]
-DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: Pull Request #68 does not need updating (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-go-co-op-gocron-2.x)
-DEBUG: getBranchPr(renovate/golang.org-x-exp-digest) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/golang.org-x-exp-digest, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #77 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-gookit-validate-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-gookit-validate-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #78 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-miekg-dns-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-miekg-dns-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #79 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-spf13-cobra-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-spf13-cobra-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #84 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-fsnotify-fsnotify-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-fsnotify-fsnotify-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #81 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-go-co-op-gocron-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-go-co-op-gocron-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #73 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-gorilla-mux-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-gorilla-mux-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #74 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-prometheus-client_golang-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-prometheus-client_golang-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #85 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-sirupsen-logrus-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-sirupsen-logrus-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #86 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-stretchr-testify-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-stretchr-testify-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #47 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-vishvananda-netlink-1.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-vishvananda-netlink-1.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #87 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/actions-setup-go-5.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/actions-setup-go-5.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #83 (repository=MisterB1/renovatePG)
-DEBUG: getBranchPr(renovate/github.com-go-co-op-gocron-2.x) (repository=MisterB1/renovatePG)
-DEBUG: findPr(renovate/github.com-go-co-op-gocron-2.x, undefined, open) (repository=MisterB1/renovatePG)
-DEBUG: Found PR #68 (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/contents/renovate.json5 (etag=W/"6da0e0ed12177addaf5e964447e16cdb8ef3e86d", lastModified=Wed, 04 Sep 2024 03:12:26 GMT) (repository=MisterB1/renovatePG)
-DEBUG: checkConfigMigrationBranch() (repository=MisterB1/renovatePG)
-DEBUG: checkConfigMigrationBranch() Config does not need migration (repository=MisterB1/renovatePG)
-DEBUG: ensureDependencyDashboard() (repository=MisterB1/renovatePG)
-DEBUG: Ensuring Dependency Dashboard (repository=MisterB1/renovatePG)
-DEBUG: Checking packageFiles for deprecated packages (repository=MisterB1/renovatePG)
-       "packageFiles": {
-         "dockerfile": [
-           {
-             "deps": [
-               {
-                 "depName": "hub.docker.internal.cba/golang",
-                 "currentValue": "1.21",
-                 "replaceString": "hub.docker.internal.cba/golang:1.21",
-                 "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
-                 "datasource": "docker",
-                 "depType": "stage",
-                 "updates": [],
-                 "packageName": "hub.docker.internal.cba/golang",
-                 "versioning": "docker",
-                 "warnings": [
-                   {
-                     "topic": "hub.docker.internal.cba/golang",
-                     "message": "Failed to look up docker package hub.docker.internal.cba/golang"
-                   }
-                 ]
-               },
-               {
-                 "depName": "ubuntu",
-                 "currentValue": "24.04",
-                 "currentDigest": "sha256:8a37d68f4f73ebf3d4efafbcf66379bf3728902a8038616808f04e34a9ab63ee",
-                 "replaceString": "ubuntu:24.04@sha256:8a37d68f4f73ebf3d4efafbcf66379bf3728902a8038616808f04e34a9ab63ee",
-                 "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
-                 "datasource": "docker",
-                 "versioning": "ubuntu",
-                 "depType": "stage",
-                 "updates": [],
-                 "packageName": "ubuntu",
-                 "warnings": [],
-                 "registryUrl": "https://index.docker.io",
-                 "lookupName": "library/ubuntu",
-                 "currentVersion": "24.04",
-                 "currentVersionTimestamp": "2024-08-17T05:53:23.242Z",
-                 "fixedVersion": "24.04"
-               },
-               {
-                 "depName": "hub.docker.internal.cba/golang",
-                 "currentValue": "1.21-bullseye",
-                 "replaceString": "hub.docker.internal.cba/golang:1.21-bullseye",
-                 "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
-                 "datasource": "docker",
-                 "depType": "final",
-                 "updates": [],
-                 "packageName": "hub.docker.internal.cba/golang",
-                 "versioning": "docker",
-                 "warnings": [
-                   {
-                     "topic": "hub.docker.internal.cba/golang",
-                     "message": "Failed to look up docker package hub.docker.internal.cba/golang"
-                   }
-                 ]
-               }
-             ],
-             "packageFile": "Dockerfile"
-           }
-         ],
-         "github-actions": [
-           {
-             "deps": [
-               {
-                 "depName": "actions/checkout",
-                 "commitMessageTopic": "{{{depName}}} action",
-                 "datasource": "github-tags",
-                 "versioning": "docker",
-                 "depType": "action",
-                 "replaceString": "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4",
-                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
-                 "currentValue": "v4",
-                 "currentDigest": "692973e3d937129bcbf40652eb9f2f61becf3332",
-                 "updates": [],
-                 "packageName": "actions/checkout",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/actions/checkout",
-                 "registryUrl": "https://github.com",
-                 "currentVersion": "v4",
-                 "currentVersionTimestamp": "2024-06-12T18:41:43.000Z",
-                 "fixedVersion": "v4"
-               },
-               {
-                 "depName": "actions/setup-go",
-                 "commitMessageTopic": "{{{depName}}} action",
-                 "datasource": "github-tags",
-                 "versioning": "docker",
-                 "depType": "action",
-                 "replaceString": "actions/setup-go@93397bea11091df50f3d7e59dc26a7711a8bcfbe # v4",
-                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
-                 "currentValue": "v4",
-                 "currentDigest": "93397bea11091df50f3d7e59dc26a7711a8bcfbe",
-                 "updates": [
-                   {
-                     "bucket": "major",
-                     "newVersion": "v5",
-                     "newValue": "v5",
-                     "newDigest": "0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32",
-                     "releaseTimestamp": "2024-06-27T18:16:26.000Z",
-                     "newMajor": 5,
-                     "newMinor": null,
-                     "newPatch": null,
-                     "updateType": "major",
-                     "branchName": "renovate/actions-setup-go-5.x"
-                   }
-                 ],
-                 "packageName": "actions/setup-go",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/actions/setup-go",
-                 "registryUrl": "https://github.com",
-                 "currentVersion": "v4",
-                 "currentVersionTimestamp": "2023-08-03T12:33:56.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v4"
-               }
-             ],
-             "packageFile": ".github/workflows/renovatePG.yaml"
-           }
-         ],
-         "gomod": [
-           {
-             "deps": [
-               {
-                 "datasource": "golang-version",
-                 "versioning": "go-mod-directive",
-                 "depType": "golang",
-                 "depName": "go",
-                 "currentValue": "1.20",
-                 "managerData": {"lineNumber": 2},
-                 "updates": [],
-                 "packageName": "go",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/golang/go",
-                 "registryUrl": "https://raw.githubusercontent.com/golang/website",
-                 "homepage": "https://go.dev/",
-                 "currentVersion": "1.23.0",
-                 "currentVersionTimestamp": "2024-08-13T00:00:00.000Z"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/PowerDNS/go-tlsconfig",
-                 "currentValue": "v0.0.0-20221101135152-0956853b28df",
-                 "currentDigest": "0956853b28df",
-                 "digestOneAndOnly": true,
-                 "versioning": "loose",
-                 "managerData": {"multiLine": true, "lineNumber": 5},
-                 "updates": [],
-                 "packageName": "github.com/PowerDNS/go-tlsconfig",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/PowerDNS/go-tlsconfig",
-                 "currentVersion": "v0.0.0-20221101135152-0956853b28df",
-                 "currentVersionTimestamp": "2022-11-01T13:51:52.000Z",
-                 "fixedVersion": "v0.0.0-20221101135152-0956853b28df"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/fsnotify/fsnotify",
-                 "currentValue": "v1.6.0",
-                 "managerData": {"multiLine": true, "lineNumber": 6},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.7.0",
-                     "newValue": "v1.7.0",
-                     "releaseTimestamp": "2023-10-22T06:24:00.000Z",
-                     "newMajor": 1,
-                     "newMinor": 7,
-                     "newPatch": 0,
-                     "updateType": "minor",
-                     "branchName": "renovate/github.com-fsnotify-fsnotify-1.x"
-                   }
-                 ],
-                 "packageName": "github.com/fsnotify/fsnotify",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/fsnotify/fsnotify",
-                 "currentVersion": "v1.6.0",
-                 "currentVersionTimestamp": "2022-10-13T01:18:11.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.6.0"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/go-co-op/gocron",
-                 "currentValue": "v1.34.0",
-                 "managerData": {"multiLine": true, "lineNumber": 7},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.37.0",
-                     "newValue": "v1.37.0",
-                     "releaseTimestamp": "2023-12-12T15:53:46.000Z",
-                     "newMajor": 1,
-                     "newMinor": 37,
-                     "newPatch": 0,
-                     "updateType": "minor",
-                     "branchName": "renovate/github.com-go-co-op-gocron-1.x"
-                   },
-                   {
-                     "bucket": "major",
-                     "newVersion": "v2.11.0",
-                     "newValue": "v2.11.0",
-                     "releaseTimestamp": "2024-07-19T18:10:28.000Z",
-                     "newMajor": 2,
-                     "newMinor": 11,
-                     "newPatch": 0,
-                     "updateType": "major",
-                     "branchName": "renovate/github.com-go-co-op-gocron-2.x"
-                   }
-                 ],
-                 "packageName": "github.com/go-co-op/gocron",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/go-co-op/gocron",
-                 "currentVersion": "v1.34.0",
-                 "currentVersionTimestamp": "2023-09-18T15:37:29.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.34.0"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/gookit/validate",
-                 "currentValue": "v1.5.1",
-                 "managerData": {"multiLine": true, "lineNumber": 8},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.5.2",
-                     "newValue": "v1.5.2",
-                     "releaseTimestamp": "2024-01-23T11:51:18.000Z",
-                     "newMajor": 1,
-                     "newMinor": 5,
-                     "newPatch": 2,
-                     "updateType": "patch",
-                     "branchName": "renovate/github.com-gookit-validate-1.x"
-                   }
-                 ],
-                 "packageName": "github.com/gookit/validate",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/gookit/validate",
-                 "currentVersion": "v1.5.1",
-                 "currentVersionTimestamp": "2023-08-01T12:51:54.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.5.1"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/gorilla/mux",
-                 "currentValue": "v1.7.1",
-                 "managerData": {"multiLine": true, "lineNumber": 9},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.8.1",
-                     "newValue": "v1.8.1",
-                     "releaseTimestamp": "2023-10-18T11:23:00.000Z",
-                     "newMajor": 1,
-                     "newMinor": 8,
-                     "newPatch": 1,
-                     "updateType": "minor",
-                     "branchName": "renovate/github.com-gorilla-mux-1.x"
-                   }
-                 ],
-                 "packageName": "github.com/gorilla/mux",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/gorilla/mux",
-                 "currentVersion": "v1.7.1",
-                 "currentVersionTimestamp": "2019-03-16T13:32:43.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.7.1"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/miekg/dns",
-                 "currentValue": "v1.1.56",
-                 "managerData": {"multiLine": true, "lineNumber": 10},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.1.62",
-                     "newValue": "v1.1.62",
-                     "releaseTimestamp": "2024-08-13T18:55:19.000Z",
-                     "newMajor": 1,
-                     "newMinor": 1,
-                     "newPatch": 62,
-                     "updateType": "patch",
-                     "branchName": "renovate/github.com-miekg-dns-1.x"
-                   }
-                 ],
-                 "packageName": "github.com/miekg/dns",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/miekg/dns",
-                 "currentVersion": "v1.1.56",
-                 "currentVersionTimestamp": "2023-09-12T09:58:33.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.1.56"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/prometheus/client_golang",
-                 "currentValue": "v1.19.1",
-                 "managerData": {"multiLine": true, "lineNumber": 11},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.20.2",
-                     "newValue": "v1.20.2",
-                     "releaseTimestamp": "2024-08-23T19:09:01.000Z",
-                     "newMajor": 1,
-                     "newMinor": 20,
-                     "newPatch": 2,
-                     "updateType": "minor",
-                     "branchName": "renovate/github.com-prometheus-client_golang-1.x"
-                   }
-                 ],
-                 "packageName": "github.com/prometheus/client_golang",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/prometheus/client_golang",
-                 "currentVersion": "v1.19.1",
-                 "currentVersionTimestamp": "2024-05-09T11:59:04.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.19.1"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/sirupsen/logrus",
-                 "currentValue": "v1.8.3",
-                 "managerData": {"multiLine": true, "lineNumber": 12},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.9.3",
-                     "newValue": "v1.9.3",
-                     "releaseTimestamp": "2023-05-21T12:59:35.000Z",
-                     "newMajor": 1,
-                     "newMinor": 9,
-                     "newPatch": 3,
-                     "updateType": "minor",
-                     "branchName": "renovate/github.com-sirupsen-logrus-1.x"
-                   }
-                 ],
-                 "packageName": "github.com/sirupsen/logrus",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/sirupsen/logrus",
-                 "currentVersion": "v1.8.3",
-                 "currentVersionTimestamp": "2023-05-15T10:31:28.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.8.3"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/spf13/cobra",
-                 "currentValue": "v1.8.0",
-                 "managerData": {"multiLine": true, "lineNumber": 13},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.8.1",
-                     "newValue": "v1.8.1",
-                     "releaseTimestamp": "2024-06-01T10:31:11.000Z",
-                     "newMajor": 1,
-                     "newMinor": 8,
-                     "newPatch": 1,
-                     "updateType": "patch",
-                     "branchName": "renovate/github.com-spf13-cobra-1.x"
-                   }
-                 ],
-                 "packageName": "github.com/spf13/cobra",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/spf13/cobra",
-                 "currentVersion": "v1.8.0",
-                 "currentVersionTimestamp": "2023-11-02T15:23:08.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.8.0"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/stretchr/testify",
-                 "currentValue": "v1.8.0",
-                 "managerData": {"multiLine": true, "lineNumber": 14},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.9.0",
-                     "newValue": "v1.9.0",
-                     "releaseTimestamp": "2024-02-29T14:36:18.000Z",
-                     "newMajor": 1,
-                     "newMinor": 9,
-                     "newPatch": 0,
-                     "updateType": "minor",
-                     "branchName": "renovate/github.com-stretchr-testify-1.x"
-                   }
-                 ],
-                 "packageName": "github.com/stretchr/testify",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/stretchr/testify",
-                 "currentVersion": "v1.8.0",
-                 "currentVersionTimestamp": "2022-06-29T10:56:06.000Z",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.8.0"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "github.com/vishvananda/netlink",
-                 "currentValue": "v1.0.1",
-                 "managerData": {"multiLine": true, "lineNumber": 15},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v1.3.0",
-                     "newValue": "v1.3.0",
-                     "releaseTimestamp": "2024-08-23T19:41:44.000Z",
-                     "newMajor": 1,
-                     "newMinor": 3,
-                     "newPatch": 0,
-                     "updateType": "minor",
-                     "branchName": "renovate/github.com-vishvananda-netlink-1.x"
-                   }
-                 ],
-                 "packageName": "github.com/vishvananda/netlink",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/vishvananda/netlink",
-                 "currentVersion": "v1.0.1",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v1.0.1"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "golang.org/x/exp",
-                 "currentValue": "v0.0.0-20230905200255-921286631fa9",
-                 "currentDigest": "921286631fa9",
-                 "digestOneAndOnly": true,
-                 "versioning": "loose",
-                 "managerData": {"multiLine": true, "lineNumber": 16},
-                 "updates": [
-                   {
-                     "bucket": "non-major",
-                     "newVersion": "v0.0.0-20240823005443-9b4947da3948",
-                     "newValue": "v0.0.0-20240823005443-9b4947da3948",
-                     "newDigest": "9b4947da3948",
-                     "releaseTimestamp": "2024-08-23T00:54:43.000Z",
-                     "newMajor": 0,
-                     "newMinor": 0,
-                     "newPatch": 0,
-                     "updateType": "digest",
-                     "branchName": "renovate/golang.org-x-exp-digest"
-                   }
-                 ],
-                 "packageName": "golang.org/x/exp",
-                 "warnings": [],
-                 "currentVersion": "v0.0.0-20230905200255-921286631fa9",
-                 "isSingleVersion": true,
-                 "fixedVersion": "v0.0.0-20230905200255-921286631fa9"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "require",
-                 "depName": "gopkg.in/yaml.v3",
-                 "currentValue": "v3.0.1",
-                 "managerData": {"multiLine": true, "lineNumber": 17},
-                 "updates": [],
-                 "packageName": "gopkg.in/yaml.v3",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/go-yaml/yaml",
-                 "currentVersion": "v3.0.1",
-                 "currentVersionTimestamp": "2022-05-27T08:35:30.000Z",
-                 "fixedVersion": "v3.0.1"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/beorn7/perks",
-                 "currentValue": "v1.0.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 21},
-                 "updates": [],
-                 "packageName": "github.com/beorn7/perks",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/cespare/xxhash/v2",
-                 "currentValue": "v2.2.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 22},
-                 "updates": [],
-                 "packageName": "github.com/cespare/xxhash/v2",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/davecgh/go-spew",
-                 "currentValue": "v1.1.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 23},
-                 "updates": [],
-                 "packageName": "github.com/davecgh/go-spew",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/go-logr/logr",
-                 "currentValue": "v1.2.3",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 24},
-                 "updates": [],
-                 "packageName": "github.com/go-logr/logr",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/golang/protobuf",
-                 "currentValue": "v1.5.3",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 25},
-                 "updates": [],
-                 "packageName": "github.com/golang/protobuf",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/google/uuid",
-                 "currentValue": "v1.4.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 26},
-                 "updates": [],
-                 "packageName": "github.com/google/uuid",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/gookit/filter",
-                 "currentValue": "v1.2.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 27},
-                 "updates": [],
-                 "packageName": "github.com/gookit/filter",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/gookit/goutil",
-                 "currentValue": "v0.6.15",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 28},
-                 "updates": [],
-                 "packageName": "github.com/gookit/goutil",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/inconshreveable/mousetrap",
-                 "currentValue": "v1.1.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 29},
-                 "updates": [],
-                 "packageName": "github.com/inconshreveable/mousetrap",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/matttproud/golang_protobuf_extensions",
-                 "currentValue": "v1.0.4",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 30},
-                 "updates": [],
-                 "packageName": "github.com/matttproud/golang_protobuf_extensions",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/pmezard/go-difflib",
-                 "currentValue": "v1.0.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 31},
-                 "updates": [],
-                 "packageName": "github.com/pmezard/go-difflib",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/prometheus/client_model",
-                 "currentValue": "v0.5.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 32},
-                 "updates": [],
-                 "packageName": "github.com/prometheus/client_model",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/prometheus/common",
-                 "currentValue": "v0.48.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 33},
-                 "updates": [],
-                 "packageName": "github.com/prometheus/common",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/prometheus/procfs",
-                 "currentValue": "v0.12.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 34},
-                 "updates": [],
-                 "packageName": "github.com/prometheus/procfs",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/robfig/cron/v3",
-                 "currentValue": "v3.0.1",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 35},
-                 "updates": [],
-                 "packageName": "github.com/robfig/cron/v3",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/spf13/pflag",
-                 "currentValue": "v1.0.5",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 36},
-                 "updates": [],
-                 "packageName": "github.com/spf13/pflag",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "github.com/vishvananda/netns",
-                 "currentValue": "v0.0.0-20191106174202-0a2b9b5464df",
-                 "currentDigest": "0a2b9b5464df",
-                 "digestOneAndOnly": true,
-                 "versioning": "loose",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 37},
-                 "updates": [],
-                 "packageName": "github.com/vishvananda/netns",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "go.uber.org/atomic",
-                 "currentValue": "v1.9.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 38},
-                 "updates": [],
-                 "packageName": "go.uber.org/atomic",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/mod",
-                 "currentValue": "v0.12.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 39},
-                 "updates": [],
-                 "packageName": "golang.org/x/mod",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/net",
-                 "currentValue": "v0.20.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 40},
-                 "updates": [],
-                 "packageName": "golang.org/x/net",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/sys",
-                 "currentValue": "v0.17.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 41},
-                 "updates": [],
-                 "packageName": "golang.org/x/sys",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/text",
-                 "currentValue": "v0.14.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 42},
-                 "updates": [],
-                 "packageName": "golang.org/x/text",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "golang.org/x/tools",
-                 "currentValue": "v0.13.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 43},
-                 "updates": [],
-                 "packageName": "golang.org/x/tools",
-                 "skipReason": "disabled"
-               },
-               {
-                 "datasource": "go",
-                 "depType": "indirect",
-                 "depName": "google.golang.org/protobuf",
-                 "currentValue": "v1.33.0",
-                 "enabled": false,
-                 "managerData": {"multiLine": true, "lineNumber": 44},
-                 "updates": [],
-                 "packageName": "google.golang.org/protobuf",
-                 "skipReason": "disabled"
-               }
-             ],
-             "packageFile": "go.mod"
-           }
-         ],
-         "regex": [
-           {
-             "deps": [
-               {
-                 "depName": "github.com/tynany/frr_exporter",
-                 "currentValue": "v1.2.0",
-                 "datasource": "go",
-                 "replaceString": "# renovate: datasource=go depName=github.com/tynany/frr_exporter\nARG FRREXPORTER_VERSION=v1.2.0\n",
-                 "updates": [],
-                 "packageName": "github.com/tynany/frr_exporter",
-                 "versioning": "semver",
-                 "warnings": [],
-                 "sourceUrl": "https://github.com/tynany/frr_exporter",
-                 "currentVersion": "v1.2.0",
-                 "currentVersionTimestamp": "2023-04-23T03:01:22.000Z",
-                 "fixedVersion": "v1.2.0"
-               }
-             ],
-             "matchStrings": [
-               "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
-             ],
-             "packageFile": "Dockerfile"
-           }
-         ]
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: Preparing files for committing to branch renovate/github.com-sirupsen-logrus-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-sirupsen-logrus-1.x",
+         "commit": "031fe971dcd18453c8ed2ba9748b7faba15a1bc7",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
        }
- WARN: Package lookup failures (repository=MisterB1/renovatePG)
-       "warnings": ["Failed to look up docker package hub.docker.internal.cba/golang"],
-       "files": ["Dockerfile"]
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"9f2181990b262d3cee751c9826a05dd5dd56e8bcc3a1c6842cedc3d941b37373", lastModified=Wed, 04 Sep 2024 03:18:57 GMT) (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"9f2181990b262d3cee751c9826a05dd5dd56e8bcc3a1c6842cedc3d941b37373", lastModified=Wed, 04 Sep 2024 03:18:57 GMT) (repository=MisterB1/renovatePG)
-DEBUG: ensureIssue(Dependency Dashboard) (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/17 (etag=W/"9f2181990b262d3cee751c9826a05dd5dd56e8bcc3a1c6842cedc3d941b37373", lastModified=Wed, 04 Sep 2024 03:18:57 GMT) (repository=MisterB1/renovatePG)
-DEBUG: Patching issue (repository=MisterB1/renovatePG)
-DEBUG: Issue updated (repository=MisterB1/renovatePG)
-DEBUG: validateReconfigureBranch() (repository=MisterB1/renovatePG)
-DEBUG: No reconfigure branch found (repository=MisterB1/renovatePG)
-DEBUG: Removing any stale branches (repository=MisterB1/renovatePG)
-DEBUG: config.repoIsOnboarded=true (repository=MisterB1/renovatePG)
-DEBUG: Branch lists (repository=MisterB1/renovatePG)
-       "branchList": [
-         "renovate/actions-setup-go-5.x",
-         "renovate/github.com-fsnotify-fsnotify-1.x",
-         "renovate/github.com-go-co-op-gocron-1.x",
-         "renovate/github.com-go-co-op-gocron-2.x",
-         "renovate/github.com-gookit-validate-1.x",
-         "renovate/github.com-gorilla-mux-1.x",
-         "renovate/github.com-miekg-dns-1.x",
-         "renovate/github.com-prometheus-client_golang-1.x",
-         "renovate/github.com-sirupsen-logrus-1.x",
-         "renovate/github.com-spf13-cobra-1.x",
-         "renovate/github.com-stretchr-testify-1.x",
-         "renovate/github.com-vishvananda-netlink-1.x",
-         "renovate/golang.org-x-exp-digest"
-       ],
-       "renovateBranches": [
-         "renovate/actions-setup-go-5.x",
-         "renovate/github.com-fsnotify-fsnotify-1.x",
-         "renovate/github.com-go-co-op-gocron-1.x",
-         "renovate/github.com-go-co-op-gocron-2.x",
-         "renovate/github.com-gookit-validate-1.x",
-         "renovate/github.com-gorilla-mux-1.x",
-         "renovate/github.com-miekg-dns-1.x",
-         "renovate/github.com-prometheus-client_golang-1.x",
-         "renovate/github.com-sirupsen-logrus-1.x",
-         "renovate/github.com-spf13-cobra-1.x",
-         "renovate/github.com-stretchr-testify-1.x",
-         "renovate/github.com-vishvananda-netlink-1.x",
-         "renovate/golang.org-x-exp-digest"
-       ]
-DEBUG: remainingBranches= (repository=MisterB1/renovatePG)
-DEBUG: No branches to clean up (repository=MisterB1/renovatePG)
-DEBUG: PackageFiles.clear() - Package files deleted (repository=MisterB1/renovatePG)
-DEBUG: Repo is activated (repository=MisterB1/renovatePG)
-DEBUG: Branch summary (repository=MisterB1/renovatePG)
-       "cacheModified": undefined,
-       "baseBranches": [{"branchName": "base", "sha": "6f265b40c4b1096620da1269657adb3bbc939d99"}],
-       "branches": [
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/golang.org-x-exp-digest",
-           "branchSha": "181e9a93a6aa5ca0c449fc664456a005e1d6cdc5",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-gookit-validate-1.x",
-           "branchSha": "e9bf789437b6b73623bab6c463a2d2fd2b03a42a",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-miekg-dns-1.x",
-           "branchSha": "513f7627fd6c93ddb762e09997920caa648f090b",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-spf13-cobra-1.x",
-           "branchSha": "be40d06eef1f4aac9f5f701e6d38a93bc4fbedef",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-fsnotify-fsnotify-1.x",
-           "branchSha": "a8fda5abadd4419acbe3e2f2ca514287518b6cb6",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-go-co-op-gocron-1.x",
-           "branchSha": "82cfb49cd97a8dbd1ea5e49b452030002030fb53",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-gorilla-mux-1.x",
-           "branchSha": "401429791cc72b9569c14626351be017440b7a9f",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-prometheus-client_golang-1.x",
-           "branchSha": "8f8369738109c45d02b7e6386d8e510e8f68c92b",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-sirupsen-logrus-1.x",
-           "branchSha": "8cdc52231aa5dd94ffaaa6de7dad8a896944463d",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-stretchr-testify-1.x",
-           "branchSha": "dbf01873771160ec2abbd9b67d209740db7102a5",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-vishvananda-netlink-1.x",
-           "branchSha": "26dc90789a109134b2d40e39c106f169d6413e23",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/actions-setup-go-5.x",
-           "branchSha": "21ba35cdbd7bbdd901c9163577c98e1c41976511",
-           "isModified": false,
-           "isPristine": false
-         },
-         {
-           "automerge": false,
-           "baseBranch": "base",
-           "baseBranchSha": "6f265b40c4b1096620da1269657adb3bbc939d99",
-           "branchName": "renovate/github.com-go-co-op-gocron-2.x",
-           "branchSha": "a099b03e0480ce606a8f27309855031015265053",
-           "isModified": false,
-           "isPristine": false
-         }
-       ],
-       "defaultBranch": "base",
-       "inactiveBranches": []
-DEBUG: branches info extended (repository=MisterB1/renovatePG)
-       "branchesInformation": [
-         {
-           "branchName": "renovate/golang.org-x-exp-digest",
-           "prNo": 77,
-           "prTitle": "Update golang.org/x/exp digest to 9b4947d",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "golang.org/x/exp",
-               "displayPending": "",
-               "fixedVersion": "v0.0.0-20230905200255-921286631fa9",
-               "currentVersion": "v0.0.0-20230905200255-921286631fa9",
-               "currentValue": "v0.0.0-20230905200255-921286631fa9",
-               "currentDigest": "921286631fa9",
-               "newValue": "v0.0.0-20240823005443-9b4947da3948",
-               "newVersion": "v0.0.0-20240823005443-9b4947da3948",
-               "newDigest": "9b4947da3948",
-               "packageFile": "go.mod",
-               "updateType": "digest",
-               "packageName": "golang.org/x/exp"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-gookit-validate-1.x",
-           "prNo": 78,
-           "prTitle": "Update module github.com/gookit/validate to v1.5.2",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/gookit/validate",
-               "displayPending": "",
-               "fixedVersion": "v1.5.1",
-               "currentVersion": "v1.5.1",
-               "currentValue": "v1.5.1",
-               "newValue": "v1.5.2",
-               "newVersion": "v1.5.2",
-               "packageFile": "go.mod",
-               "updateType": "patch",
-               "packageName": "github.com/gookit/validate"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-miekg-dns-1.x",
-           "prNo": 79,
-           "prTitle": "Update module github.com/miekg/dns to v1.1.62",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/miekg/dns",
-               "displayPending": "",
-               "fixedVersion": "v1.1.56",
-               "currentVersion": "v1.1.56",
-               "currentValue": "v1.1.56",
-               "newValue": "v1.1.62",
-               "newVersion": "v1.1.62",
-               "packageFile": "go.mod",
-               "updateType": "patch",
-               "packageName": "github.com/miekg/dns"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-spf13-cobra-1.x",
-           "prNo": 84,
-           "prTitle": "Update module github.com/spf13/cobra to v1.8.1",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/spf13/cobra",
-               "displayPending": "",
-               "fixedVersion": "v1.8.0",
-               "currentVersion": "v1.8.0",
-               "currentValue": "v1.8.0",
-               "newValue": "v1.8.1",
-               "newVersion": "v1.8.1",
-               "packageFile": "go.mod",
-               "updateType": "patch",
-               "packageName": "github.com/spf13/cobra"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-fsnotify-fsnotify-1.x",
-           "prNo": 81,
-           "prTitle": "Update module github.com/fsnotify/fsnotify to v1.7.0",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/fsnotify/fsnotify",
-               "displayPending": "",
-               "fixedVersion": "v1.6.0",
-               "currentVersion": "v1.6.0",
-               "currentValue": "v1.6.0",
-               "newValue": "v1.7.0",
-               "newVersion": "v1.7.0",
-               "packageFile": "go.mod",
-               "updateType": "minor",
-               "packageName": "github.com/fsnotify/fsnotify"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-go-co-op-gocron-1.x",
-           "prNo": 73,
-           "prTitle": "Update module github.com/go-co-op/gocron to v1.37.0",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/go-co-op/gocron",
-               "displayPending": "",
-               "fixedVersion": "v1.34.0",
-               "currentVersion": "v1.34.0",
-               "currentValue": "v1.34.0",
-               "newValue": "v1.37.0",
-               "newVersion": "v1.37.0",
-               "packageFile": "go.mod",
-               "updateType": "minor",
-               "packageName": "github.com/go-co-op/gocron"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-gorilla-mux-1.x",
-           "prNo": 74,
-           "prTitle": "Update module github.com/gorilla/mux to v1.8.1",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/gorilla/mux",
-               "displayPending": "",
-               "fixedVersion": "v1.7.1",
-               "currentVersion": "v1.7.1",
-               "currentValue": "v1.7.1",
-               "newValue": "v1.8.1",
-               "newVersion": "v1.8.1",
-               "packageFile": "go.mod",
-               "updateType": "minor",
-               "packageName": "github.com/gorilla/mux"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-prometheus-client_golang-1.x",
-           "prNo": 85,
-           "prTitle": "Update module github.com/prometheus/client_golang to v1.20.2",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/prometheus/client_golang",
-               "displayPending": "",
-               "fixedVersion": "v1.19.1",
-               "currentVersion": "v1.19.1",
-               "currentValue": "v1.19.1",
-               "newValue": "v1.20.2",
-               "newVersion": "v1.20.2",
-               "packageFile": "go.mod",
-               "updateType": "minor",
-               "packageName": "github.com/prometheus/client_golang"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-sirupsen-logrus-1.x",
-           "prNo": 86,
-           "prTitle": "Update module github.com/sirupsen/logrus to v1.9.3",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/sirupsen/logrus",
-               "displayPending": "",
-               "fixedVersion": "v1.8.3",
-               "currentVersion": "v1.8.3",
-               "currentValue": "v1.8.3",
-               "newValue": "v1.9.3",
-               "newVersion": "v1.9.3",
-               "packageFile": "go.mod",
-               "updateType": "minor",
-               "packageName": "github.com/sirupsen/logrus"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-stretchr-testify-1.x",
-           "prNo": 47,
-           "prTitle": "Update module github.com/stretchr/testify to v1.9.0",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/stretchr/testify",
-               "displayPending": "",
-               "fixedVersion": "v1.8.0",
-               "currentVersion": "v1.8.0",
-               "currentValue": "v1.8.0",
-               "newValue": "v1.9.0",
-               "newVersion": "v1.9.0",
-               "packageFile": "go.mod",
-               "updateType": "minor",
-               "packageName": "github.com/stretchr/testify"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-vishvananda-netlink-1.x",
-           "prNo": 87,
-           "prTitle": "Update module github.com/vishvananda/netlink to v1.3.0",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/vishvananda/netlink",
-               "displayPending": "",
-               "fixedVersion": "v1.0.1",
-               "currentVersion": "v1.0.1",
-               "currentValue": "v1.0.1",
-               "newValue": "v1.3.0",
-               "newVersion": "v1.3.0",
-               "packageFile": "go.mod",
-               "updateType": "minor",
-               "packageName": "github.com/vishvananda/netlink"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/actions-setup-go-5.x",
-           "prNo": 83,
-           "prTitle": "Update actions/setup-go action to v5",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "github-tags",
-               "depName": "actions/setup-go",
-               "displayPending": "",
-               "fixedVersion": "v4",
-               "currentVersion": "v4",
-               "currentValue": "v4",
-               "currentDigest": "93397bea11091df50f3d7e59dc26a7711a8bcfbe",
-               "newValue": "v5",
-               "newVersion": "v5",
-               "newDigest": "0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32",
-               "packageFile": ".github/workflows/renovatePG.yaml",
-               "updateType": "major",
-               "packageName": "actions/setup-go"
-             }
-           ]
-         },
-         {
-           "branchName": "renovate/github.com-go-co-op-gocron-2.x",
-           "prNo": 68,
-           "prTitle": "Update module github.com/go-co-op/gocron to v2",
-           "result": "done",
-           "upgrades": [
-             {
-               "datasource": "go",
-               "depName": "github.com/go-co-op/gocron",
-               "displayPending": "",
-               "fixedVersion": "v1.34.0",
-               "currentVersion": "v1.34.0",
-               "currentValue": "v1.34.0",
-               "newValue": "v2.11.0",
-               "newVersion": "v2.11.0",
-               "packageFile": "go.mod",
-               "updateType": "major",
-               "packageName": "github.com/go-co-op/gocron"
-             }
-           ]
-         }
-       ]
-DEBUG: Renovate repository PR statistics (repository=MisterB1/renovatePG)
-       "stats": {"total": 72, "open": 13, "closed": 44, "merged": 15}
-DEBUG: Repository result: done, status: activated, enabled: true, onboarded: true (repository=MisterB1/renovatePG)
-DEBUG: repository problems (repository=MisterB1/renovatePG)
-       "repoProblems": ["WARN: Package lookup failures"]
-DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/renovatePG)
-       "splits": {"init": 32461, "extract": 991, "lookup": 336, "onboarding": 0, "update": 28873},
-       "total": 68846
-DEBUG: Package cache statistics (repository=MisterB1/renovatePG)
-       "get": {"count": 161, "avgMs": 11, "medianMs": 1, "maxMs": 110, "totalMs": 1775},
-       "set": {"count": 77, "avgMs": 1, "medianMs": 1, "maxMs": 6, "totalMs": 108}
-DEBUG: HTTP statistics (repository=MisterB1/renovatePG)
-       "hosts": {
-         "api.github.com": {
-           "count": 6,
-           "reqAvgMs": 3205,
-           "reqMedianMs": 1730,
-           "reqMaxMs": 10149,
-           "queueAvgMs": 0,
-           "queueMedianMs": 0,
-           "queueMaxMs": 1
-         }
-       },
-       "requests": 6
-DEBUG: HTTP cache statistics (repository=MisterB1/renovatePG)
-       "https://api.github.com": {
-         "/repos/MisterB1/renovatePG/contents/renovate.json5": {"hit": 0, "miss": 1},
-         "/repos/MisterB1/renovatePG/issues/17": {"hit": 0, "miss": 4},
-         "/repos/MisterB1/renovatePG/pulls": {"hit": 0, "miss": 1}
-       }
-DEBUG: Lookup statistics (repository=MisterB1/renovatePG)
-       "docker": {"count": 3, "avgMs": 101, "medianMs": 62, "maxMs": 186, "totalMs": 304},
-       "go": {"count": 14, "avgMs": 112, "medianMs": 111, "maxMs": 141, "totalMs": 1564},
-       "golang-version": {"count": 1, "avgMs": 91, "medianMs": 91, "maxMs": 91, "totalMs": 91},
-       "github-tags": {"count": 2, "avgMs": 187, "medianMs": 189, "maxMs": 189, "totalMs": 373}
- INFO: Repository finished (repository=MisterB1/renovatePG)
-       "cloned": true,
-       "durationMs": 68846
-DEBUG: Checking file package cache for expired items
-DEBUG: Deleted 0 of 201 file cached entries in 132ms
- INFO: Renovate is exiting with a non-zero code due to the following logged errors
-       "loggerErrors": [
-         {
-           "name": "renovate",
-           "level": 50,
-           "logContext": "q9gJpUAUQePSernvxycpI",
-           "versions": {
-             "node": "22.6.0",
-             "acorn": "8.11.3",
-             "ada": "2.9.0",
-             "amaro": "0.0.6",
-             "ares": "1.33.0",
-             "brotli": "1.1.0",
-             "cjs_module_lexer": "1.2.2",
-             "cldr": "44.1",
-             "icu": "74.2",
-             "llhttp": "9.2.1",
-             "modules": "127",
-             "napi": "9",
-             "nbytes": "0.1.0",
-             "ncrypto": "0.0.1",
-             "nghttp2": "1.61.0",
-             "openssl": "3.3.1",
-             "simdjson": "3.9.4",
-             "simdutf": "5.3.0",
-             "sqlite": "3.46.0",
-             "tz": "2023c",
-             "undici": "6.19.2",
-             "unicode": "15.1",
-             "uv": "1.48.0",
-             "uvwasi": "0.0.21",
-             "v8": "12.4.254.21-node.18",
-             "zlib": "1.2.12"
-           },
-           "range": "^20.15.1",
-           "msg": "Unsupported node environment detected. Please update your node version."
-         }
-       ]
+DEBUG: Pushing refSpec renovate/github.com-sirupsen-logrus-1.x:renovate/github.com-sirupsen-logrus-1.x (repository=MisterB1/renovatePG, branch=renovate/github.com-sirupsen-logrus-1.x)
