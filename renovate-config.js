@@ -14,6 +14,11 @@ module.exports = {
       {
           "datasources":["regex"],
           "addLabels": ["regex"]
-      }
+      },
+      {
+            "datasources":["gomod"],
+            "addLabels": ["gomod"]
+        }
+
   ]
 }
