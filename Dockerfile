@@ -1,8 +1,8 @@
-FROM hub.docker.internal.cba/golang:1.21 AS acmbuilder
+FROM hub.docker.com/golang:1.21 AS acmbuilder
 FROM ubuntu:24.04@sha256:8a37d68f4f73ebf3d4efafbcf66379bf3728902a8038616808f04e34a9ab63ee as base
  
 # Use Artifactory
-ENV GOPROXY=https://artifactory.internal.cba/org.golang.proxy
+ENV GOPROXY=https://artifactory.com/org.golang.proxy
 ENV GOSUMDB=off
  
 WORKDIR /src
@@ -20,12 +20,12 @@ RUN make bin/dns-anycast-manager-linux-amd64
  
 ######
  
-FROM hub.docker.internal.cba/golang:1.21-bullseye AS frrexporter
+FROM hub.docker.com/golang:1.21-bullseye AS frrexporter
  
 # renovate: datasource=go depName=github.com/tynany/frr_exporter
 ARG FRREXPORTER_VERSION=v1.2.0
  
-ENV GOPROXY=https://artifactory.internal.cba/org.golang.proxy
+ENV GOPROXY=https://artifactory.com/org.golang.proxy
 ENV GOSUMDB=off
  
 WORKDIR /src
@@ -35,14 +35,14 @@ RUN cp ${GOPATH}/bin/frr_exporter /
  
 ##########
  
-# FROM applicationinfrastructure-public.docker.internal.cba/library/ubuntu:24.04@sha256:20aa388836c09f052fcd69462b2337de56a628b11b50bf40948927efd1927991
+# FROM applicationinfrastructure-public.docker.com/library/ubuntu:24.04@sha256:20aa388836c09f052fcd69462b2337de56a628b11b50bf40948927efd1927991
  
 ARG FRR_VERSION=10.1
 RUN apt-get update && apt-get -y upgrade
  
 RUN apt-get install -y libc6 lsb-release net-tools git curl gnupg2
-RUN curl -k -s https://artifactory.internal.cba/artifactory/org.frrouting.deb/keys.asc | apt-key add -
-RUN echo deb https://artifactory.internal.cba/artifactory/org.frrouting.deb $(lsb_release -s -c) frr-$FRR_VERSION | tee -a /etc/apt/sources.list.d/frr.list
+RUN curl -k -s https://artifactory.com/artifactory/org.frrouting.deb/keys.asc | apt-key add -
+RUN echo deb https://artifactory.com/artifactory/org.frrouting.deb $(lsb_release -s -c) frr-$FRR_VERSION | tee -a /etc/apt/sources.list.d/frr.list
  
 RUN apt update && apt install -y frr=${FRR_VERSION}-0~ubuntu24.04.1 frr-pythontools
  
