@@ -10,11 +10,11 @@
   "addLabels": ["test"],
   "packageRules": [
       {
-          "matchPackageNames": ["regex"],
+          "matchManagers": ["regex"],
           "addLabels": ["regex"]
       },
       {
-            "matchPackageNames": ["gomod"],
+            "matchManagers": ["gomod"],
             "addLabels": ["gomod"]
         }
 
