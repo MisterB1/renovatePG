@@ -5,7 +5,7 @@
       "config:best-practices", // preset setting these options: https://docs.renovatebot.com/presets-config/#configbest-practices
       ":prConcurrentLimitNone", // allows any number of PRs to be opened
       ":prHourlyLimitNone", // allows PRs to opened as they are found without limit
-      ":rebaseStalePrs" // when main branch is updated, rebase any stale PRs on every run
+      ":rebaseStalePrs", // when main branch is updated, rebase any stale PRs on every run
       "vulnerabilityAlerts"
       {
         "enabled": true,
