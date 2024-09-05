@@ -28,9 +28,5 @@
       "matchManagers": ["regex"],
       "addLabels": ["regex"]
     }
-  ],
-      "vulnerabilityAlerts": {
-        "enabled": true
-        "labels": ["security"]
-  }
+  ]
 }
