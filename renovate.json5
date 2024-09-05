@@ -1,13 +1,11 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json", // Loads the standard schema and default values
-    "labels": ["renovate"], // labels all PRs
     "extends": [
       "config:best-practices", // preset setting these options: https://docs.renovatebot.com/presets-config/#configbest-practices
       ":prConcurrentLimitNone", // allows any number of PRs to be opened
       ":prHourlyLimitNone", // allows PRs to opened as they are found without limit
       ":rebaseStalePrs" // when main branch is updated, rebase any stale PRs on every run
     ], 
-    "labels": ["renovate"], // labels all PRs
     "packageRules": [ // add label to all PRs with the package manager that rasied it
     {
       "matchManagers": ["regex"],
@@ -30,6 +28,7 @@
       "addLabels": ["regex"]
     }
   ],      
+  "labels": ["renovate"], // labels all PRs
   "vulnerabilityAlerts": { // add security labels to PRs that fix vulnerabilities
     "addLabels": ["security"]
   }
