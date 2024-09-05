@@ -1,5 +1,5 @@
 #FROM hub.docker.internal.cba/golang:1.21 AS acmbuilder
-FROM ubuntu:24.02@sha256:8a37d68f4f73ebf3d4efafbcf66379bf3728902a8038616808f04e34a9ab63ee as base
+FROM ubuntu:24.02 as base
  
 # Use Artifactory
 ENV GOPROXY=https://artifactory.internal.cba/org.golang.proxy
