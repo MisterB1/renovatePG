@@ -107,7 +107,7 @@ DEBUG: hostRules: authentication already set for api.github.com (repository=Mist
 DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: MisterB1/cicd-pipeline-train-schedule-pipelines default branch = master (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Using personal access token for git init (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
-DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=483) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=406) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Default config file renovate.json not found in repo (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository is a fork and not manually configured - skipping - did you want to run with --fork-processing=enabled? (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Removing any stale branches (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
@@ -116,7 +116,7 @@ DEBUG: No renovate branches found (repository=MisterB1/cicd-pipeline-train-sched
 DEBUG: Repository result: fork, status: disabled, enabled: false, onboarded: undefined (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "splits": {},
-       "total": 2393
+       "total": 1557
 DEBUG: Package cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
        "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
@@ -124,9 +124,9 @@ DEBUG: HTTP statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelin
        "hosts": {
          "api.github.com": {
            "count": 2,
-           "reqAvgMs": 451,
-           "reqMedianMs": 483,
-           "reqMaxMs": 483,
+           "reqAvgMs": 429,
+           "reqMedianMs": 452,
+           "reqMaxMs": 452,
            "queueAvgMs": 0,
            "queueMedianMs": 0,
            "queueMaxMs": 0
@@ -137,7 +137,7 @@ DEBUG: HTTP cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-p
 DEBUG: Lookup statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository finished (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "cloned": false,
-       "durationMs": 2393
+       "durationMs": 1557
 DEBUG: Reinitializing hostRules for repo
 DEBUG: Clearing hostRules
 DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
@@ -155,7 +155,7 @@ DEBUG: Resetting npmrc (repository=MisterB1/renovatePG)
 DEBUG: checkOnboarding() (repository=MisterB1/renovatePG)
 DEBUG: isOnboarded() (repository=MisterB1/renovatePG)
 DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"1c9b3e9fbc4f00c3f937f6ce6f3bb390e2eb92cb39c120ab1fb6fcf8a48ff0de", lastModified=undefined) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"f82288d23b39e90d3162caa95f409fa77962e69f1dd5970b60db82c575d1f192", lastModified=undefined) (repository=MisterB1/renovatePG)
 DEBUG: getPrList success (repository=MisterB1/renovatePG)
        "pullsTotal": 72,
        "requestsTotal": 1,
@@ -165,11 +165,11 @@ DEBUG: findFile(renovate.json) (repository=MisterB1/renovatePG)
 DEBUG: Initializing git repository into /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/repos/github/MisterB1/renovatePG (repository=MisterB1/renovatePG)
 DEBUG: Performing blobless clone (repository=MisterB1/renovatePG)
 DEBUG: git clone completed (repository=MisterB1/renovatePG)
-       "durationMs": 4732
+       "durationMs": 3291
 DEBUG: latest repository commit (repository=MisterB1/renovatePG)
        "latestCommit": {
-         "hash": "f3d03e43d61814adb4ac31a1bcd23e6f61e5802b",
-         "date": "2024-09-05T16:44:46+10:00",
+         "hash": "979c8ed0008a37179f81b29db30f77bd9a72a989",
+         "date": "2024-09-06T08:23:10+10:00",
          "message": "test",
          "refs": "HEAD -> base, origin/base, origin/HEAD",
          "body": "",
@@ -182,111 +182,29 @@ DEBUG: Retrieving issueList (repository=MisterB1/renovatePG)
 DEBUG: Retrieved 2 issues (repository=MisterB1/renovatePG)
 DEBUG: Repo is onboarded (repository=MisterB1/renovatePG)
 DEBUG: Found renovate.json5 config file (repository=MisterB1/renovatePG)
-DEBUG: Repository config (repository=MisterB1/renovatePG)
+DEBUG: Error parsing JSON5 file (repository=MisterB1/renovatePG)
        "fileName": "renovate.json5",
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "labels": ["renovate"],
-         "extends": [
-           "config:best-practices",
-           ":prConcurrentLimitNone",
-           ":prHourlyLimitNone",
-           ":rebaseStalePrs"
-         ],
-         "packageRules": [
-           {"matchManagers": ["regex"], "addLabels": ["regex"]},
-           {"matchManagers": ["gomod"], "addLabels": ["gomod"]},
-           {"matchManagers": ["dockerfile"], "addLabels": ["dockerfile"]},
-           {"matchManagers": ["github-actions"], "addLabels": ["github-actions"]},
-           {"matchManagers": ["regex"], "addLabels": ["regex"]}
-         ],
-         "vulnerabilityAlerts": [{"enabled": true, "addLabels": ["security"]}]
-       }
-DEBUG: migrateAndValidate() (repository=MisterB1/renovatePG)
-DEBUG: Config migration necessary (repository=MisterB1/renovatePG)
-       "oldConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "labels": ["renovate"],
-         "extends": [
-           "config:best-practices",
-           ":prConcurrentLimitNone",
-           ":prHourlyLimitNone",
-           ":rebaseStalePrs"
-         ],
-         "packageRules": [
-           {"matchManagers": ["regex"], "addLabels": ["regex"]},
-           {"matchManagers": ["gomod"], "addLabels": ["gomod"]},
-           {"matchManagers": ["dockerfile"], "addLabels": ["dockerfile"]},
-           {"matchManagers": ["github-actions"], "addLabels": ["github-actions"]},
-           {"matchManagers": ["regex"], "addLabels": ["regex"]}
-         ],
-         "vulnerabilityAlerts": [{"enabled": true, "addLabels": ["security"]}]
-       },
-       "newConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "labels": ["renovate"],
-         "extends": [
-           "config:best-practices",
-           ":prConcurrentLimitNone",
-           ":prHourlyLimitNone",
-           ":rebaseStalePrs"
-         ],
-         "packageRules": [
-           {"matchManagers": ["custom.regex"], "addLabels": ["regex"]},
-           {"matchManagers": ["gomod"], "addLabels": ["gomod"]},
-           {"matchManagers": ["dockerfile"], "addLabels": ["dockerfile"]},
-           {"matchManagers": ["github-actions"], "addLabels": ["github-actions"]},
-           {"matchManagers": ["custom.regex"], "addLabels": ["regex"]}
-         ],
-         "vulnerabilityAlerts": [{"enabled": true, "addLabels": ["security"]}]
-       }
-DEBUG: Post-massage config (repository=MisterB1/renovatePG)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "labels": ["renovate"],
-         "extends": [
-           "config:best-practices",
-           ":prConcurrentLimitNone",
-           ":prHourlyLimitNone",
-           ":rebaseStalePrs"
-         ],
-         "packageRules": [
-           {"matchManagers": ["custom.regex"], "addLabels": ["regex"]},
-           {"matchManagers": ["gomod"], "addLabels": ["gomod"]},
-           {"matchManagers": ["dockerfile"], "addLabels": ["dockerfile"]},
-           {"matchManagers": ["github-actions"], "addLabels": ["github-actions"]},
-           {"matchManagers": ["custom.regex"], "addLabels": ["regex"]}
-         ],
-         "vulnerabilityAlerts": [{"enabled": true, "addLabels": ["security"]}]
-       }
- INFO: Found renovate config errors (repository=MisterB1/renovatePG)
-       "errors": [
-         {
-           "topic": "Configuration Error",
-           "message": "Configuration option `vulnerabilityAlerts` should be a json object"
-         }
-       ]
+       "fileContents": "{\n    \"$schema\": \"https://docs.renovatebot.com/renovate-schema.json\", // Loads the standard schema and default values\n    \"labels\": [\"renovate\"], // labels all PRs\n    \"extends\": [\n      \"config:best-practices\", // preset setting these options: https://docs.renovatebot.com/presets-config/#configbest-practices\n      \":prConcurrentLimitNone\", // allows any number of PRs to be opened\n      \":prHourlyLimitNone\", // allows PRs to opened as they are found without limit\n      \":rebaseStalePrs\" // when main branch is updated, rebase any stale PRs on every run\n      \"vulnerabilityAlerts\": \n      {\n        \"enabled\": true,\n        \"addLabels\": [\"security\"]\n      }\n    ], \n    \"labels\": [\"renovate\"], // labels all PRs\n    \"packageRules\": [\n    {\n      \"matchManagers\": [\"regex\"],\n      \"addLabels\": [\"regex\"]\n    },\n    {\n      \"matchManagers\": [\"gomod\"],\n      \"addLabels\": [\"gomod\"]\n    },\n    {\n      \"matchManagers\": [\"dockerfile\"],\n      \"addLabels\": [\"dockerfile\"]\n    },\n    {\n      \"matchManagers\": [\"github-actions\"],\n      \"addLabels\": [\"github-actions\"]\n    },\n    {\n      \"matchManagers\": [\"regex\"],\n      \"addLabels\": [\"regex\"]\n    }\n  ],\n}\n"
  INFO: Repository has invalid config (repository=MisterB1/renovatePG)
        "error": {
          "validationSource": "renovate.json5",
-         "validationError": "The renovate configuration file contains some invalid settings",
-         "validationMessage": "Configuration option `vulnerabilityAlerts` should be a json object",
+         "validationError": "Invalid JSON5 (parsing failed)",
+         "validationMessage": "JSON5.parse error: `JSON5: invalid character '\\\"' at 9:7`",
          "message": "config-validation",
-         "stack": "Error: config-validation\n    at mergeRenovateConfig (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/merge.ts:198:19)\n    at getRepoConfig (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/config.ts:14:12)\n    at initRepo (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/index.ts:56:12)\n    at Object.renovateRepository (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/index.ts:64:14)\n    at attributes.repository (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:202:11)\n    at start (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:187:7)\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/renovate.ts:18:22"
+         "stack": "Error: config-validation\n    at checkForRepoConfigError (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/merge.ts:161:17)\n    at mergeRenovateConfig (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/merge.ts:195:3)\n    at getRepoConfig (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/config.ts:14:12)\n    at initRepo (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/init/index.ts:56:12)\n    at Object.renovateRepository (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/repository/index.ts:64:14)\n    at attributes.repository (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:202:11)\n    at start (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/workers/global/index.ts:187:7)\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/lib/renovate.ts:18:22"
        }
 DEBUG: raiseConfigWarningIssue() (repository=MisterB1/renovatePG)
 DEBUG: getBranchPr(renovate/configure) (repository=MisterB1/renovatePG)
 DEBUG: findPr(renovate/configure, undefined, open) (repository=MisterB1/renovatePG)
 DEBUG: findPr(renovate/configure, undefined, closed) (repository=MisterB1/renovatePG)
 DEBUG: ensureIssue(Action Required: Fix Renovate Configuration) (repository=MisterB1/renovatePG)
-DEBUG: Reopening previously closed issue (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/88 (etag=W/"13e9e6bbdc2d448c75aec0ab582e10aa30371388a18df6ba2e25b49e57ca69c2", lastModified=Thu, 05 Sep 2024 06:39:22 GMT) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/issues/88 (etag=W/"80a77b050ce781dc3e73a591b426683188cee589ba808e609411505e29ae7ac8", lastModified=Thu, 05 Sep 2024 06:45:15 GMT) (repository=MisterB1/renovatePG)
 DEBUG: Patching issue (repository=MisterB1/renovatePG)
 DEBUG: Issue updated (repository=MisterB1/renovatePG)
 DEBUG: Repository result: config-validation, status: onboarded, enabled: true, onboarded: true (repository=MisterB1/renovatePG)
 DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/renovatePG)
        "splits": {},
-       "total": 9507
+       "total": 9148
 DEBUG: Package cache statistics (repository=MisterB1/renovatePG)
        "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
        "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
@@ -294,12 +212,12 @@ DEBUG: HTTP statistics (repository=MisterB1/renovatePG)
        "hosts": {
          "api.github.com": {
            "count": 5,
-           "reqAvgMs": 691,
-           "reqMedianMs": 528,
-           "reqMaxMs": 1031,
+           "reqAvgMs": 527,
+           "reqMedianMs": 517,
+           "reqMaxMs": 687,
            "queueAvgMs": 0,
            "queueMedianMs": 0,
-           "queueMaxMs": 1
+           "queueMaxMs": 0
          }
        },
        "requests": 5
@@ -311,15 +229,15 @@ DEBUG: HTTP cache statistics (repository=MisterB1/renovatePG)
 DEBUG: Lookup statistics (repository=MisterB1/renovatePG)
  INFO: Repository finished (repository=MisterB1/renovatePG)
        "cloned": true,
-       "durationMs": 9507
+       "durationMs": 9148
 DEBUG: Checking file package cache for expired items
-DEBUG: Deleted 0 of 200 file cached entries in 170ms
+DEBUG: Deleted 73 of 174 file cached entries in 214ms
  INFO: Renovate is exiting with a non-zero code due to the following logged errors
        "loggerErrors": [
          {
            "name": "renovate",
            "level": 50,
-           "logContext": "fIfVkSaiu-mftZwo8sHBT",
+           "logContext": "Y45bTtOnaOaNLOKAyWxQo",
            "versions": {
              "node": "22.6.0",
              "acorn": "8.11.3",

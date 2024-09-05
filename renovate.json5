@@ -6,7 +6,7 @@
       ":prConcurrentLimitNone", // allows any number of PRs to be opened
       ":prHourlyLimitNone", // allows PRs to opened as they are found without limit
       ":rebaseStalePrs" // when main branch is updated, rebase any stale PRs on every run
-      "vulnerabilityAlerts": 
+      "vulnerabilityAlerts"
       {
         "enabled": true,
         "addLabels": ["security"]
