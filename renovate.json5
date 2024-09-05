@@ -1,6 +1,3 @@
-qorking:
-
-
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json", // Loads the standard schema and default values
     "labels": ["renovate"], // labels all PRs
