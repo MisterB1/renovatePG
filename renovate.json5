@@ -28,5 +28,8 @@
       "matchManagers": ["regex"],
       "addLabels": ["regex"]
     }
-  ]
+  ],
+      "vulnerabilityAlerts": {
+        "labels": ["security"]
+  },
 }
