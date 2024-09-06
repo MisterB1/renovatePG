@@ -6,6 +6,7 @@
       ":prHourlyLimitNone", // allows PRs to opened as they are found without limit
       ":rebaseStalePrs" // when main branch is updated, rebase any stale PRs on every run
     ], 
+    "postUpdateOptions": ["gomodTidy"],
     "labels": ["newPackageManager"], // xx
     "packageRules": [ // add label to all PRs with the package manager that rasied it
     {
