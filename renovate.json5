@@ -15,10 +15,6 @@
     {
       "matchManagers": ["gomod"],
       "labels": ["gomod"]
-    },
-    {
-      "matchManagers": ["dockerfile"],
-      "labels": ["dockerfile"]
     }
   ],
   "labels": ["renovate"], // labels all PRs
