@@ -18,12 +18,8 @@
     {
       "matchManagers": ["dockerfile"],
       "addLabels": ["dockerfile"]
-    },
-    {
-      "matchManagers": ["github-actions"],
-      "addLabels": ["github-actions"]
     }
-  ],      
+  ],
   "labels": ["renovate"], // labels all PRs
   "vulnerabilityAlerts": { // add security labels to PRs that fix vulnerabilities
     "addLabels": ["security"]
