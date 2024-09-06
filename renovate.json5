@@ -28,6 +28,7 @@
   ],
   "addLabels": ["renovate"], // labels all PRs
   "vulnerabilityAlerts": { // add security labels to PRs that fix vulnerabilities
+    "enabled": true,
     "addLabels": ["security"]
   }
 }
