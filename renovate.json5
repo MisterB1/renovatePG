@@ -6,18 +6,19 @@
       ":prHourlyLimitNone", // allows PRs to opened as they are found without limit
       ":rebaseStalePrs" // when main branch is updated, rebase any stale PRs on every run
     ], 
+    "labels": ["newPackageManager"], // xx
     "packageRules": [ // add label to all PRs with the package manager that rasied it
     {
       "matchManagers": ["regex"],
-      "addLabels": ["regex"]
+      "labels": ["regex"]
     },
     {
       "matchManagers": ["gomod"],
-      "addLabels": ["gomod"]
+      "labels": ["gomod"]
     },
     {
       "matchManagers": ["dockerfile"],
-      "addLabels": ["dockerfile"]
+      "labels": ["dockerfile"]
     }
   ],
   "labels": ["renovate"], // labels all PRs
