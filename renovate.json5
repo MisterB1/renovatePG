@@ -13,6 +13,14 @@
       "labels": ["regex"]
     },
     {
+      "matchManagers": ["github-actions"],
+      "labels": ["github-actions"]
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "labels": ["dockerfile"]
+    },
+    {
       "matchManagers": ["gomod"],
       "labels": ["gomod"]
     }
