@@ -6,30 +6,11 @@
       ":prHourlyLimitNone", // allows PRs to opened as they are found without limit
       ":rebaseStalePrs" // when main branch is updated, rebase any stale PRs on every run
     ], 
-    "postUpdateOptions": ["gomodTidy"],
-    "labels": ["newPackageManager"], // xx
-    "packageRules": [ // add label to all PRs with the package manager that rasied it
-    {
-      "matchManagers": ["regex"],
-      "labels": ["regex"]
-    },
-    {
-      "matchManagers": ["github-actions"],
-      "labels": ["github-actions"]
-    },
-    {
-      "matchManagers": ["dockerfile"],
-      "labels": ["dockerfile"]
-    },
-    {
-      "matchManagers": ["gomod"],
-      "labels": ["gomod"]
-    }
-  ],
+
   "addLabels": ["renovate"], // labels all PRs
   "vulnerabilityAlerts": { // add security labels to PRs that fix vulnerabilities
     "enabled": true,
-    "addLabels": ["security"]
-  }
+    "addLabels": ["security"]}
+    "postUpdateOptions": ["gomodTidy"]  
 }
 
