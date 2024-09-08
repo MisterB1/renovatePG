@@ -12,7 +12,7 @@ require (
     github.com/prometheus/client_golang v1.18.1
     github.com/sirupsen/logrus v1.7.3
     github.com/spf13/cobra v1.7.0
-    github.com/stretchr/testify v1.7.0
+    github.com/stretchr/testify v1.9.0
     github.com/vishvananda/netlink v1.0.0
     golang.org/x/exp v0.0.0-20230905200255-921286631fa9
     gopkg.in/yaml.v3 v3.0.1
