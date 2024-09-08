@@ -7,7 +7,7 @@ require (
     github.com/fsnotify/fsnotify v1.5.0
     github.com/go-co-op/gocron v1.33.0
     github.com/gookit/validate v1.4.1
-    github.com/gorilla/mux v1.6.1
+    github.com/gorilla/mux v1.8.1
     github.com/miekg/dns v1.0.56
     github.com/prometheus/client_golang v1.18.1
     github.com/sirupsen/logrus v1.7.3
