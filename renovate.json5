@@ -14,7 +14,7 @@
     "postUpdateOptions": ["gomodTidy"],
   "packageRules": [
       {
-        "matchPackageNames": [
+        "matchPackagePatterns": [
           "*"
         ],
         "matchUpdateTypes": [
