@@ -9,5 +9,16 @@ module.exports = {
           "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
 	]
     }
-  ]
+  ],
+  "packageRules": [
+      {
+        "matchPackageNames": [
+          "*"
+        ],
+        "matchUpdateTypes": [
+          "minor",
+          "patch"
+        ]
+      }
+    ]
 }
