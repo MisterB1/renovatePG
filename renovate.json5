@@ -11,6 +11,17 @@
   "vulnerabilityAlerts": { // add security labels to PRs that fix vulnerabilities
     "enabled": true,
     "addLabels": ["security"] },
-    "postUpdateOptions": ["gomodTidy"]  
+    "postUpdateOptions": ["gomodTidy"],
+  "packageRules": [
+      {
+        "matchPackageNames": [
+          "*"
+        ],
+        "matchUpdateTypes": [
+          "minor",
+          "patch"
+        ]
+      }
+    ]
 }
 
