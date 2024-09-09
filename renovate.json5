@@ -6,5 +6,23 @@
       ":prHourlyLimitNone", // allows PRs to opened as they are found without limit
       ":rebaseStalePrs" // when main branch is updated, rebase any stale PRs on every run
     ], 
+
+  "addLabels": ["renovate"], // labels all PRs
+  "vulnerabilityAlerts": { // add security labels to PRs that fix vulnerabilities
+    "enabled": true,
+    "addLabels": ["security"] },
+    "postUpdateOptions": ["gomodTidy"],
+  "packageRules": [
+      {
+        "matchManagers": [
+          "gomod"
+        ],
+        "matchUpdateTypes": [
+          "minor",
+          "patch"
+        ],
+      "groupName": "all gomod non-major dependencies"
+      }
+    ]
 }
 
