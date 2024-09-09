@@ -16,7 +16,9 @@
     {
       "matchManagers": ["*"],
           "addLabels": "{{manager}}"
-    },
+    }
+    ],
+    [
       {
         "matchManagers": [
           "gomod"
