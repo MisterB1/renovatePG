@@ -23,6 +23,7 @@
         ],
       "groupName": "all gomod non-major dependencies"
       }
-    ]
+    ],
+    "rollbackPrs": false
 }
 
