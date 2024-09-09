@@ -30,8 +30,8 @@ ENV GOSUMDB=off
  
 WORKDIR /src
  
-RUN go install github.com/tynany/frr_exporter@$FRREXPORTER_VERSION
-RUN cp ${GOPATH}/bin/frr_exporter /
+#RUN go install github.com/tynany/frr_exporter@$FRREXPORTER_VERSION
+#RUN cp ${GOPATH}/bin/frr_exporter /
  
 ##########
  
@@ -47,7 +47,7 @@ RUN echo deb https://artifactory.internal.cba/artifactory/org.frrouting.deb $(ls
 RUN apt update && apt install -y frr=${FRR_VERSION}-0~ubuntu24.04.1 frr-pythontools
  
 # Copy FRR Exporter and Anycast Manager Binaries
-COPY --from=frrexporter /frr_exporter /
+#COPY --from=frrexporter /frr_exporter /
 COPY --from=acmbuilder /src/bin/dns-anycast-manager-linux-amd64 /
 COPY frr/frr-start.sh /usr/lib/frr
 COPY frr/docker-entrypoint.sh /
