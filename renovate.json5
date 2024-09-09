@@ -12,6 +12,7 @@
     "enabled": true,
     "addLabels": ["security"] },
     "postUpdateOptions": ["gomodTidy"],
+    "rollbackPrs": true,
   "packageRules": [
       {
         "matchManagers": [
