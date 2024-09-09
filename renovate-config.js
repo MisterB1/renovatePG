@@ -1,7 +1,6 @@
 module.exports = {
 "platform": "github",
 "autodiscover": true,
-"rollbackPrs": true,
 "customManagers": [
     {
       "customType": "regex",

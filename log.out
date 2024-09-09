@@ -5,6 +5,7 @@ DEBUG: File config
        "config": {
          "platform": "github",
          "autodiscover": true,
+         "rollbackPrs": true,
          "customManagers": [
            {
              "customType": "regex",
@@ -23,6 +24,7 @@ DEBUG: Combined config
        "config": {
          "platform": "github",
          "autodiscover": true,
+         "rollbackPrs": true,
          "customManagers": [
            {
              "customType": "regex",
@@ -107,7 +109,7 @@ DEBUG: hostRules: authentication already set for api.github.com (repository=Mist
 DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: MisterB1/cicd-pipeline-train-schedule-pipelines default branch = master (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Using personal access token for git init (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
-DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=347) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=366) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Default config file renovate.json not found in repo (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository is a fork and not manually configured - skipping - did you want to run with --fork-processing=enabled? (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Removing any stale branches (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
@@ -116,7 +118,7 @@ DEBUG: No renovate branches found (repository=MisterB1/cicd-pipeline-train-sched
 DEBUG: Repository result: fork, status: disabled, enabled: false, onboarded: undefined (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "splits": {},
-       "total": 1678
+       "total": 2154
 DEBUG: Package cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
        "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
@@ -124,12 +126,12 @@ DEBUG: HTTP statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelin
        "hosts": {
          "api.github.com": {
            "count": 2,
-           "reqAvgMs": 413,
-           "reqMedianMs": 479,
-           "reqMaxMs": 479,
-           "queueAvgMs": 0,
-           "queueMedianMs": 0,
-           "queueMaxMs": 0
+           "reqAvgMs": 606,
+           "reqMedianMs": 845,
+           "reqMaxMs": 845,
+           "queueAvgMs": 1,
+           "queueMedianMs": 1,
+           "queueMaxMs": 1
          }
        },
        "requests": 2
@@ -137,7 +139,7 @@ DEBUG: HTTP cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-p
 DEBUG: Lookup statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository finished (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "cloned": false,
-       "durationMs": 1678
+       "durationMs": 2154
 DEBUG: Reinitializing hostRules for repo
 DEBUG: Clearing hostRules
 DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
@@ -155,7 +157,7 @@ DEBUG: Resetting npmrc (repository=MisterB1/renovatePG)
 DEBUG: checkOnboarding() (repository=MisterB1/renovatePG)
 DEBUG: isOnboarded() (repository=MisterB1/renovatePG)
 DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"97d8e5fdbb126765f9372bfed2ce6170785d57c8e59add0c2d4fccf7de2469a0", lastModified=undefined) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"2bf09626a079b5a9153d68e57089818ffe78028c9a4b4d9f33894dc73a9bcb2d", lastModified=undefined) (repository=MisterB1/renovatePG)
 DEBUG: getPrList success (repository=MisterB1/renovatePG)
        "pullsTotal": 113,
        "requestsTotal": 1,
@@ -165,11 +167,11 @@ DEBUG: findFile(renovate.json) (repository=MisterB1/renovatePG)
 DEBUG: Initializing git repository into /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/repos/github/MisterB1/renovatePG (repository=MisterB1/renovatePG)
 DEBUG: Performing blobless clone (repository=MisterB1/renovatePG)
 DEBUG: git clone completed (repository=MisterB1/renovatePG)
-       "durationMs": 2343
+       "durationMs": 2711
 DEBUG: latest repository commit (repository=MisterB1/renovatePG)
        "latestCommit": {
-         "hash": "17de3821977930b5c879533d64708bcc032ae77c",
-         "date": "2024-09-09T14:18:37+10:00",
+         "hash": "0f58c941d367a6b722dd8de217bebd317b274923",
+         "date": "2024-09-09T14:20:53+10:00",
          "message": "test",
          "refs": "HEAD -> base, origin/base, origin/HEAD",
          "body": "",
@@ -195,7 +197,6 @@ DEBUG: Repository config (repository=MisterB1/renovatePG)
          "addLabels": ["renovate"],
          "vulnerabilityAlerts": {"enabled": true, "addLabels": ["security"]},
          "postUpdateOptions": ["gomodTidy"],
-         "rollbackPrs": true,
          "packageRules": [
            {
              "matchManagers": ["gomod"],
@@ -229,7 +230,7 @@ DEBUG: extract() (repository=MisterB1/renovatePG)
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG)
 DEBUG: latest commit (repository=MisterB1/renovatePG)
        "branchName": "base",
-       "latestCommitDate": "2024-09-09T14:18:37+10:00"
+       "latestCommitDate": "2024-09-09T14:20:53+10:00"
 DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=MisterB1/renovatePG)
 DEBUG: Using file match: (^|/)(galaxy|requirements)(\.ansible)?\.ya?ml$ for manager ansible-galaxy (repository=MisterB1/renovatePG)
 DEBUG: Using file match: (^|/)\.tool-versions$ for manager asdf (repository=MisterB1/renovatePG)
@@ -346,7 +347,7 @@ DEBUG: Matched 1 file(s) for manager gomod: go.mod (repository=MisterB1/renovate
 DEBUG: Matched 1 file(s) for manager regex: Dockerfile (repository=MisterB1/renovatePG)
 DEBUG: Found a multistage build stage name: base (repository=MisterB1/renovatePG)
 DEBUG: manager extract durations (ms) (repository=MisterB1/renovatePG)
-       "managers": {"dockerfile": 2, "regex": 2, "gomod": 3, "github-actions": 6}
+       "managers": {"dockerfile": 2, "github-actions": 5, "gomod": 5, "regex": 5}
 DEBUG: Found dockerfile package files (repository=MisterB1/renovatePG)
 DEBUG: Found github-actions package files (repository=MisterB1/renovatePG)
 DEBUG: Found gomod package files (repository=MisterB1/renovatePG)
@@ -1407,7 +1408,7 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-09T04:18:58.901Z) (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-09T04:21:10.783Z) (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
@@ -1419,7 +1420,7 @@ DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
        "branchName": "base",
-       "latestCommitDate": "2024-09-09T14:18:37+10:00"
+       "latestCommitDate": "2024-09-09T14:20:53+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: Starting search at index 126 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
        "depName": "actions/checkout"
@@ -1454,7 +1455,7 @@ DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/pin-dependenc
        "result": {
          "author": null,
          "branch": "renovate/pin-dependencies",
-         "commit": "0d08246a27030e2e7f73c056a41c7ab834296afa",
+         "commit": "002e54b2edd5fd55926899b56769f4de7b9e968e",
          "root": false,
          "summary": {"changes": 1, "insertions": 2, "deletions": 2}
        }
@@ -1468,9 +1469,9 @@ DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/pin-dependencie
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
        "branchName": "base",
-       "latestCommitDate": "2024-09-09T14:18:37+10:00"
+       "latestCommitDate": "2024-09-09T14:20:53+10:00"
  INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
-       "commitSha": "0d08246a27030e2e7f73c056a41c7ab834296afa"
+       "commitSha": "002e54b2edd5fd55926899b56769f4de7b9e968e"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: getBranchPr(renovate/pin-dependencies) (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
@@ -1481,66 +1482,35 @@ DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/pin-de
        "warnings": ["Can't find version matching 24.02 for docker package ubuntu"],
        "files": ["Dockerfile"]
 DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
-DEBUG: PR body changed (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
-       "prTitle": "Pin dependencies"
-DEBUG: updatePr(131, Pin dependencies, body) (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
-DEBUG: PR updated...prNo: 131 (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
- INFO: PR updated (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
-       "pr": 131,
-       "prTitle": "Pin dependencies"
 DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
+DEBUG: Pull Request #131 does not need updating (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: getBranchPr(renovate/github.com-miekg-dns-rollback) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: findPr(renovate/github.com-miekg-dns-rollback, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
-DEBUG: findPr(renovate/github.com-miekg-dns-rollback, undefined, closed) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: Found PR #123 (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
-DEBUG: Found autoclosed PR for branch (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
-       "autoclosedPr": {
-         "number": 123,
-         "sourceBranch": "renovate/github.com-miekg-dns-rollback",
-         "title": "Roll back module github.com/miekg/dns to v1.0.15 - autoclosed",
-         "state": "closed",
-         "bodyStruct": {
-           "hash": "1334d1d5e9269764406ebb2b2e8614d8f24a2dd25eed905f371f55a38db5a934",
-           "rebaseRequested": false,
-           "debugData": {
-             "createdInVer": "38.45.0",
-             "updatedInVer": "38.45.0",
-             "targetBranch": "base",
-             "labels": ["renovate"]
-           }
-         },
-         "updated_at": "2024-09-09T03:04:49Z",
-         "node_id": "PR_kwDOMmKYLc56yDmc",
-         "sha": "4a04fc045a3e28d8a06f01703794798d8c713425",
-         "sourceRepo": "MisterB1/renovatePG",
-         "labels": ["renovate"],
-         "reviewers": [],
-         "createdAt": "2024-09-09T00:33:05Z",
-         "closedAt": "2024-09-09T03:04:47Z",
-         "targetBranch": "base"
-       }
-DEBUG: HEAD https://api.github.com/repos/MisterB1/renovatePG/git/refs/heads/renovate/github.com-miekg-dns-rollback/ = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=592) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
-DEBUG: HEAD https://api.github.com/repos/MisterB1/renovatePG/git/refs/heads/renovate/github.com-miekg-dns-rollback = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=608) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
-DEBUG: Recreated autoclosed branch renovate/github.com-miekg-dns-rollback with sha 4a04fc045a3e28d8a06f01703794798d8c713425 (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
- INFO: Successfully reopened autoclosed PR (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
-       "branchName": "renovate/github.com-miekg-dns-rollback",
-       "title": "Roll back module github.com/miekg/dns to v1.0.15",
-       "number": 123
-DEBUG: branchExists=false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: branchExists=true (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: dependencyDashboardCheck=undefined (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: PR rebase requested=false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-09T04:19:08.884Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-09T04:21:15.134Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
-DEBUG: Branch needs creating (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: branch.isBehindBase(): true (repository=MisterB1/renovatePG, baseBranch=base, branch=renovate/github.com-miekg-dns-rollback)
+       "branchName": "renovate/github.com-miekg-dns-rollback"
+DEBUG: Branch is behind base branch and needs rebasing (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Branch is unmodified, so can be rebased (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
        "branchName": "base",
-       "latestCommitDate": "2024-09-09T14:18:37+10:00"
+       "latestCommitDate": "2024-09-09T14:20:53+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: gomod.updateDependency: v1.0.15 (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: Updating github.com/miekg/dns in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
@@ -1549,6 +1519,9 @@ DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=ren
 DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: isBranchConflicted(base, renovate/github.com-miekg-dns-rollback) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: branch.isConflicted(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: branch.isConflicted(): false (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: Preparing files for committing to branch renovate/github.com-miekg-dns-rollback (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
 DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
@@ -1557,18 +1530,125 @@ DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-mi
        "result": {
          "author": null,
          "branch": "renovate/github.com-miekg-dns-rollback",
-         "commit": "09273ab7656621e0d391a94851622c3de178e834",
+         "commit": "8d67f14de47871ad2f35aef0e5da3a48cc0c78ab",
          "root": false,
          "summary": {"changes": 1, "insertions": 1, "deletions": 0}
        }
 DEBUG: Pushing refSpec renovate/github.com-miekg-dns-rollback:renovate/github.com-miekg-dns-rollback (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
-DEBUG: Git function thrown (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+       "result": {
+         "pushed": [],
+         "ref": {
+           "local": "refs/remotes/origin/renovate/github.com-miekg-dns-rollback"
+         },
+         "remoteMessages": {"all": []}
+       }
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-09T14:20:53+10:00"
+ INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+       "commitSha": "8d67f14de47871ad2f35aef0e5da3a48cc0c78ab"
+DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: getBranchPr(renovate/github.com-miekg-dns-rollback) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: findPr(renovate/github.com-miekg-dns-rollback, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Found PR #123 (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Found existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Fetching changelog: https://github.com/miekg/dns (v1.0.56 -> v1.0.15) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: No releases (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+ WARN: Package lookup failures (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+       "warnings": ["Can't find version matching 24.02 for docker package ubuntu"],
+       "files": ["Dockerfile"]
+DEBUG: Processing existing PR (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: PR body changed (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+       "prTitle": "Roll back module github.com/miekg/dns to v1.0.15"
+DEBUG: updatePr(123, Roll back module github.com/miekg/dns to v1.0.15, body) (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: PR updated...prNo: 123 (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+ INFO: PR updated (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+       "pr": 123,
+       "prTitle": "Roll back module github.com/miekg/dns to v1.0.15"
+DEBUG: setPrCache() (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: PR is not configured for automerge (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: setBranchCommit() (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: syncBranchState() (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: getBranchPr(renovate/github.com-prometheus-client_golang-rollback) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: findPr(renovate/github.com-prometheus-client_golang-rollback, undefined, open) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: findPr(renovate/github.com-prometheus-client_golang-rollback, undefined, closed) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Found PR #124 (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Found autoclosed PR for branch (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+       "autoclosedPr": {
+         "number": 124,
+         "sourceBranch": "renovate/github.com-prometheus-client_golang-rollback",
+         "title": "Roll back module github.com/prometheus/client_golang to v1.18.0 - autoclosed",
+         "state": "closed",
+         "bodyStruct": {
+           "hash": "012492059b769f51ca177979c9f1055444ee7a1ac264dc93759a01ce3d0c0abb",
+           "rebaseRequested": false,
+           "debugData": {
+             "createdInVer": "38.45.0",
+             "updatedInVer": "38.45.0",
+             "targetBranch": "base",
+             "labels": ["renovate"]
+           }
+         },
+         "updated_at": "2024-09-09T03:04:51Z",
+         "node_id": "PR_kwDOMmKYLc56yDm6",
+         "sha": "03c3e32a193ad3d540d44612304018b5e190f55d",
+         "sourceRepo": "MisterB1/renovatePG",
+         "labels": ["renovate"],
+         "reviewers": [],
+         "createdAt": "2024-09-09T00:33:08Z",
+         "closedAt": "2024-09-09T03:04:49Z",
+         "targetBranch": "base"
+       }
+DEBUG: HEAD https://api.github.com/repos/MisterB1/renovatePG/git/refs/heads/renovate/github.com-prometheus-client_golang-rollback/ = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=494) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: HEAD https://api.github.com/repos/MisterB1/renovatePG/git/refs/heads/renovate/github.com-prometheus-client_golang-rollback = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=719) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Recreated autoclosed branch renovate/github.com-prometheus-client_golang-rollback with sha 03c3e32a193ad3d540d44612304018b5e190f55d (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+ INFO: Successfully reopened autoclosed PR (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+       "branchName": "renovate/github.com-prometheus-client_golang-rollback",
+       "title": "Roll back module github.com/prometheus/client_golang to v1.18.0",
+       "number": 124
+DEBUG: branchExists=false (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: dependencyDashboardCheck=undefined (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: PR rebase requested=false (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-09T04:21:23.873Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Branch needs creating (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+       "branchName": "base",
+       "latestCommitDate": "2024-09-09T14:20:53+10:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: gomod.updateDependency: v1.18.0 (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Updating github.com/prometheus/client_golang in go.mod (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: updateArtifacts for updatedPackageFiles (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: gomod.updateArtifacts(go.mod) (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: No go.sum found (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Updated 1 package files (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: No updated lock files in branch (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: 1 file(s) to commit (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Preparing files for committing to branch renovate/github.com-prometheus-client_golang-rollback (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/github.com-prometheus-client_golang-rollback",
+         "commit": "897fc1fd4b02261c08fa297e6b4007fe2fd48c6a",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: Pushing refSpec renovate/github.com-prometheus-client_golang-rollback:renovate/github.com-prometheus-client_golang-rollback (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
+DEBUG: Git function thrown (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
        "err": {
          "task": {
            "commands": [
              "push",
              "origin",
-             "renovate/github.com-miekg-dns-rollback:renovate/github.com-miekg-dns-rollback",
+             "renovate/github.com-prometheus-client_golang-rollback:renovate/github.com-prometheus-client_golang-rollback",
              "--force-with-lease",
              "-u",
              "--no-verify",
@@ -1578,16 +1658,16 @@ DEBUG: Git function thrown (repository=MisterB1/renovatePG, branch=renovate/gith
            "format": "utf-8",
            "parser": "[function]"
          },
-         "message": "To https://github.com/MisterB1/renovatePG.git\n!\trefs/heads/renovate/github.com-miekg-dns-rollback:refs/heads/renovate/github.com-miekg-dns-rollback\t[rejected] (stale info)\nDone\nPushing to https://github.com/MisterB1/renovatePG.git\nerror: failed to push some refs to 'https://github.com/MisterB1/renovatePG.git'\n",
-         "stack": "Error: To https://github.com/MisterB1/renovatePG.git\n!\trefs/heads/renovate/github.com-miekg-dns-rollback:refs/heads/renovate/github.com-miekg-dns-rollback\t[rejected] (stale info)\nDone\nPushing to https://github.com/MisterB1/renovatePG.git\nerror: failed to push some refs to 'https://github.com/MisterB1/renovatePG.git'\n\n    at Object.action (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/plugins/plugin-store.ts:54:29)\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:121:14)\n    at GitExecutorChain.<anonymous> (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:97:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/dist/cjs/index.js:52:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+         "message": "To https://github.com/MisterB1/renovatePG.git\n!\trefs/heads/renovate/github.com-prometheus-client_golang-rollback:refs/heads/renovate/github.com-prometheus-client_golang-rollback\t[rejected] (stale info)\nDone\nPushing to https://github.com/MisterB1/renovatePG.git\nerror: failed to push some refs to 'https://github.com/MisterB1/renovatePG.git'\n",
+         "stack": "Error: To https://github.com/MisterB1/renovatePG.git\n!\trefs/heads/renovate/github.com-prometheus-client_golang-rollback:refs/heads/renovate/github.com-prometheus-client_golang-rollback\t[rejected] (stale info)\nDone\nPushing to https://github.com/MisterB1/renovatePG.git\nerror: failed to push some refs to 'https://github.com/MisterB1/renovatePG.git'\n\n    at Object.action (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/plugins/plugin-store.ts:54:29)\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:121:14)\n    at GitExecutorChain.<anonymous> (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:97:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/dist/cjs/index.js:52:24)"
        }
-DEBUG: Unknown error committing files (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Unknown error committing files (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
        "err": {
          "task": {
            "commands": [
              "push",
              "origin",
-             "renovate/github.com-miekg-dns-rollback:renovate/github.com-miekg-dns-rollback",
+             "renovate/github.com-prometheus-client_golang-rollback:renovate/github.com-prometheus-client_golang-rollback",
              "--force-with-lease",
              "-u",
              "--no-verify",
@@ -1597,25 +1677,25 @@ DEBUG: Unknown error committing files (repository=MisterB1/renovatePG, branch=re
            "format": "utf-8",
            "parser": "[function]"
          },
-         "message": "To https://github.com/MisterB1/renovatePG.git\n!\trefs/heads/renovate/github.com-miekg-dns-rollback:refs/heads/renovate/github.com-miekg-dns-rollback\t[rejected] (stale info)\nDone\nPushing to https://github.com/MisterB1/renovatePG.git\nerror: failed to push some refs to 'https://github.com/MisterB1/renovatePG.git'\n",
-         "stack": "Error: To https://github.com/MisterB1/renovatePG.git\n!\trefs/heads/renovate/github.com-miekg-dns-rollback:refs/heads/renovate/github.com-miekg-dns-rollback\t[rejected] (stale info)\nDone\nPushing to https://github.com/MisterB1/renovatePG.git\nerror: failed to push some refs to 'https://github.com/MisterB1/renovatePG.git'\n\n    at Object.action (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/plugins/plugin-store.ts:54:29)\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:121:14)\n    at GitExecutorChain.<anonymous> (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:97:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/dist/cjs/index.js:52:24)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+         "message": "To https://github.com/MisterB1/renovatePG.git\n!\trefs/heads/renovate/github.com-prometheus-client_golang-rollback:refs/heads/renovate/github.com-prometheus-client_golang-rollback\t[rejected] (stale info)\nDone\nPushing to https://github.com/MisterB1/renovatePG.git\nerror: failed to push some refs to 'https://github.com/MisterB1/renovatePG.git'\n",
+         "stack": "Error: To https://github.com/MisterB1/renovatePG.git\n!\trefs/heads/renovate/github.com-prometheus-client_golang-rollback:refs/heads/renovate/github.com-prometheus-client_golang-rollback\t[rejected] (stale info)\nDone\nPushing to https://github.com/MisterB1/renovatePG.git\nerror: failed to push some refs to 'https://github.com/MisterB1/renovatePG.git'\n\n    at Object.action (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/plugins/error-detection.plugin.ts:42:29)\n    at PluginStore.exec (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/plugins/plugin-store.ts:54:29)\n    at /opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:124:42\n    at new Promise (<anonymous>)\n    at GitExecutorChain.handleTaskData (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:121:14)\n    at GitExecutorChain.<anonymous> (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/src/lib/runners/git-executor-chain.ts:97:40)\n    at Generator.next (<anonymous>)\n    at fulfilled (/opt/homebrew/Cellar/renovate/38.45.0/libexec/lib/node_modules/renovate/node_modules/simple-git/dist/cjs/index.js:52:24)"
        }
-DEBUG: Passing repository-changed error up (repository=MisterB1/renovatePG, branch=renovate/github.com-miekg-dns-rollback)
+DEBUG: Passing repository-changed error up (repository=MisterB1/renovatePG, branch=renovate/github.com-prometheus-client_golang-rollback)
  INFO: Repository has changed during renovation - aborting (repository=MisterB1/renovatePG)
 DEBUG: Repository result: repository-changed, status: onboarded, enabled: true, onboarded: true (repository=MisterB1/renovatePG)
 DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/renovatePG)
-       "splits": {"init": 6786, "extract": 584, "lookup": 336, "onboarding": 0},
-       "total": 18800
+       "splits": {"init": 7309, "extract": 593, "lookup": 343, "onboarding": 0},
+       "total": 22584
 DEBUG: Package cache statistics (repository=MisterB1/renovatePG)
-       "get": {"count": 23, "avgMs": 55, "medianMs": 57, "maxMs": 107, "totalMs": 1272},
+       "get": {"count": 23, "avgMs": 54, "medianMs": 54, "maxMs": 107, "totalMs": 1238},
        "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
 DEBUG: HTTP statistics (repository=MisterB1/renovatePG)
        "hosts": {
          "api.github.com": {
            "count": 11,
-           "reqAvgMs": 677,
-           "reqMedianMs": 592,
-           "reqMaxMs": 1061,
+           "reqAvgMs": 679,
+           "reqMedianMs": 601,
+           "reqMaxMs": 1286,
            "queueAvgMs": 0,
            "queueMedianMs": 0,
            "queueMaxMs": 1
@@ -1629,20 +1709,20 @@ DEBUG: HTTP cache statistics (repository=MisterB1/renovatePG)
        }
 DEBUG: Lookup statistics (repository=MisterB1/renovatePG)
        "golang-version": {"count": 1, "avgMs": 54, "medianMs": 54, "maxMs": 54, "totalMs": 54},
-       "go": {"count": 13, "avgMs": 93, "medianMs": 94, "maxMs": 111, "totalMs": 1209},
+       "go": {"count": 13, "avgMs": 90, "medianMs": 91, "maxMs": 115, "totalMs": 1172},
        "docker": {"count": 1, "avgMs": 158, "medianMs": 158, "maxMs": 158, "totalMs": 158},
-       "github-tags": {"count": 2, "avgMs": 163, "medianMs": 166, "maxMs": 166, "totalMs": 326}
+       "github-tags": {"count": 2, "avgMs": 164, "medianMs": 168, "maxMs": 168, "totalMs": 328}
  INFO: Repository finished (repository=MisterB1/renovatePG)
        "cloned": true,
-       "durationMs": 18800
+       "durationMs": 22584
 DEBUG: Checking file package cache for expired items
-DEBUG: Deleted 1 of 403 file cached entries in 299ms
+DEBUG: Deleted 0 of 402 file cached entries in 295ms
  INFO: Renovate is exiting with a non-zero code due to the following logged errors
        "loggerErrors": [
          {
            "name": "renovate",
            "level": 50,
-           "logContext": "hmlcAflpcJwgvqhsPAus9",
+           "logContext": "44oT2bKQpi26TN3C9zqh4",
            "versions": {
              "node": "22.6.0",
              "acorn": "8.11.3",
