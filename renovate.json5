@@ -11,6 +11,7 @@
   "vulnerabilityAlerts": { // add security labels to PRs that fix vulnerabilities
     "enabled": true,
     "addLabels": ["security"] },
+    "addLabels": "{{manager}}",
     "postUpdateOptions": ["gomodTidy"],
   "packageRules": [
       {
