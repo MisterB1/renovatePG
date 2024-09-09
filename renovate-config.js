@@ -6,7 +6,7 @@ module.exports = {
       "customType": "regex",
       "fileMatch": ["^Dockerfile$"],
       "matchStrings": [
-          "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"
+          "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))\\s(?:ARG|ENV) .+?_VERSION=(?<currentValue>.+?)\\s"
 	]
     }
   ]
