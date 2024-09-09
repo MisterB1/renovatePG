@@ -48,9 +48,9 @@ RUN apt update && apt install -y frr=${FRR_VERSION}-0~ubuntu24.04.1 frr-pythonto
  
 # Copy FRR Exporter and Anycast Manager Binaries
 #COPY --from=frrexporter /frr_exporter /
-COPY --from=acmbuilder /src/bin/dns-anycast-manager-linux-amd64 /
-COPY frr/frr-start.sh /usr/lib/frr
-COPY frr/docker-entrypoint.sh /
+#COPY --from=acmbuilder /src/bin/dns-anycast-manager-linux-amd64 /
+#COPY frr/frr-start.sh /usr/lib/frr
+#COPY frr/docker-entrypoint.sh /
 RUN chmod 755 /docker-entrypoint.sh /frr_exporter /dns-anycast-manager-linux-amd64 /usr/lib/frr/frr-start.sh
 RUN mkdir -p /var/run/frr && chown -R frr:frr /var/run/frr
 CMD ["/docker-entrypoint.sh"]
