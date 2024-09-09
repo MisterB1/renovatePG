@@ -1,7 +1,7 @@
 module dns-anycast-manager
- 
+
 go 1.20
-  
+
 require (
     github.com/PowerDNS/go-tlsconfig v0.0.0-20221101135152-0956853b28df
     github.com/fsnotify/fsnotify v1.5.0
@@ -16,7 +16,7 @@ require (
     github.com/vishvananda/netlink v1.0.0
     gopkg.in/yaml.v3 v3.0.1
 )
- 
+
 require (
     github.com/beorn7/perks v1.0.1 // indirect
     github.com/cespare/xxhash/v2 v2.2.0 // indirect
