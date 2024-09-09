@@ -7,17 +7,11 @@
       ":rebaseStalePrs" // when main branch is updated, rebase any stale PRs on every run
     ], 
 
-  "addLabels": ["renovate"], // labels all PRs
+  "addLabels": ["renovate","{{{manager}}}"], // labels all PRs with renovate and manager name that found dependency 
   "vulnerabilityAlerts": { // add security labels to PRs that fix vulnerabilities
     "enabled": true,
     "addLabels": ["security"] },
     "postUpdateOptions": ["gomodTidy"],
-  "packageRules": [
-    {
-      "matchManagers": ["*"],
-          "addLabels": "{{manager}}"
-    }
-  ],
   "packageRules": [
     {
         "matchManagers": [
