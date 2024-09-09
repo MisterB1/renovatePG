@@ -17,9 +17,9 @@
       "matchManagers": ["*"],
           "addLabels": "{{manager}}"
     }
-    ],
-    [
-      {
+  ],
+  "packageRules": [
+    {
         "matchManagers": [
           "gomod"
         ],
