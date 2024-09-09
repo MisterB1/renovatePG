@@ -9,7 +9,7 @@ require (
     github.com/gookit/validate v1.4.1
     github.com/gorilla/mux v1.6.1
     github.com/miekg/dns v1.0.56
-    github.com/prometheus/client_golang v1.18.1
+    github.com/prometheus/client_golang v1.18.0
     github.com/sirupsen/logrus v1.7.3
     github.com/spf13/cobra v1.7.0
     github.com/stretchr/testify v1.7.0
