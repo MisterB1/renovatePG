@@ -29,7 +29,7 @@ done
 
 if [ "$copyall" = "true" ]
 then
- for file in renovate-config.js renovate.json
+ for file in renovate-config.js renovate.json5
  do
   rm ~paulrelf/RenovatePG/${file} 2> /dev/null
   cp ~paulrelf/RenovatePGSourcefiles/${file} ~paulrelf/RenovatePG/${file}
