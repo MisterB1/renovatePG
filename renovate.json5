@@ -1,5 +1,5 @@
 {
-  "$schema": https://docs.renovatebot.com/renovate-schema.json, // Loads the standard schema and default values
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json", // Loads the standard schema and default values
   "extends": [
     "config:best-practices", // preset setting these options: https://docs.renovatebot.com/presets-config/#configbest-practices
     ":prConcurrentLimitNone", // allows any number of PRs to be opened
