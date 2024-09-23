@@ -1,12 +1,7 @@
 name: renovatePG
 on:
  workflow_dispatch:
-permissions:
- workflow: write
- id-token: write
- contents: write
- pull-requests: write
- issues: write
+permissions: write-all
 jobs:
   renovate:
     runs-on: default
