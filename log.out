@@ -108,7 +108,7 @@ DEBUG: hostRules: authentication already set for api.github.com (repository=Mist
 DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: MisterB1/cicd-pipeline-train-schedule-pipelines default branch = master (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Using personal access token for git init (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
-DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=366) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
+DEBUG: GET https://api.github.com/repos/MisterB1/cicd-pipeline-train-schedule-pipelines/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=347) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Default config file renovate.json not found in repo (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository is a fork and not manually configured - skipping - did you want to run with --fork-processing=enabled? (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Removing any stale branches (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
@@ -117,7 +117,7 @@ DEBUG: No renovate branches found (repository=MisterB1/cicd-pipeline-train-sched
 DEBUG: Repository result: fork, status: disabled, enabled: false, onboarded: undefined (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
 DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "splits": {},
-       "total": 1596
+       "total": 1582
 DEBUG: Package cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
        "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
@@ -125,9 +125,9 @@ DEBUG: HTTP statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelin
        "hosts": {
          "api.github.com": {
            "count": 2,
-           "reqAvgMs": 460,
-           "reqMedianMs": 553,
-           "reqMaxMs": 553,
+           "reqAvgMs": 382,
+           "reqMedianMs": 416,
+           "reqMaxMs": 416,
            "queueAvgMs": 0,
            "queueMedianMs": 0,
            "queueMaxMs": 0
@@ -138,7 +138,7 @@ DEBUG: HTTP cache statistics (repository=MisterB1/cicd-pipeline-train-schedule-p
 DEBUG: Lookup statistics (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
  INFO: Repository finished (repository=MisterB1/cicd-pipeline-train-schedule-pipelines)
        "cloned": false,
-       "durationMs": 1596
+       "durationMs": 1582
 DEBUG: Reinitializing hostRules for repo
 DEBUG: Clearing hostRules
 DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
@@ -156,7 +156,7 @@ DEBUG: Resetting npmrc (repository=MisterB1/renovatePG)
 DEBUG: checkOnboarding() (repository=MisterB1/renovatePG)
 DEBUG: isOnboarded() (repository=MisterB1/renovatePG)
 DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"6b40bb4aa08af66f7a2dec2d42b5bd90bfe59beeba45fd8902829f61fb0431a0", lastModified=undefined) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag=W/"741f1907881a8bc06feb15e2709e3c7eafe71fbbac448a99250365feca7a8674", lastModified=undefined) (repository=MisterB1/renovatePG)
 DEBUG: getPrList success (repository=MisterB1/renovatePG)
        "pullsTotal": 128,
        "requestsTotal": 1,
@@ -166,11 +166,11 @@ DEBUG: findFile(renovate.json) (repository=MisterB1/renovatePG)
 DEBUG: Initializing git repository into /var/folders/dz/17hsdcvd2x55ytc4mvf_n7g40000gn/T/renovate/repos/github/MisterB1/renovatePG (repository=MisterB1/renovatePG)
 DEBUG: Performing blobless clone (repository=MisterB1/renovatePG)
 DEBUG: git clone completed (repository=MisterB1/renovatePG)
-       "durationMs": 1642
+       "durationMs": 1869
 DEBUG: latest repository commit (repository=MisterB1/renovatePG)
        "latestCommit": {
-         "hash": "2dc37f5e7efdbfd3bf5a84fec9bcb71c2b70db6a",
-         "date": "2024-09-24T09:48:25+10:00",
+         "hash": "e441fe1618bb0380456d3a3fc5e5c97d08e05a55",
+         "date": "2024-09-24T09:49:18+10:00",
          "message": "test",
          "refs": "HEAD -> base, origin/base, origin/HEAD",
          "body": "",
@@ -229,7 +229,7 @@ DEBUG: extract() (repository=MisterB1/renovatePG)
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG)
 DEBUG: latest commit (repository=MisterB1/renovatePG)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
 DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=MisterB1/renovatePG)
 DEBUG: Using file match: (^|/)(galaxy|requirements)(\.ansible)?\.ya?ml$ for manager ansible-galaxy (repository=MisterB1/renovatePG)
 DEBUG: Using file match: (^|/)\.tool-versions$ for manager asdf (repository=MisterB1/renovatePG)
@@ -346,7 +346,7 @@ DEBUG: Matched 1 file(s) for manager gomod: go.mod (repository=MisterB1/renovate
 DEBUG: Matched 1 file(s) for manager regex: Dockerfile (repository=MisterB1/renovatePG)
 DEBUG: Found a multistage build stage name: base (repository=MisterB1/renovatePG)
 DEBUG: manager extract durations (ms) (repository=MisterB1/renovatePG)
-       "managers": {"dockerfile": 2, "regex": 2, "github-actions": 5, "gomod": 5}
+       "managers": {"dockerfile": 1, "github-actions": 4, "gomod": 5, "regex": 5}
 DEBUG: Found dockerfile package files (repository=MisterB1/renovatePG)
 DEBUG: Found github-actions package files (repository=MisterB1/renovatePG)
 DEBUG: Found gomod package files (repository=MisterB1/renovatePG)
@@ -1084,7 +1084,7 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:48:40.064Z) (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:49:41.604Z) (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
@@ -1096,11 +1096,11 @@ DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
-DEBUG: Starting search at index 227 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
+DEBUG: Starting search at index 228 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
        "depName": "actions/checkout"
-DEBUG: Found match at index 227 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
+DEBUG: Found match at index 228 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
        "depName": "actions/checkout"
 DEBUG: Contents updated (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
        "depName": "actions/checkout"
@@ -1109,9 +1109,9 @@ DEBUG: Digest is not updated (repository=MisterB1/renovatePG, packageFile=.githu
        "manager": "github-actions",
        "expectedValue": "93397bea11091df50f3d7e59dc26a7711a8bcfbe",
        "foundValue": undefined
-DEBUG: Starting search at index 325 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
+DEBUG: Starting search at index 326 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
        "depName": "actions/setup-go"
-DEBUG: Found match at index 325 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
+DEBUG: Found match at index 326 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
        "depName": "actions/setup-go"
 DEBUG: Contents updated (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/pin-dependencies)
        "depName": "actions/setup-go"
@@ -1131,7 +1131,7 @@ DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/pin-dependenc
        "result": {
          "author": null,
          "branch": "renovate/pin-dependencies",
-         "commit": "9bec922aa34869b5985dbb42a7e2b3d9764b6027",
+         "commit": "94ee616b3becce03a18dfc038be9bff2153d3ae0",
          "root": false,
          "summary": {"changes": 1, "insertions": 2, "deletions": 2}
        }
@@ -1145,9 +1145,9 @@ DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/pin-dependencie
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
  INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
-       "commitSha": "9bec922aa34869b5985dbb42a7e2b3d9764b6027"
+       "commitSha": "94ee616b3becce03a18dfc038be9bff2153d3ae0"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
 DEBUG: getBranchPr(renovate/pin-dependencies) (repository=MisterB1/renovatePG, branch=renovate/pin-dependencies)
@@ -1171,7 +1171,7 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:48:43.581Z) (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:49:45.075Z) (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
@@ -1183,7 +1183,7 @@ DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: gomod.updateDependency: v2.12.1 (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: Updating github.com/go-co-op/gocron/v2 in go.mod (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
@@ -1205,7 +1205,7 @@ DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non
        "result": {
          "author": null,
          "branch": "renovate/all-gomod-non-major-dependencies",
-         "commit": "e47629f73f2f0588562c2993a57956e6b848a332",
+         "commit": "8324c7581639377af39d48d10f89d22a57ceffe3",
          "root": false,
          "summary": {"changes": 1, "insertions": 2, "deletions": 0}
        }
@@ -1221,9 +1221,9 @@ DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-m
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
  INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
-       "commitSha": "e47629f73f2f0588562c2993a57956e6b848a332"
+       "commitSha": "8324c7581639377af39d48d10f89d22a57ceffe3"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
 DEBUG: getBranchPr(renovate/all-gomod-non-major-dependencies) (repository=MisterB1/renovatePG, branch=renovate/all-gomod-non-major-dependencies)
@@ -1249,7 +1249,7 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:48:46.212Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:49:47.600Z) (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
@@ -1261,7 +1261,7 @@ DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: Starting search at index 84 (repository=MisterB1/renovatePG, packageFile=Dockerfile, branch=renovate/github.com-tynany-frr_exporter-1.x)
        "depName": "github.com/tynany/frr_exporter"
@@ -1283,7 +1283,7 @@ DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/github.com-ty
        "result": {
          "author": null,
          "branch": "renovate/github.com-tynany-frr_exporter-1.x",
-         "commit": "caf0c3929572d0bbd8037e9ac6bca8bd5f7b5ab8",
+         "commit": "44638cdbbcb2c976f9fd7ddf6de9ee941fcbadf5",
          "root": false,
          "summary": {"changes": 1, "insertions": 1, "deletions": 1}
        }
@@ -1299,9 +1299,9 @@ DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/github.com-tyna
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
  INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
-       "commitSha": "caf0c3929572d0bbd8037e9ac6bca8bd5f7b5ab8"
+       "commitSha": "44638cdbbcb2c976f9fd7ddf6de9ee941fcbadf5"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
 DEBUG: getBranchPr(renovate/github.com-tynany-frr_exporter-1.x) (repository=MisterB1/renovatePG, branch=renovate/github.com-tynany-frr_exporter-1.x)
@@ -1326,7 +1326,7 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:48:48.712Z) (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:49:50.270Z) (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
@@ -1338,7 +1338,7 @@ DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: Starting search at index 61 (repository=MisterB1/renovatePG, packageFile=Dockerfile, branch=renovate/ubuntu-24.x)
        "depName": "ubuntu"
@@ -1361,7 +1361,7 @@ DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
        "result": {
          "author": null,
          "branch": "renovate/ubuntu-24.x",
-         "commit": "c3f62dd0d90bec65b680e879b43181d14486bf98",
+         "commit": "0e9d980cc68f831de9d70fef80d1ce5e33ccda09",
          "root": false,
          "summary": {"changes": 1, "insertions": 1, "deletions": 0}
        }
@@ -1375,9 +1375,9 @@ DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
  INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
-       "commitSha": "c3f62dd0d90bec65b680e879b43181d14486bf98"
+       "commitSha": "0e9d980cc68f831de9d70fef80d1ce5e33ccda09"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
 DEBUG: getBranchPr(renovate/ubuntu-24.x) (repository=MisterB1/renovatePG, branch=renovate/ubuntu-24.x)
@@ -1401,7 +1401,7 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:48:51.392Z) (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:49:53.004Z) (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
@@ -1413,11 +1413,11 @@ DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
-DEBUG: Starting search at index 227 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-checkout-4.x)
+DEBUG: Starting search at index 228 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-checkout-4.x)
        "depName": "actions/checkout"
-DEBUG: Found match at index 227 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-checkout-4.x)
+DEBUG: Found match at index 228 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-checkout-4.x)
        "depName": "actions/checkout"
 DEBUG: Contents updated (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-checkout-4.x)
        "depName": "actions/checkout"
@@ -1435,7 +1435,7 @@ DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/actions-check
        "result": {
          "author": null,
          "branch": "renovate/actions-checkout-4.x",
-         "commit": "9caa2ed795a47fed4b842db5ae957a17efeac8ca",
+         "commit": "6cd174a12b343cd8684727ca9fb8d2132748ff14",
          "root": false,
          "summary": {"changes": 1, "insertions": 1, "deletions": 1}
        }
@@ -1449,9 +1449,9 @@ DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/actions-checkou
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
  INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
-       "commitSha": "9caa2ed795a47fed4b842db5ae957a17efeac8ca"
+       "commitSha": "6cd174a12b343cd8684727ca9fb8d2132748ff14"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
 DEBUG: getBranchPr(renovate/actions-checkout-4.x) (repository=MisterB1/renovatePG, branch=renovate/actions-checkout-4.x)
@@ -1476,7 +1476,7 @@ DEBUG: Checking if PR has been edited (repository=MisterB1/renovatePG, branch=re
 DEBUG: branch.isModified(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
 DEBUG: branch.isModified() = false (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
 DEBUG: Found existing branch PR (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:48:54.050Z) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2024-09-23T23:49:55.575Z) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
 DEBUG: No schedule defined (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
 DEBUG: Branch already exists (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
 DEBUG: branch.isBehindBase(): using git to calculate (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
@@ -1488,11 +1488,11 @@ DEBUG: Using reuseExistingBranch: false (repository=MisterB1/renovatePG, branch=
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-DEBUG: Starting search at index 282 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-setup-go-5.x)
+DEBUG: Starting search at index 283 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-setup-go-5.x)
        "depName": "actions/setup-go"
-DEBUG: Found match at index 282 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-setup-go-5.x)
+DEBUG: Found match at index 283 (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-setup-go-5.x)
        "depName": "actions/setup-go"
 DEBUG: Contents updated (repository=MisterB1/renovatePG, packageFile=.github/workflows/renovatePG.yaml, branch=renovate/actions-setup-go-5.x)
        "depName": "actions/setup-go"
@@ -1510,7 +1510,7 @@ DEBUG: git commit (repository=MisterB1/renovatePG, branch=renovate/actions-setup
        "result": {
          "author": null,
          "branch": "renovate/actions-setup-go-5.x",
-         "commit": "31e563e67a0e1c8e838f932e2fca31cfe4540393",
+         "commit": "00f33a903761f0c7c9af3a7626e1ddf2bb6cf32e",
          "root": false,
          "summary": {"changes": 1, "insertions": 1, "deletions": 0}
        }
@@ -1524,9 +1524,9 @@ DEBUG: git push (repository=MisterB1/renovatePG, branch=renovate/actions-setup-g
 DEBUG: Setting current branch to base (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
 DEBUG: latest commit (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
        "branchName": "base",
-       "latestCommitDate": "2024-09-24T09:48:25+10:00"
+       "latestCommitDate": "2024-09-24T09:49:18+10:00"
  INFO: Branch updated (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
-       "commitSha": "31e563e67a0e1c8e838f932e2fca31cfe4540393"
+       "commitSha": "00f33a903761f0c7c9af3a7626e1ddf2bb6cf32e"
 DEBUG: Ensuring PR (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
 DEBUG: There are 0 errors and 0 warnings (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
 DEBUG: getBranchPr(renovate/actions-setup-go-5.x) (repository=MisterB1/renovatePG, branch=renovate/actions-setup-go-5.x)
@@ -1557,7 +1557,7 @@ DEBUG: Found PR #144 (repository=MisterB1/renovatePG)
 DEBUG: getBranchPr(renovate/actions-setup-go-5.x) (repository=MisterB1/renovatePG)
 DEBUG: findPr(renovate/actions-setup-go-5.x, undefined, open) (repository=MisterB1/renovatePG)
 DEBUG: Found PR #139 (repository=MisterB1/renovatePG)
-DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/contents/renovate.json5 (etag=W/"5ae19d692a10f42dfbe45df23677d2cb4eaf124c", lastModified=Mon, 23 Sep 2024 23:48:25 GMT) (repository=MisterB1/renovatePG)
+DEBUG: http cache: saving https://api.github.com/repos/MisterB1/renovatePG/contents/renovate.json5 (etag=W/"5ae19d692a10f42dfbe45df23677d2cb4eaf124c", lastModified=Mon, 23 Sep 2024 23:49:18 GMT) (repository=MisterB1/renovatePG)
 DEBUG: checkConfigMigrationBranch() (repository=MisterB1/renovatePG)
 DEBUG: checkConfigMigrationBranch() Config does not need migration (repository=MisterB1/renovatePG)
 DEBUG: ensureDependencyDashboard() (repository=MisterB1/renovatePG)
@@ -2251,59 +2251,59 @@ DEBUG: PackageFiles.clear() - Package files deleted (repository=MisterB1/renovat
 DEBUG: Repo is activated (repository=MisterB1/renovatePG)
 DEBUG: Branch summary (repository=MisterB1/renovatePG)
        "cacheModified": undefined,
-       "baseBranches": [{"branchName": "base", "sha": "2dc37f5e7efdbfd3bf5a84fec9bcb71c2b70db6a"}],
+       "baseBranches": [{"branchName": "base", "sha": "e441fe1618bb0380456d3a3fc5e5c97d08e05a55"}],
        "branches": [
          {
            "automerge": false,
            "baseBranch": "base",
-           "baseBranchSha": "2dc37f5e7efdbfd3bf5a84fec9bcb71c2b70db6a",
+           "baseBranchSha": "e441fe1618bb0380456d3a3fc5e5c97d08e05a55",
            "branchName": "renovate/pin-dependencies",
-           "branchSha": "9bec922aa34869b5985dbb42a7e2b3d9764b6027",
+           "branchSha": "94ee616b3becce03a18dfc038be9bff2153d3ae0",
            "isModified": false,
            "isPristine": true
          },
          {
            "automerge": false,
            "baseBranch": "base",
-           "baseBranchSha": "2dc37f5e7efdbfd3bf5a84fec9bcb71c2b70db6a",
+           "baseBranchSha": "e441fe1618bb0380456d3a3fc5e5c97d08e05a55",
            "branchName": "renovate/all-gomod-non-major-dependencies",
-           "branchSha": "e47629f73f2f0588562c2993a57956e6b848a332",
+           "branchSha": "8324c7581639377af39d48d10f89d22a57ceffe3",
            "isModified": false,
            "isPristine": true
          },
          {
            "automerge": false,
            "baseBranch": "base",
-           "baseBranchSha": "2dc37f5e7efdbfd3bf5a84fec9bcb71c2b70db6a",
+           "baseBranchSha": "e441fe1618bb0380456d3a3fc5e5c97d08e05a55",
            "branchName": "renovate/github.com-tynany-frr_exporter-1.x",
-           "branchSha": "caf0c3929572d0bbd8037e9ac6bca8bd5f7b5ab8",
+           "branchSha": "44638cdbbcb2c976f9fd7ddf6de9ee941fcbadf5",
            "isModified": false,
            "isPristine": true
          },
          {
            "automerge": false,
            "baseBranch": "base",
-           "baseBranchSha": "2dc37f5e7efdbfd3bf5a84fec9bcb71c2b70db6a",
+           "baseBranchSha": "e441fe1618bb0380456d3a3fc5e5c97d08e05a55",
            "branchName": "renovate/ubuntu-24.x",
-           "branchSha": "c3f62dd0d90bec65b680e879b43181d14486bf98",
+           "branchSha": "0e9d980cc68f831de9d70fef80d1ce5e33ccda09",
            "isModified": false,
            "isPristine": true
          },
          {
            "automerge": false,
            "baseBranch": "base",
-           "baseBranchSha": "2dc37f5e7efdbfd3bf5a84fec9bcb71c2b70db6a",
+           "baseBranchSha": "e441fe1618bb0380456d3a3fc5e5c97d08e05a55",
            "branchName": "renovate/actions-checkout-4.x",
-           "branchSha": "9caa2ed795a47fed4b842db5ae957a17efeac8ca",
+           "branchSha": "6cd174a12b343cd8684727ca9fb8d2132748ff14",
            "isModified": false,
            "isPristine": true
          },
          {
            "automerge": false,
            "baseBranch": "base",
-           "baseBranchSha": "2dc37f5e7efdbfd3bf5a84fec9bcb71c2b70db6a",
+           "baseBranchSha": "e441fe1618bb0380456d3a3fc5e5c97d08e05a55",
            "branchName": "renovate/actions-setup-go-5.x",
-           "branchSha": "31e563e67a0e1c8e838f932e2fca31cfe4540393",
+           "branchSha": "00f33a903761f0c7c9af3a7626e1ddf2bb6cf32e",
            "isModified": false,
            "isPristine": true
          }
@@ -2472,18 +2472,18 @@ DEBUG: Renovate repository PR statistics (repository=MisterB1/renovatePG)
        "stats": {"total": 128, "open": 6, "closed": 97, "merged": 25}
 DEBUG: Repository result: done, status: activated, enabled: true, onboarded: true (repository=MisterB1/renovatePG)
 DEBUG: Repository timing splits (milliseconds) (repository=MisterB1/renovatePG)
-       "splits": {"init": 5570, "extract": 536, "lookup": 250, "onboarding": 0, "update": 16602},
-       "total": 23412
+       "splits": {"init": 6328, "extract": 556, "lookup": 248, "onboarding": 1, "update": 16902},
+       "total": 24518
 DEBUG: Package cache statistics (repository=MisterB1/renovatePG)
-       "get": {"count": 38, "avgMs": 25, "medianMs": 8, "maxMs": 93, "totalMs": 949},
-       "set": {"count": 7, "avgMs": 1, "medianMs": 1, "maxMs": 3, "totalMs": 10}
+       "get": {"count": 38, "avgMs": 24, "medianMs": 7, "maxMs": 91, "totalMs": 901},
+       "set": {"count": 7, "avgMs": 2, "medianMs": 1, "maxMs": 4, "totalMs": 12}
 DEBUG: HTTP statistics (repository=MisterB1/renovatePG)
        "hosts": {
          "api.github.com": {
            "count": 6,
-           "reqAvgMs": 503,
-           "reqMedianMs": 432,
-           "reqMaxMs": 908,
+           "reqAvgMs": 590,
+           "reqMedianMs": 454,
+           "reqMaxMs": 1278,
            "queueAvgMs": 0,
            "queueMedianMs": 0,
            "queueMaxMs": 1
@@ -2497,21 +2497,21 @@ DEBUG: HTTP cache statistics (repository=MisterB1/renovatePG)
          "/repos/MisterB1/renovatePG/pulls": {"hit": 0, "miss": 1}
        }
 DEBUG: Lookup statistics (repository=MisterB1/renovatePG)
-       "golang-version": {"count": 1, "avgMs": 47, "medianMs": 47, "maxMs": 47, "totalMs": 47},
-       "go": {"count": 13, "avgMs": 71, "medianMs": 72, "maxMs": 79, "totalMs": 917},
-       "docker": {"count": 1, "avgMs": 140, "medianMs": 140, "maxMs": 140, "totalMs": 140},
-       "github-tags": {"count": 2, "avgMs": 143, "medianMs": 147, "maxMs": 147, "totalMs": 286}
+       "golang-version": {"count": 1, "avgMs": 48, "medianMs": 48, "maxMs": 48, "totalMs": 48},
+       "go": {"count": 13, "avgMs": 67, "medianMs": 70, "maxMs": 78, "totalMs": 868},
+       "docker": {"count": 1, "avgMs": 138, "medianMs": 138, "maxMs": 138, "totalMs": 138},
+       "github-tags": {"count": 2, "avgMs": 142, "medianMs": 145, "maxMs": 145, "totalMs": 283}
  INFO: Repository finished (repository=MisterB1/renovatePG)
        "cloned": true,
-       "durationMs": 23412
+       "durationMs": 24518
 DEBUG: Checking file package cache for expired items
-DEBUG: Deleted 0 of 66 file cached entries in 40ms
+DEBUG: Deleted 0 of 66 file cached entries in 49ms
  INFO: Renovate is exiting with a non-zero code due to the following logged errors
        "loggerErrors": [
          {
            "name": "renovate",
            "level": 50,
-           "logContext": "MgePuWrT7rtL3ptptWL63",
+           "logContext": "p1UEQwGWjxjo8EaDt1Pwt",
            "versions": {
              "node": "22.6.0",
              "acorn": "8.11.3",

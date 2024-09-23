@@ -2,7 +2,7 @@ name: renovatePG
 on:
  workflow_dispatch:
 permissions:
- workflows: write
+ workflow: write
  id-token: write
  contents: write
  pull-requests: write
