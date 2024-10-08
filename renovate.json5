@@ -1,5 +1,5 @@
 {
     "extends": ["github>MisterB1/renovatePG:renPG.json5"],
     "timezone": "Australia/Sydney",
-    "schedule": ["after 4am"]
+    "schedule": ["before 4am"]
 }
