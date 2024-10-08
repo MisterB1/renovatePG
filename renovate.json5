@@ -1,3 +1,4 @@
 {
-    "extends": ["github>MisterB1/renovatePG:renPG.json5"]
+    "extends": ["github>MisterB1/renovatePG:renPG.json5"],
+    "schedule": ["before 4am"]
 }
