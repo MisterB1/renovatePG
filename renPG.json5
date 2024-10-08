@@ -23,7 +23,7 @@
       "groupName": "all gomod non-major dependencies"
       },
     {
-      "matchUpdateTypes": ["pinDigest"],
+      "matchManagers": ["pinDigest"],
       "automerge": true
     }
     ]
