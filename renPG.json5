@@ -13,17 +13,7 @@
   "postUpdateOptions": ["gomodTidy"],
   "packageRules": [
     {
-      "matchManagers": [
-        "gomod"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "groupName": "all gomod non-major dependencies"
-      },
-    {
-      "matchManagers": ["pinDigest"],
+      "matchManagers": ["gomod"],
       "automerge": true
     }
     ]
