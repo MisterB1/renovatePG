@@ -21,6 +21,10 @@
         "patch"
       ],
       "groupName": "all gomod non-major dependencies"
-      }
+      },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
     ]
 }
