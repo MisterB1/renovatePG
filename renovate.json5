@@ -1,3 +1,20 @@
 {
-    "timezone": "Australia/Sydney"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json", // Loads the standard schema and default values
+  "extends": [
+    "config:best-practices", // preset setting these options: https://docs.renovatebot.com/presets-config/#configbest-practices
+    ":prConcurrentLimitNone", // allows any number of PRs to be opened
+    ":prHourlyLimitNone", // allows PRs to opened as they are found without limit
+    ":rebaseStalePrs" // when main branch is updated, rebase any stale PRs on every run
+  ],
+  "addLabels": ["renovate","{{{manager}}}"], // labels all PRs with renovate and manager name that found dependency
+  "vulnerabilityAlerts": {
+  "enabled": true,
+  "addLabels": ["security"] }, // add security labels to PRs that fix vulnerabilities
+  "postUpdateOptions": ["gomodTidy"],
+  "packageRules": [
+    {
+      "matchManagers": ["gomod"],
+      "automerge": true
+    }
+    ]
 }
