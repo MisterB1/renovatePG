@@ -1,4 +1,4 @@
 module.exports = {
-"platform": "github",
-"autodiscover": true,
+  "platform": "github",
+  "autodiscover": true
 }
